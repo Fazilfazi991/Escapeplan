@@ -41,7 +41,7 @@
   };
 
   function makeClickable(element, handler) {
-    if (element.tagName === 'A') element.setAttribute('href', '#');
+    if (element.tagName === 'A' && !element.getAttribute('href')) element.setAttribute('href', '#');
     element.removeAttribute('onclick');
     element.dataset.epWired = 'true';
     element.addEventListener('click', (event) => {
