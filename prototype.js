@@ -105,7 +105,7 @@
       .find((node) => needles.some((needle) => label(node).includes(needle)));
     const target = document.getElementById(kind === 'how' ? 'how-it-works' : 'sample-result')
       || marker?.closest('section') || marker?.parentElement?.parentElement || document.body;
-    target.id = `escapeplan-${kind}`;
+    if (!target.id) target.id = `escapeplan-${kind}`;
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 

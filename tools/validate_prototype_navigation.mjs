@@ -27,6 +27,9 @@ if (!prototype.includes("page === 'home' || page.includes('landing_page')")) {
 if (!prototype.includes("document.getElementById(kind === 'how' ? 'how-it-works' : 'sample-result')")) {
   throw new Error('Landing navigation must target explicit section IDs before matching text');
 }
+if (!prototype.includes("if (!target.id) target.id = `escapeplan-${kind}`")) {
+  throw new Error('Landing navigation must preserve explicit section IDs');
+}
 
 const routeNames = [
   'escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined',
