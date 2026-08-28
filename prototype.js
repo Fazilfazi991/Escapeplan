@@ -103,7 +103,8 @@
     const needles = kind === 'how' ? ['how it works', 'built for'] : ['sample result', 'digital operator', 'your top match'];
     const marker = [...document.querySelectorAll('h1, h2, h3, h4, p, span')]
       .find((node) => needles.some((needle) => label(node).includes(needle)));
-    const target = marker?.closest('section') || marker?.parentElement?.parentElement || document.body;
+    const target = document.getElementById(kind === 'how' ? 'how-it-works' : 'sample-result')
+      || marker?.closest('section') || marker?.parentElement?.parentElement || document.body;
     target.id = `escapeplan-${kind}`;
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }

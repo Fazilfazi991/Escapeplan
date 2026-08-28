@@ -24,6 +24,9 @@ for (const marker of ['href="/quiz_question_1_mobile/code"', 'id="how-it-works"'
 if (!prototype.includes("page === 'home' || page.includes('landing_page')")) {
   throw new Error('Root URL must be classified as a landing page for in-page navigation');
 }
+if (!prototype.includes("document.getElementById(kind === 'how' ? 'how-it-works' : 'sample-result')")) {
+  throw new Error('Landing navigation must target explicit section IDs before matching text');
+}
 
 const routeNames = [
   'escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined',
