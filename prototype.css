@@ -24,5 +24,15 @@ button:focus-visible, a:focus-visible, [role="button"]:focus-visible { outline: 
 #ep-report-nav { position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; gap: 6px; overflow-x: auto; padding: 10px 14px; background: rgba(255,255,255,.97); border-bottom: 1px solid #dbe3ef; font: 700 13px system-ui,sans-serif; }
 #ep-report-nav a { white-space: nowrap; padding: 9px 13px; border-radius: 999px; color: var(--ep-ink); text-decoration: none; }
 #ep-report-nav a:hover, #ep-report-nav a[aria-current="page"] { background: var(--ep-blue); color: #fff; }
-@media (max-width: 640px) { .ep-brand-logo { width: 128px; height: 33px; } .ep-brand-logo img { width: 165px; height: 165px; left: -18px; top: -66px; } #ep-progress { grid-template-columns: 1fr; gap: 7px; } #ep-report-nav { justify-content: flex-start; } }
+@media (max-width: 640px) {
+  .ep-brand-logo { width: 128px; height: 33px; }
+  .ep-brand-logo img { width: 165px; height: 165px; left: -18px; top: -66px; }
+  #sample-result .glass-card { margin-top: 16px !important; padding: 16px !important; gap: 12px !important; }
+  #sample-result .glass-card > .grid { display: none !important; }
+  #sample-result .glass-card .w-12, #sample-result .glass-card .w-14 { display: none !important; }
+  #sample-result .glass-card h4 { margin-bottom: 8px !important; }
+  #sample-result .glass-card .pt-3 { flex-wrap: wrap; gap: 6px !important; }
+  #ep-progress { grid-template-columns: 1fr; gap: 7px; }
+  #ep-report-nav { justify-content: flex-start; }
+}
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

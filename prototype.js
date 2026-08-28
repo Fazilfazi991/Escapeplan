@@ -13,7 +13,7 @@
 
   const routes = {
     home: () => go('escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined'),
-    quiz: () => location.href = route('quiz_question_1_mobile'),
+    quiz: () => location.href = route('assessment'),
     result: () => go('result_the_digital_operator_desktop', 'result_the_digital_operator_mobile'),
     paywall: () => go('curiosity_paywall_desktop', 'curiosity_paywall_mobile'),
     report: () => go('report_executive_summary_desktop', 'report_summary_dna_mobile')

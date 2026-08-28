@@ -5,8 +5,11 @@ const root = process.cwd();
 const desktop = fs.readFileSync(path.join(root, 'escapeplan_landing_page_desktop_refined/code.html'), 'utf8');
 const mobile = fs.readFileSync(path.join(root, 'escapeplan_landing_page_mobile_refined/code.html'), 'utf8');
 const prototype = fs.readFileSync(path.join(root, 'prototype.js'), 'utf8');
+const assessment = fs.readFileSync(path.join(root, 'assessment/assessment.js'), 'utf8');
+const assessmentHtml = fs.readFileSync(path.join(root, 'assessment/code.html'), 'utf8');
+const core = fs.readFileSync(path.join(root, 'shared/escapeplan-core.js'), 'utf8');
 const requiredLandingMarkup = [
-  'href="/quiz_question_1_mobile/code"',
+  'href="/assessment/code"',
   'href="#how-it-works"',
   'href="#sample-result"',
   'id="how-it-works"',
@@ -17,7 +20,7 @@ for (const marker of requiredLandingMarkup) {
   if (!desktop.includes(marker)) throw new Error(`Desktop landing is missing ${marker}`);
 }
 
-for (const marker of ['href="/quiz_question_1_mobile/code"', 'id="how-it-works"', 'id="sample-result"']) {
+for (const marker of ['href="/assessment/code"', 'id="how-it-works"', 'id="sample-result"']) {
   if (!mobile.includes(marker)) throw new Error(`Mobile landing is missing ${marker}`);
 }
 
@@ -30,9 +33,22 @@ if (!prototype.includes("document.getElementById(kind === 'how' ? 'how-it-works'
 if (!prototype.includes("if (!target.id) target.id = `escapeplan-${kind}`")) {
   throw new Error('Landing navigation must preserve explicit section IDs');
 }
+if ((assessment.match(/id: '(situation|motivation|capital|time|environment|strengths|tradeoff)'/g) || []).length !== 7) {
+  throw new Error('Assessment must contain exactly seven required questions');
+}
+if (!assessment.includes("selectedFor('situation').includes(0)") || !assessment.includes("selectedFor('environment').includes(1)")) {
+  throw new Error('Assessment conditional rules are missing');
+}
+if (assessmentHtml.includes('ep-progress') || assessmentHtml.includes('Question 1 of 5')) {
+  throw new Error('Assessment must not include the legacy injected progress UI');
+}
+if (!core.includes("IN: { currency: 'INR'") || !core.includes("AE: { currency: 'AED'") || !core.includes("US: { currency: 'USD'")) {
+  throw new Error('Shared currency formatter must support INR, AED and USD market configuration');
+}
 
 const routeNames = [
   'escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined',
+  'assessment',
   'quiz_question_1_mobile', 'quiz_capital_question_desktop', 'quiz_business_style_mobile',
   'quiz_risk_scenario_desktop', 'quiz_final_question_mobile',
   'analysis_introduction_desktop', 'analysis_capital_income_desktop',

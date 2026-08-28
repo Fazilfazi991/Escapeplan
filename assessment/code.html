@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9f7f5">
+  <title>EscapePlan Assessment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assessment/assessment.css">
+</head>
+<body>
+  <div class="assessment-shell">
+    <header class="assessment-header">
+      <a class="assessment-brand" href="/" aria-label="EscapePlan home">
+        <span class="assessment-brand-crop"><img src="/escapeplan_logo/screen.png" alt="EscapePlan"></span>
+      </a>
+      <button class="assessment-exit" type="button" data-action="exit" aria-label="Exit assessment">Exit</button>
+    </header>
+
+    <main id="assessment" class="assessment-main" tabindex="-1">
+      <section class="assessment-progress" aria-label="Assessment progress">
+        <div class="assessment-progress-copy">
+          <span id="progress-stage">EscapePlan Assessment</span>
+          <strong id="progress-label">14% complete</strong>
+        </div>
+        <div class="assessment-progress-track" aria-hidden="true"><i id="progress-bar"></i></div>
+      </section>
+
+      <section id="question-view" class="assessment-view" aria-live="polite">
+        <div class="question-copy">
+          <p id="question-category" class="question-category"></p>
+          <h1 id="question-title"></h1>
+          <p id="question-help" class="question-help"></p>
+        </div>
+        <div id="option-list" class="option-list" role="group"></div>
+      </section>
+
+      <section id="insight-view" class="insight-view" aria-live="polite" hidden>
+        <div class="insight-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <h1 id="insight-title"></h1>
+        <p id="insight-copy"></p>
+        <button class="insight-continue" type="button" data-action="insight-continue">Continue <span aria-hidden="true">→</span></button>
+      </section>
+    </main>
+
+    <footer id="assessment-actions" class="assessment-actions">
+      <div class="assessment-actions-inner">
+        <button class="back-button" type="button" data-action="back"><span aria-hidden="true">←</span> Back</button>
+        <button id="continue-button" class="continue-button" type="button" data-action="continue" disabled>
+          <span>Continue</span><span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/shared/escapeplan-core.js"></script>
+  <script src="/assessment/assessment.js"></script>
+</body>
+</html>

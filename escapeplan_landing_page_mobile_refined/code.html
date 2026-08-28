@@ -230,15 +230,15 @@
     </script>
 <link rel="stylesheet" href="/prototype.css" />
 </head>
-<body class="bg-background text-on-surface font-body-md overflow-x-hidden pb-[100px]">
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar (Rendered on mobile, hiding text links as per rules, keeping action) -->
 <header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/30 flex justify-between items-center w-full px-margin-mobile py-md max-w-7xl mx-auto z-50">
 <a aria-label="EscapePlan home" class="ep-brand-logo hover:opacity-80 transition-opacity duration-200" href="/">
 <img alt="EscapePlan" src="/escapeplan_logo/screen.png"/>
 </a>
 <!-- Mobile Links Hidden, Action Present -->
-<a class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-md py-sm rounded-lg hover:opacity-80 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="/quiz_question_1_mobile/code">
-            Take the test
+<a class="text-primary font-label-md text-label-md px-sm py-sm rounded-lg hover:bg-primary-fixed/40 transition-colors active:scale-95" href="/assessment/code">
+            Start
         </a>
 </header>
 <main class="w-full flex flex-col items-center">
@@ -254,36 +254,25 @@
                 </p>
 </div>
 <!-- Result Preview Card -->
-<div class="w-full bg-surface-container-lowest rounded-xl layer-2-shadow p-lg flex flex-col gap-md border border-primary-fixed mt-sm relative overflow-hidden group transform hover:scale-[1.02] transition-transform duration-300" id="sample-result">
+<div class="w-full bg-surface-container-lowest rounded-xl p-md flex flex-col gap-sm border border-primary-fixed mt-sm relative overflow-hidden" id="sample-result">
 <div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/20 to-transparent opacity-50"></div>
 <div class="relative z-10 flex flex-col gap-sm">
 <div class="flex justify-between items-center w-full">
-<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-xs">
-<span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span>
-                                Your #1 Match
-                            </span>
-<div class="bg-primary-fixed text-on-primary-fixed px-sm py-xs rounded-full flex items-center gap-xs">
-<span class="material-symbols-outlined text-[14px]">psychology</span>
-<span class="text-label-sm font-label-sm font-bold"><span id="countup-score">0</span>/100 Score</span>
-</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Your #1 Match</span>
+<div class="bg-primary-fixed text-on-primary-fixed px-sm py-xs rounded-full"><span class="text-label-sm font-label-sm font-bold">81% Profile Match</span></div>
 </div>
 <!-- Progress Bar -->
 <div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden mt-1 mb-2">
 <div class="h-full bg-primary animate-progress rounded-full w-0"></div>
 </div>
-<div class="w-full h-16 bg-surface-variant rounded-lg relative overflow-hidden backdrop-blur-sm border border-outline-variant/30 flex items-center justify-center">
-<span class="text-headline-md font-headline-md text-on-surface-variant opacity-30 filter blur-sm select-none">Boutique Agency</span>
-<div class="absolute inset-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline-variant text-[32px] opacity-50">lock</span>
-</div>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant text-left mt-xs">
-                        High alignment with your desire for creative autonomy and strategic thinking.
+<div class="w-full h-8 bg-surface-variant rounded-md opacity-60"></div>
+<p class="text-body-md font-body-md text-on-surface-variant text-left">
+                        Strong alignment with how you want to work.
                     </p>
 </div>
 </div>
 <!-- Primary CTA -->
-<a class="w-full h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-sm mt-md layer-1-shadow hover:opacity-90 active:scale-95 transition-all" href="/quiz_question_1_mobile/code">
+<a class="w-full h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-sm mt-md layer-1-shadow hover:opacity-90 active:scale-95 transition-all" href="/assessment/code">
                 Find My Business Match
                 <span class="material-symbols-outlined">arrow_forward</span>
 </a>
@@ -361,7 +350,7 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-inverse-surface full-width bottom-0 flex flex-col justify-between items-center w-full px-margin-mobile py-lg gap-md max-w-7xl mx-auto mt-md pb-24">
+<footer class="bg-surface-container-low dark:bg-inverse-surface full-width bottom-0 flex flex-col justify-between items-center w-full px-margin-mobile py-lg gap-md max-w-7xl mx-auto mt-md">
 <span class="text-label-md font-label-md font-bold text-on-surface dark:text-inverse-on-surface">EscapePlan</span>
 <div class="flex flex-row flex-wrap justify-center items-center gap-md">
 <a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
@@ -370,12 +359,5 @@
 </div>
 <p class="text-body-sm font-body-md text-on-surface-variant text-center opacity-70">© 2024 EscapePlan. No hype. Just clarity.</p>
 </footer>
-<!-- Sticky Footer CTA -->
-<div class="fixed bottom-0 left-0 right-0 p-margin-mobile pb-8 bg-gradient-to-t from-background via-background/90 to-transparent z-40 flex justify-center backdrop-blur-sm">
-<a class="w-full max-w-sm h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-sm shadow-[0_15px_40px_-10px_rgba(70,72,212,0.4)] hover:opacity-90 active:scale-95 transition-all group" href="/quiz_question_1_mobile/code">
-            Find Mine
-            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
 <script src="/prototype.js" defer></script>
 </body></html>
