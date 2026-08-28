@@ -1,0 +1,1384 @@
+{
+  "version": "calibration-references-v1.0.0",
+  "label_semantics": "Internal manually reasoned references, not expert ground truth or success probabilities.",
+  "profiles": [
+    {
+      "profile_id": "employed_technical_low_capital",
+      "employment_status": "full_time_job",
+      "available_capital_inr": 50000,
+      "safe_risk_capital_inr": 20000,
+      "monthly_income_target_inr": 50000,
+      "available_hours_daily": 2,
+      "environment": "online",
+      "strengths": [
+        "technology"
+      ],
+      "risk_tolerance": 2,
+      "income_timing": "3_months"
+    },
+    {
+      "profile_id": "full_time_offline_operator",
+      "employment_status": "ready_full_time",
+      "available_capital_inr": 1500000,
+      "safe_risk_capital_inr": 900000,
+      "monthly_income_target_inr": 150000,
+      "available_hours_daily": 9,
+      "environment": "offline",
+      "strengths": [
+        "operations"
+      ],
+      "risk_tolerance": 4,
+      "income_timing": "6_months"
+    },
+    {
+      "profile_id": "student_creative",
+      "employment_status": "student",
+      "available_capital_inr": 20000,
+      "safe_risk_capital_inr": 5000,
+      "monthly_income_target_inr": 20000,
+      "available_hours_daily": 2,
+      "environment": "online",
+      "strengths": [
+        "creative"
+      ],
+      "risk_tolerance": 3,
+      "income_timing": "long_term"
+    },
+    {
+      "profile_id": "zero_capital_seller",
+      "employment_status": "unemployed",
+      "available_capital_inr": 0,
+      "safe_risk_capital_inr": 0,
+      "monthly_income_target_inr": 40000,
+      "available_hours_daily": 6,
+      "environment": "hybrid",
+      "strengths": [
+        "sales",
+        "networking"
+      ],
+      "risk_tolerance": 3,
+      "income_timing": "30_days"
+    },
+    {
+      "profile_id": "funded_food_operator",
+      "employment_status": "ready_full_time",
+      "available_capital_inr": 2000000,
+      "safe_risk_capital_inr": 1400000,
+      "monthly_income_target_inr": 250000,
+      "available_hours_daily": 10,
+      "environment": "offline",
+      "strengths": [
+        "operations",
+        "product_sourcing"
+      ],
+      "risk_tolerance": 4,
+      "income_timing": "6_months"
+    },
+    {
+      "profile_id": "existing_distribution_owner",
+      "employment_status": "existing_business",
+      "available_capital_inr": 2500000,
+      "safe_risk_capital_inr": 1200000,
+      "monthly_income_target_inr": 300000,
+      "available_hours_daily": 7,
+      "environment": "hybrid",
+      "strengths": [
+        "operations",
+        "sales",
+        "product_sourcing"
+      ],
+      "risk_tolerance": 4,
+      "income_timing": "6_months"
+    },
+    {
+      "profile_id": "cautious_executive",
+      "employment_status": "full_time_job",
+      "available_capital_inr": 5000000,
+      "safe_risk_capital_inr": 500000,
+      "monthly_income_target_inr": 200000,
+      "available_hours_daily": 2,
+      "environment": "no_preference",
+      "strengths": [
+        "finance_analysis"
+      ],
+      "risk_tolerance": 1,
+      "income_timing": "12_months"
+    },
+    {
+      "profile_id": "digital_growth_founder",
+      "employment_status": "ready_full_time",
+      "available_capital_inr": 1000000,
+      "safe_risk_capital_inr": 500000,
+      "monthly_income_target_inr": 1000000,
+      "available_hours_daily": 10,
+      "environment": "online",
+      "strengths": [
+        "technology",
+        "sales"
+      ],
+      "risk_tolerance": 4,
+      "income_timing": "12_months"
+    },
+    {
+      "profile_id": "no_strengths_explorer",
+      "employment_status": "part_time_job",
+      "available_capital_inr": 75000,
+      "safe_risk_capital_inr": 25000,
+      "monthly_income_target_inr": 30000,
+      "available_hours_daily": 3,
+      "environment": "no_preference",
+      "strengths": [
+        "none_identified"
+      ],
+      "risk_tolerance": 3,
+      "income_timing": "6_months"
+    },
+    {
+      "profile_id": "trade_operator",
+      "employment_status": "ready_full_time",
+      "available_capital_inr": 800000,
+      "safe_risk_capital_inr": 500000,
+      "monthly_income_target_inr": 120000,
+      "available_hours_daily": 9,
+      "environment": "offline",
+      "strengths": [
+        "technical_trade",
+        "operations"
+      ],
+      "risk_tolerance": 4,
+      "income_timing": "3_months"
+    },
+    {
+      "profile_id": "brand_builder",
+      "employment_status": "part_time_job",
+      "available_capital_inr": 300000,
+      "safe_risk_capital_inr": 120000,
+      "monthly_income_target_inr": 100000,
+      "available_hours_daily": 4,
+      "environment": "hybrid",
+      "strengths": [
+        "creative",
+        "sales"
+      ],
+      "risk_tolerance": 3,
+      "income_timing": "6_months"
+    },
+    {
+      "profile_id": "extreme_income_target",
+      "employment_status": "ready_full_time",
+      "available_capital_inr": 10000000,
+      "safe_risk_capital_inr": 2000000,
+      "monthly_income_target_inr": 1000000,
+      "available_hours_daily": 12,
+      "environment": "online",
+      "strengths": [
+        "technology",
+        "sales"
+      ],
+      "risk_tolerance": 5,
+      "income_timing": "12_months"
+    }
+  ],
+  "comparisons": [
+    {
+      "reference_id": "cal:employed_technical_low_capital:restaurant-cafe",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:digital-downloads",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "digital-downloads",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:micro-saas",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "micro-saas",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:freelancing",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "freelancing",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:cloud-kitchen",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:local-service-brand",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "local-service-brand",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:niche-ecommerce",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:wholesale-distribution",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:paid-newsletter",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:employed_technical_low_capital:automotive-service",
+      "profile_id": "employed_technical_low_capital",
+      "business_model_id": "automotive-service",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:restaurant-cafe",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:digital-downloads",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "digital-downloads",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:micro-saas",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "micro-saas",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:freelancing",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:cloud-kitchen",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:local-service-brand",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "local-service-brand",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:niche-ecommerce",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:wholesale-distribution",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:paid-newsletter",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:full_time_offline_operator:automotive-service",
+      "profile_id": "full_time_offline_operator",
+      "business_model_id": "automotive-service",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:restaurant-cafe",
+      "profile_id": "student_creative",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:digital-downloads",
+      "profile_id": "student_creative",
+      "business_model_id": "digital-downloads",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:micro-saas",
+      "profile_id": "student_creative",
+      "business_model_id": "micro-saas",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:freelancing",
+      "profile_id": "student_creative",
+      "business_model_id": "freelancing",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:cloud-kitchen",
+      "profile_id": "student_creative",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:local-service-brand",
+      "profile_id": "student_creative",
+      "business_model_id": "local-service-brand",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:niche-ecommerce",
+      "profile_id": "student_creative",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:wholesale-distribution",
+      "profile_id": "student_creative",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:paid-newsletter",
+      "profile_id": "student_creative",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:student_creative:automotive-service",
+      "profile_id": "student_creative",
+      "business_model_id": "automotive-service",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:restaurant-cafe",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:digital-downloads",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "digital-downloads",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:micro-saas",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "micro-saas",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:freelancing",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:cloud-kitchen",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:local-service-brand",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "local-service-brand",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:niche-ecommerce",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:wholesale-distribution",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:paid-newsletter",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:zero_capital_seller:automotive-service",
+      "profile_id": "zero_capital_seller",
+      "business_model_id": "automotive-service",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:restaurant-cafe",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:digital-downloads",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "digital-downloads",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:micro-saas",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "micro-saas",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:freelancing",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:cloud-kitchen",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:local-service-brand",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "local-service-brand",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:niche-ecommerce",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:wholesale-distribution",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:paid-newsletter",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:funded_food_operator:automotive-service",
+      "profile_id": "funded_food_operator",
+      "business_model_id": "automotive-service",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:restaurant-cafe",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:digital-downloads",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "digital-downloads",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:micro-saas",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "micro-saas",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:freelancing",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "freelancing",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:cloud-kitchen",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:local-service-brand",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "local-service-brand",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:niche-ecommerce",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:wholesale-distribution",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:paid-newsletter",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:existing_distribution_owner:automotive-service",
+      "profile_id": "existing_distribution_owner",
+      "business_model_id": "automotive-service",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:restaurant-cafe",
+      "profile_id": "cautious_executive",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:digital-downloads",
+      "profile_id": "cautious_executive",
+      "business_model_id": "digital-downloads",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:micro-saas",
+      "profile_id": "cautious_executive",
+      "business_model_id": "micro-saas",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:freelancing",
+      "profile_id": "cautious_executive",
+      "business_model_id": "freelancing",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:cloud-kitchen",
+      "profile_id": "cautious_executive",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:local-service-brand",
+      "profile_id": "cautious_executive",
+      "business_model_id": "local-service-brand",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:niche-ecommerce",
+      "profile_id": "cautious_executive",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:wholesale-distribution",
+      "profile_id": "cautious_executive",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:paid-newsletter",
+      "profile_id": "cautious_executive",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:cautious_executive:automotive-service",
+      "profile_id": "cautious_executive",
+      "business_model_id": "automotive-service",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:restaurant-cafe",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:digital-downloads",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "digital-downloads",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:micro-saas",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "micro-saas",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:freelancing",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:cloud-kitchen",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:local-service-brand",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "local-service-brand",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:niche-ecommerce",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:wholesale-distribution",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:paid-newsletter",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:digital_growth_founder:automotive-service",
+      "profile_id": "digital_growth_founder",
+      "business_model_id": "automotive-service",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:restaurant-cafe",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:digital-downloads",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "digital-downloads",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:micro-saas",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "micro-saas",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:freelancing",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:cloud-kitchen",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:local-service-brand",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "local-service-brand",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:niche-ecommerce",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:wholesale-distribution",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "poor",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:paid-newsletter",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:no_strengths_explorer:automotive-service",
+      "profile_id": "no_strengths_explorer",
+      "business_model_id": "automotive-service",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:restaurant-cafe",
+      "profile_id": "trade_operator",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:digital-downloads",
+      "profile_id": "trade_operator",
+      "business_model_id": "digital-downloads",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:micro-saas",
+      "profile_id": "trade_operator",
+      "business_model_id": "micro-saas",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:freelancing",
+      "profile_id": "trade_operator",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:cloud-kitchen",
+      "profile_id": "trade_operator",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:local-service-brand",
+      "profile_id": "trade_operator",
+      "business_model_id": "local-service-brand",
+      "expected_band": "exceptional",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:niche-ecommerce",
+      "profile_id": "trade_operator",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:wholesale-distribution",
+      "profile_id": "trade_operator",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:paid-newsletter",
+      "profile_id": "trade_operator",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:trade_operator:automotive-service",
+      "profile_id": "trade_operator",
+      "business_model_id": "automotive-service",
+      "expected_band": "exceptional",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:restaurant-cafe",
+      "profile_id": "brand_builder",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:digital-downloads",
+      "profile_id": "brand_builder",
+      "business_model_id": "digital-downloads",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:micro-saas",
+      "profile_id": "brand_builder",
+      "business_model_id": "micro-saas",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:freelancing",
+      "profile_id": "brand_builder",
+      "business_model_id": "freelancing",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:cloud-kitchen",
+      "profile_id": "brand_builder",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:local-service-brand",
+      "profile_id": "brand_builder",
+      "business_model_id": "local-service-brand",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:niche-ecommerce",
+      "profile_id": "brand_builder",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "strong",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:wholesale-distribution",
+      "profile_id": "brand_builder",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:paid-newsletter",
+      "profile_id": "brand_builder",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:brand_builder:automotive-service",
+      "profile_id": "brand_builder",
+      "business_model_id": "automotive-service",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:restaurant-cafe",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "restaurant-cafe",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:digital-downloads",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "digital-downloads",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:micro-saas",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "micro-saas",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:freelancing",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "freelancing",
+      "expected_band": "mixed",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:cloud-kitchen",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "cloud-kitchen",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:local-service-brand",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "local-service-brand",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:niche-ecommerce",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "niche-ecommerce",
+      "expected_band": "good",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:wholesale-distribution",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "wholesale-distribution",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:paid-newsletter",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "paid-newsletter",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    },
+    {
+      "reference_id": "cal:extreme_income_target:automotive-service",
+      "profile_id": "extreme_income_target",
+      "business_model_id": "automotive-service",
+      "expected_band": "weak",
+      "label_type": "calibration_reference",
+      "rationale": "Manually reasoned from capital, time, strengths, risk, environment, speed and operating burden; not ground truth.",
+      "review_status": "internally_reasoned",
+      "reviewed_at": "2026-08-28"
+    }
+  ]
+}

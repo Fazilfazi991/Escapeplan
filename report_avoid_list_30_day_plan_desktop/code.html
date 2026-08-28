@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Validation &amp; Avoidance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#f0eded",
+                      "secondary-container": "#bcf063",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#494bd6",
+                      "on-primary-container": "#fffbff",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary-fixed-variant": "#881d24",
+                      "surface": "#fcf9f8",
+                      "outline-variant": "#c7c4d7",
+                      "background": "#fcf9f8",
+                      "inverse-on-surface": "#f3f0ef",
+                      "inverse-primary": "#c0c1ff",
+                      "surface-container-low": "#f6f3f2",
+                      "tertiary-fixed-dim": "#ffb3b0",
+                      "on-primary-fixed-variant": "#2f2ebe",
+                      "tertiary-fixed": "#ffdad8",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary": "#476800",
+                      "secondary-fixed": "#bff365",
+                      "on-tertiary-fixed": "#410006",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed-dim": "#a4d64c",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#464554",
+                      "primary-fixed-dim": "#c0c1ff",
+                      "tertiary-container": "#c64b4d",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed": "#131f00",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#dcd9d9",
+                      "primary-fixed": "#e1e0ff",
+                      "primary": "#4648d4",
+                      "on-surface": "#1c1b1b",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-secondary-fixed-variant": "#354e00",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#07006c",
+                      "error": "#ba1a1a",
+                      "primary-container": "#6063ee",
+                      "surface-variant": "#e5e2e1",
+                      "on-secondary-container": "#4b6d00",
+                      "tertiary": "#a53337",
+                      "outline": "#767586",
+                      "on-background": "#1c1b1b",
+                      "surface-bright": "#fcf9f8",
+                      "inverse-surface": "#313030"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "lg": "24px",
+                      "margin-desktop": "64px",
+                      "gutter": "20px",
+                      "sm": "8px",
+                      "md": "16px",
+                      "margin-mobile": "20px",
+                      "xl": "40px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "display-lg-mobile": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.95) 100%);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
+            border: 1px solid #F3F4F6;
+        }
+        .active-lift {
+            box-shadow: 0px 15px 40px rgba(99, 102, 241, 0.08);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        .progress-track {
+            background-color: #F3F4F6;
+        }
+        .progress-fill {
+            background-color: #4648d4;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto z-50">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">EscapePlan</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md hover:opacity-80 transition-opacity duration-200" href="#">How it works</a>
+<a class="text-primary font-bold border-b-2 border-primary text-label-md font-label-md scale-95 transition-transform duration-150" href="#">Sample result</a>
+<button class="bg-primary text-on-primary text-label-md font-label-md px-lg py-sm rounded-lg h-14 hover:opacity-80 transition-opacity duration-200">Take the test</button>
+</nav>
+<!-- Mobile Menu Placeholder -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-xl">
+<!-- Header Section -->
+<section class="flex flex-col gap-sm">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Your Next Steps</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Based on your profile, here are the paths you should avoid and the exact 30-day plan to validate your best idea.</p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Left Column: Avoidance -->
+<div class="lg:col-span-5 flex flex-col gap-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-error">warning</span>
+                    Businesses to Avoid
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We've identified these models as high-risk for your specific skills and capital constraints.</p>
+<div class="flex flex-col gap-md">
+<!-- Avoid Card 1 -->
+<div class="glass-card rounded-xl p-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-error-container">restaurant</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Physical Restaurant</h3>
+<div class="inline-block px-sm py-1 bg-surface-variant rounded-full mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">High Capital, Low Margin</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Requires $250k+ upfront and 80+ hour work weeks. Conflicts entirely with your goal of geographic freedom and low initial capital.</p>
+</div>
+</div>
+</div>
+<!-- Avoid Card 2 -->
+<div class="glass-card rounded-xl p-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-error-container">storefront</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Retail Franchise</h3>
+<div class="inline-block px-sm py-1 bg-surface-variant rounded-full mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rigid System, High Fees</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Ties you to specific operational guidelines and extracts 8-12% of gross revenue, stifling your creative problem-solving strengths.</p>
+</div>
+</div>
+</div>
+<!-- Avoid Card 3 -->
+<div class="glass-card rounded-xl p-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-error-container">code_blocks</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">B2C Mobile App</h3>
+<div class="inline-block px-sm py-1 bg-surface-variant rounded-full mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Winner-Take-All Market</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Incredibly high customer acquisition costs. Without a massive marketing budget or existing audience, discovery is nearly impossible.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: 30-Day Plan -->
+<div class="lg:col-span-7 flex flex-col gap-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+                    30-Day Validation Plan
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A structured sprint to test your B2B Service idea without spending a dime on development.</p>
+<!-- Plan Container -->
+<div class="glass-card rounded-xl p-xl flex flex-col gap-xl">
+<!-- Progress Header -->
+<div class="flex flex-col gap-sm mb-sm">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Overall Progress</span>
+<span class="font-headline-md text-headline-md text-primary">0%</span>
+</div>
+<div class="h-2 w-full progress-track rounded-full overflow-hidden">
+<div class="h-full progress-fill w-0 transition-all duration-500 rounded-full"></div>
+</div>
+</div>
+<!-- Weeks -->
+<div class="relative border-l-2 border-outline-variant/30 ml-3 pl-md pb-lg flex flex-col gap-xl">
+<!-- Week 1 -->
+<div class="relative group">
+<div class="absolute -left-[27px] top-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary font-label-sm text-label-sm shadow-sm ring-4 ring-background">1</div>
+<div class="bg-surface-container-low rounded-lg p-md border border-outline-variant/20 hover:active-lift transition-all">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Week 1: Find the Customer</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Identify exactly who has the problem and where they hang out.</p>
+<ul class="flex flex-col gap-sm">
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">List 10 specific target companies.</span>
+</li>
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Find contact info for the key decision-maker at each.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Week 2 -->
+<div class="relative group">
+<div class="absolute -left-[27px] top-1 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm shadow-sm ring-4 ring-background group-hover:bg-primary-fixed-dim transition-colors">2</div>
+<div class="bg-surface-container-lowest rounded-lg p-md border border-outline-variant/20 hover:active-lift transition-all opacity-80 hover:opacity-100">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Week 2: Smallest Offer</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Craft a service that solves one tiny piece of their problem.</p>
+<ul class="flex flex-col gap-sm">
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background opacity-50" disabled="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Write a 1-page plain text pitch.</span>
+</li>
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background opacity-50" disabled="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Define the exact outcome you promise.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Week 3 -->
+<div class="relative group">
+<div class="absolute -left-[27px] top-1 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm shadow-sm ring-4 ring-background group-hover:bg-primary-fixed-dim transition-colors">3</div>
+<div class="bg-surface-container-lowest rounded-lg p-md border border-outline-variant/20 hover:active-lift transition-all opacity-80 hover:opacity-100">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Week 3: Ask for Money</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Pitch the offer and try to get paid before doing the work.</p>
+<ul class="flex flex-col gap-sm">
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background opacity-50" disabled="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Send 10 personalized outreach messages.</span>
+</li>
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background opacity-50" disabled="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Conduct at least 3 discovery calls.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Week 4 -->
+<div class="relative group">
+<div class="absolute -left-[27px] top-1 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm shadow-sm ring-4 ring-background group-hover:bg-primary-fixed-dim transition-colors">4</div>
+<div class="bg-surface-container-lowest rounded-lg p-md border border-outline-variant/20 hover:active-lift transition-all opacity-80 hover:opacity-100">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Week 4: Decide</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Review the feedback. Did they pay? Pivot or proceed.</p>
+<ul class="flex flex-col gap-sm">
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background opacity-50" disabled="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Analyze objections if no sales were made.</span>
+</li>
+<li class="flex items-center gap-sm cursor-pointer hover:bg-surface-container p-sm rounded-md transition-colors">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-background opacity-50" disabled="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Fulfill the service if payment was received.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface full-width bottom-0 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-xl gap-lg max-w-7xl mx-auto">
+<div class="text-label-md font-label-md font-bold text-on-surface dark:text-inverse-on-surface">© 2024 EscapePlan. No hype. Just clarity.</div>
+<nav class="flex gap-md md:gap-lg flex-wrap justify-center">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors text-label-sm font-label-sm Standard link hover transitions" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors text-label-sm font-label-sm Standard link hover transitions" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors text-label-sm font-label-sm Standard link hover transitions" href="#">Contact Support</a>
+</nav>
+</div>
+</footer>
+<script>
+        // Simple logic to update progress bar based on checkboxes
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const progressBar = document.querySelector('.progress-fill');
+        const progressText = document.querySelector('.text-primary.font-headline-md');
+
+        function updateProgress() {
+            const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const total = checkboxes.length;
+            const percentage = Math.round((checked / total) * 100);
+            
+            progressBar.style.width = `${percentage}%`;
+            progressText.textContent = `${percentage}%`;
+        }
+
+        checkboxes.forEach(box => {
+            box.addEventListener('change', updateProgress);
+            // Enable next week's checkboxes for demo purposes when checking current
+            box.addEventListener('click', function() {
+                 let parentGroup = this.closest('.group');
+                 if(parentGroup && parentGroup.nextElementSibling) {
+                     let nextInputs = parentGroup.nextElementSibling.querySelectorAll('input');
+                     nextInputs.forEach(input => {
+                         input.disabled = false;
+                         input.classList.remove('opacity-50');
+                     });
+                 }
+            });
+        });
+    </script>
+</body></html>

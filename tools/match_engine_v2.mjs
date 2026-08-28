@@ -1,0 +1,39 @@
+export const clamp=(x,a=0,b=100)=>Math.min(b,Math.max(a,x));
+const norm10=x=>100*(x-1)/9, norm5=x=>25*(x-1), urgency={'30_days':30,'3_months':90,'6_months':180,'12_months':365,long_term:730};
+const strengthMap={sales:'sales_dependency',technology:'technical_complexity',creative:'creative_dependency',product_sourcing:'supplier_dependency',operations:'operations_dependency',networking:'customer_interaction',finance_analysis:'business_experience_requirement',teaching:'creative_dependency',technical_trade:'operations_dependency'};
+export const weightsV2={capital:16,time:14,skills:14,risk:12,income:11,speed:10,operating_style:14,employment:5,location:4};
+const calibrate=x=>{const pts=[[0,0],[25,12],[50,38],[70,60],[85,78],[95,92],[100,100]];for(let i=1;i<pts.length;i++)if(x<=pts[i][0]){const [x0,y0]=pts[i-1],[x1,y1]=pts[i];return y0+(x-x0)*(y1-y0)/(x1-x0)}return 100};
+const range=(x,lo,hi)=>x<lo?clamp(55*x/Math.max(lo,1)):x<=hi?95:90;
+const window=(actual,required)=>actual<=required?95:clamp(95*Math.exp(-1.9*(actual/required-1)));
+export function readiness(p){
+ const runway=clamp((p.savings_runway_months??0)/9*100),safe=(p.money.safe_risk_capital_minor??0)/100,cap=clamp(Math.log10(1+safe/50000)*60),financial=.55*runway+.45*cap;
+ const time=clamp(p.available_hours_daily/4*100), clarity=[p.primary_motivation,p.money.monthly_income_target_minor!=null,p.time_to_first_income_requirement,p.preferred_business_environment].filter(Boolean).length*25;
+ const strengths=p.strengths.includes('none_identified')?52:clamp(55+p.strengths.length*12),share=(p.money.safe_risk_capital_minor??0)/Math.max(p.money.available_capital_minor??0,1),risk=clamp(80-Math.abs(norm5(p.risk_tolerance)-share*100)*.6-(p.savings_runway_months<3?15:0));
+ const stability={full_time_job:90,part_time_job:65,student:65,existing_business:75,ready_full_time:55,unemployed:35}[p.employment_status]??50,horizon=p.time_to_first_income_requirement==='30_days'&&p.available_hours_daily<2?35:75;
+ return Math.round((.25*financial+.18*time+.15*clarity+.12*strengths+.12*risk+.10*stability+.08*horizon)*10)/10;
+}
+export function scoreV2(p,m){
+ const s=m.scores,C=p.money.safe_risk_capital_minor,c=m.capital,v=m.validation_capital??{minimum_cash_required_minor:c.minimum_test_minor,zero_cost_validation_supported:false,concept_validation_possible_without_launch:false},M=v.minimum_cash_required_minor,L=c.typical_startup_low_minor,H=c.typical_startup_high_minor;
+ if(p.available_hours_daily===0)return {excluded:true,code:'ZERO_HOURS'};
+ if(C<M&&!v.concept_validation_possible_without_launch)return {excluded:true,code:'VALIDATION_CASH_UNAVAILABLE'};
+ if(p.operational_preferences.inventory_tolerance===0&&m.requires_inventory)return {excluded:true,code:'INVENTORY_REFUSED'};
+ let capitalRaw,capital_state;
+ if(C<M){capitalRaw=20+25*C/Math.max(M,1);capital_state='cannot_fund_validation';}
+ else if(C<L){capitalRaw=55+15*(C-M)/Math.max(L-M,1);capital_state='validation_only';}
+ else if(C<H){capitalRaw=78+17*(C-L)/Math.max(H-L,1);capital_state='lean_to_comfortable_launch';}
+ else {capitalRaw=95;capital_state='comfortable_or_excess';}
+ if(C===0&&v.zero_cost_validation_supported){capitalRaw=58;capital_state='zero_cost_validation_only';}
+ const capital=calibrate(clamp(capitalRaw));
+ const hlo=m.ideal_daily_hours_range[0],timeCapacity=clamp(p.available_hours_daily/Math.max(hlo,1)*100),timeRaw=.55*range(p.available_hours_daily,...m.ideal_daily_hours_range)+.3*clamp(100-Math.max(0,norm10(s.operator_dependency)-timeCapacity))+.15*(m.can_start_part_time?90:45); const time=calibrate(timeRaw);
+ const none=p.strengths.includes('none_identified'),caps={};for(const d of Object.values(strengthMap))caps[d]=none?52:38;for(const st of p.strengths)if(strengthMap[st])caps[strengthMap[st]]=90;
+ const deps=['sales_dependency','technical_complexity','creative_dependency','operations_dependency','supplier_dependency'];let gap=0,den=0,matched=0;for(const d of deps){const dep=norm10(s[d]),w=10+dep;gap+=Math.max(0,dep-(caps[d]??38))*w;matched+=(100-Math.abs(dep-(caps[d]??38)))*w;den+=w}const experience=clamp(100-.9*Math.max(0,norm10(s.business_experience_requirement)-norm5(p.optional?.business_experience??2)));let skills=calibrate(clamp(.52*matched/den+.28*(100-gap/den)+.20*experience));if(m.monetizable_strengths?.length&&!p.strengths.some(x=>m.monetizable_strengths.includes(x)))skills=Math.min(skills,42);if((p.optional?.industry_experience??[]).some(x=>m.industry_tags?.includes(x)))skills=clamp(skills+25);
+ const exposure=.45*norm10(s.financial_risk)+.2*norm10(s.fixed_cost_intensity)+.15*norm10(s.working_capital_requirement)+.1*norm10(s.regulatory_complexity)+.1*norm10(s.staff_requirement), tolerance=norm5(p.risk_tolerance);const risk=calibrate(clamp(90-1.05*Math.max(0,exposure-tolerance)-.15*Math.max(0,tolerance-exposure-45)));
+ const target=p.money.monthly_income_target_minor/100,A=clamp(25*Math.log2(Math.max(target,25000)/25000)),capacity=.42*norm10(s.income_ceiling)+.25*norm10(s.scalability)+.13*norm10(s.recurring_revenue)+.08*norm10(s.automation_potential)-.12*norm10(s.operator_dependency);const income=calibrate(clamp(88-1.2*Math.max(0,A-capacity)-.1*Math.max(0,capacity-A-45)));
+ const speed=calibrate(.35*window(m.typical_validation_window_days,urgency[p.time_to_first_income_requirement])+.65*window(m.typical_first_revenue_window_days,urgency[p.time_to_first_income_requirement]));
+ const explicit=p.preferred_business_environment!=='no_preference',env=!explicit?65:p.preferred_business_environment===m.online_offline_type?100:m.online_offline_type==='hybrid'||p.preferred_business_environment==='hybrid'?65:20;
+ const prefs=p.operational_preferences,req=[['customer_interaction_tolerance','customer_interaction'],['staff_management_tolerance','staff_requirement'],['inventory_tolerance','inventory_requirement'],['content_creation_tolerance','creative_dependency'],['computer_work_tolerance','technical_complexity'],['system_building_preference','automation_potential']];let n=0,d=0;for(const [pk,sk]of req){const r=norm10(s[sk]),w=.4+r/100;n+=(100-Math.abs(norm5(prefs[pk])-r))*w;d+=w}const motivation={build_asset:(norm10(s.scalability)+norm10(s.recurring_revenue)+norm10(s.automation_potential))/3,financial_independence:(norm10(s.income_ceiling)+norm10(s.scalability))/2,flexibility:(norm10(s.side_hustle_compatibility)+100-norm10(s.operator_dependency))/2,extra_income:(norm10(s.speed_to_first_revenue)+norm10(s.side_hustle_compatibility))/2,leave_job:(norm10(s.income_ceiling)+norm10(s.full_time_founder_requirement))/2,exploration:65}[p.primary_motivation]??65;let styleRaw=.30*env+.52*n/d+.18*motivation;if(explicit&&env===20)styleRaw=Math.min(styleRaw,42);const operating_style=calibrate(clamp(styleRaw));
+ let emp=m.can_start_part_time?88:42;if(['full_time_job','student'].includes(p.employment_status))emp-=.55*norm10(s.full_time_founder_requirement);else if(p.employment_status==='part_time_job')emp-=.25*norm10(s.full_time_founder_requirement);else if(['ready_full_time','unemployed'].includes(p.employment_status))emp+=8;else emp=80-.15*norm10(s.operator_dependency);const employment=calibrate(clamp(emp));
+ const location=calibrate(clamp(60-.18*norm10(s.location_dependency)+(m.supports_remote_operation?8:0)));
+ const factors={capital,time,skills,risk,income,speed,operating_style,employment,location};const base=Object.entries(weightsV2).reduce((z,[k,w])=>z+w*factors[k]/100,0),highCount=Object.values(factors).filter(x=>x>=80).length,criticalCount=Object.values(factors).filter(x=>x<35).length;const total=clamp(base+(highCount>=7?7:highCount>=5?3:0)-criticalCount*2);
+ return {excluded:false,total:Math.round(total*10)/10,capital_state,launch_ready:C>=L,validation_worthy:C>=M||v.zero_cost_validation_supported||v.concept_validation_possible_without_launch,factors:Object.fromEntries(Object.entries(factors).map(([k,x])=>[k,Math.round(x*10)/10]))};
+}

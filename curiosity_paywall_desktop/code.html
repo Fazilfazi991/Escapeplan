@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Unlock Your Blueprint</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#4b6d00",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#354e00",
+                        "secondary": "#476800",
+                        "outline-variant": "#c7c4d7",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-container": "#bcf063",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-bright": "#fcf9f8",
+                        "primary-container": "#6063ee",
+                        "background": "#fcf9f8",
+                        "on-tertiary-container": "#fffbff",
+                        "tertiary-container": "#c64b4d",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed": "#bff365",
+                        "on-tertiary-fixed-variant": "#881d24",
+                        "on-error-container": "#93000a",
+                        "outline": "#767586",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#a4d64c",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-container": "#fffbff",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed": "#e1e0ff",
+                        "on-surface": "#1c1b1b",
+                        "tertiary": "#a53337",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1c1b1b",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-surface-variant": "#464554",
+                        "surface-tint": "#494bd6",
+                        "on-tertiary-fixed": "#410006",
+                        "inverse-primary": "#c0c1ff",
+                        "surface": "#fcf9f8",
+                        "on-primary-fixed": "#07006c",
+                        "primary": "#4648d4",
+                        "on-secondary-fixed": "#131f00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "unit": "4px",
+                        "gutter": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Subtle animation for the visible match */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        .hover-float:hover {
+            animation: float 2s ease-in-out infinite;
+        }
+
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/30 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto z-50 transition-all duration-300">
+<div class="flex items-center gap-md">
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">EscapePlan</span>
+</div>
+<!-- Navigation Links (Checkout context: Suppress active states to focus on conversion, but render as per JSON) -->
+<nav class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors text-label-md font-label-md hover:opacity-80 transition-opacity duration-200" href="#">How it works</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors text-label-md font-label-md hover:opacity-80 transition-opacity duration-200" href="#">Sample result</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="bg-primary text-on-primary h-10 px-md rounded-lg font-label-md text-label-md hover:opacity-80 transition-opacity duration-200 hidden md:block">Take the test</button>
+<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-xl">
+<!-- Hero Title -->
+<div class="text-center md:text-left max-w-3xl mb-lg">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-sm">Your EscapePlan is ready.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We analyzed your skills, capital, and risk profile. Here are the precise paths to your financial independence.</p>
+</div>
+<!-- Main Conversion Section (Two-Column Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl relative items-start">
+<!-- Left Column: Visual Ranking (7 Matches) -->
+<div class="lg:col-span-7 flex flex-col gap-md">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">analytics</span> Top 7 Business Matches
+                </h2>
+<!-- Match #1 (Visible) -->
+<div class="bg-surface-container-lowest rounded-xl p-lg border border-surface-variant shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] relative overflow-hidden transition-transform hover:-translate-y-1 duration-300 cursor-default">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary-container"></div>
+<div class="flex justify-between items-start mb-md">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-headline-md text-headline-md text-on-primary-fixed font-bold">1</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Boutique Coffee Roaster</h3>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mt-1">98% Match Score</p>
+</div>
+</div>
+<div class="bg-surface rounded-full px-md py-xs border border-surface-variant flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-surface">High Growth</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg border-b border-surface-variant pb-md">Leverages your operational background and allows for moderate initial capital deployment with high margin potential in urban tier-2 markets.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-1">Est. Budget</p>
+<p class="font-label-md text-label-md text-on-surface">₹2.5L - ₹4L</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-1">Time to Profit</p>
+<p class="font-label-md text-label-md text-on-surface">4-6 Months</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-1">Weekly Effort</p>
+<p class="font-label-md text-label-md text-on-surface">25 Hours</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-1">Risk Level</p>
+<div class="flex items-center gap-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<p class="font-label-md text-label-md text-on-surface">Low/Med</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Matches #2 to #7 (Locked) -->
+<!-- Use a loop concept in HTML structure -->
+<div class="group relative bg-surface-container-low rounded-xl p-md border border-surface-variant shadow-sm flex items-center justify-between overflow-hidden cursor-not-allowed">
+<div class="flex items-center gap-md w-full">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center font-label-md text-label-md text-outline">2</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface blur-[4px] select-none opacity-60">Digital Agency Niche</h3>
+<div class="flex items-center gap-sm mt-1">
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-2 py-0.5 rounded-full">Best Side-Business Option</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline absolute right-md top-1/2 -translate-y-1/2">lock</span>
+</div>
+<div class="group relative bg-surface-container-low rounded-xl p-md border border-surface-variant shadow-sm flex items-center justify-between overflow-hidden cursor-not-allowed">
+<div class="flex items-center gap-md w-full">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center font-label-md text-label-md text-outline">3</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface blur-[4px] select-none opacity-60">SaaS Micro-tool</h3>
+<div class="flex items-center gap-sm mt-1">
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded-full">Highest Profit Margin</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline absolute right-md top-1/2 -translate-y-1/2">lock</span>
+</div>
+<div class="group relative bg-surface-container-low rounded-xl p-md border border-surface-variant shadow-sm flex items-center justify-between overflow-hidden cursor-not-allowed">
+<div class="flex items-center gap-md w-full">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center font-label-md text-label-md text-outline">4</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface blur-[4px] select-none opacity-60">Dropshipping Brand</h3>
+<div class="flex items-center gap-sm mt-1">
+<span class="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant px-2 py-0.5 rounded-full">Lowest Startup Cost</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline absolute right-md top-1/2 -translate-y-1/2">lock</span>
+</div>
+<div class="text-center mt-sm">
+<p class="font-label-sm text-label-sm text-outline italic">+ 3 more hyper-targeted models locked</p>
+</div>
+</div>
+<!-- Right Column: The Unlock Summary Card (Sticky) -->
+<div class="lg:col-span-5 lg:sticky lg:top-xl flex flex-col">
+<div class="bg-surface-container-lowest rounded-2xl p-lg shadow-[0_15px_40px_-15px_rgba(70,72,212,0.15)] border-2 border-primary/20 flex flex-col h-full relative overflow-hidden">
+<!-- Decorative subtle gradient blob in background -->
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="mb-lg border-b border-surface-variant pb-lg text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Unlock My EscapePlan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Get full access to all 7 matches and your complete execution roadmap.</p>
+<div class="flex items-center justify-center gap-sm items-end">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">₹199</span>
+<span class="font-label-md text-label-md text-outline mb-1">one-time</span>
+</div>
+</div>
+<!-- Persuasive Value Comparison -->
+<div class="bg-surface rounded-lg p-md mb-lg border border-surface-variant flex items-start gap-md">
+<span class="material-symbols-outlined text-primary text-[24px]">info</span>
+<p class="font-label-md text-label-md text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Perspective:</strong> ₹199 is less than 0.1% of a standard ₹2 lakh business investment. Stop guessing and start executing with data.
+                        </p>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-md">What's Included:</h3>
+<ul class="flex flex-col gap-md mb-xl flex-grow overflow-y-auto pr-sm custom-scrollbar">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Unmask all <strong>Top 7 Business Matches</strong></span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Complete <strong>30-Day Execution Roadmap</strong></span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Detailed <strong>Financial Projections</strong> (Year 1)</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">List of <strong>3 Businesses to Strictly Avoid</strong></span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Exact Capital &amp; Budget Requirements</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Breakeven Timeline Analysis</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Competitor Landscape Overview</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary icon-fill text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Marketing Strategy &amp; Acquisition Channels</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-outline">Required Software &amp; Tools Stack</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-outline">Legal &amp; Compliance Checklist</span>
+</li>
+</ul>
+<button class="w-full h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-sm hover:bg-primary/90 transition-colors shadow-sm mt-auto relative overflow-hidden group">
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+<span class="relative z-10 flex items-center gap-sm">
+                            Unlock Full Plan <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-outline mt-sm flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">lock</span> Secure 256-bit encryption
+                    </p>
+</div>
+</div>
+</div>
+<hr class="border-surface-variant my-lg"/>
+<!-- Below Main Section: Locked Content Previews -->
+<div class="flex flex-col gap-xl">
+<!-- Businesses to Avoid -->
+<section class="flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-error">warning</span> Businesses to Avoid
+                    </h2>
+<span class="font-label-sm text-label-sm text-outline bg-surface-variant px-sm py-xs rounded-md flex items-center gap-xs"><span class="material-symbols-outlined text-[14px]">lock</span> Locked</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">Based on your profile, these 3 models have a &gt;85% statistical failure rate for you.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Avoid Card (Locked) -->
+<div class="bg-surface-container-low rounded-xl p-lg border border-error-container/30 relative overflow-hidden flex flex-col justify-center items-center h-32">
+<div class="absolute inset-0 backdrop-blur-[2px] bg-white/30 z-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-3xl">lock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface blur-md select-none opacity-50">Crypto Trading</h3>
+<p class="font-label-sm text-label-sm text-error mt-sm blur-sm select-none">Capital Intensive • High Volatility</p>
+</div>
+<!-- Avoid Card (Locked) -->
+<div class="bg-surface-container-low rounded-xl p-lg border border-error-container/30 relative overflow-hidden flex flex-col justify-center items-center h-32">
+<div class="absolute inset-0 backdrop-blur-[2px] bg-white/30 z-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-3xl">lock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface blur-md select-none opacity-50">F&amp;B Franchise</h3>
+<p class="font-label-sm text-label-sm text-error mt-sm blur-sm select-none">Low Margin • Operational Nightmare</p>
+</div>
+<!-- Avoid Card (Locked) -->
+<div class="bg-surface-container-low rounded-xl p-lg border border-error-container/30 relative overflow-hidden flex flex-col justify-center items-center h-32">
+<div class="absolute inset-0 backdrop-blur-[2px] bg-white/30 z-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-3xl">lock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface blur-md select-none opacity-50">Generic E-com</h3>
+<p class="font-label-sm text-label-sm text-error mt-sm blur-sm select-none">Saturated Market • Ad Spend Heavy</p>
+</div>
+</div>
+</section>
+<!-- Financial Insights -->
+<section class="flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">monitoring</span> Financial Insights
+                    </h2>
+<span class="font-label-sm text-label-sm text-outline bg-surface-variant px-sm py-xs rounded-md flex items-center gap-xs"><span class="material-symbols-outlined text-[14px]">lock</span> Locked</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden shadow-sm">
+<div class="flex justify-between items-center p-md border-b border-surface-variant bg-surface">
+<span class="font-label-md text-label-md text-on-surface-variant">Metric</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Projection (Match #1)</span>
+</div>
+<div class="flex justify-between items-center p-md border-b border-surface-variant relative group">
+<span class="font-body-md text-body-md text-on-surface">Required Setup Capital</span>
+<div class="relative flex items-center">
+<span class="font-headline-md text-headline-md text-on-surface blur-md select-none opacity-60">₹2,50,000</span>
+<span class="material-symbols-outlined absolute right-0 text-outline group-hover:text-primary transition-colors">lock</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-md border-b border-surface-variant relative group">
+<span class="font-body-md text-body-md text-on-surface">Year 1 Net Profit Target</span>
+<div class="relative flex items-center">
+<span class="font-headline-md text-headline-md text-on-surface blur-md select-none opacity-60">₹8,40,000</span>
+<span class="material-symbols-outlined absolute right-0 text-outline group-hover:text-primary transition-colors">lock</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-md relative group">
+<span class="font-body-md text-body-md text-on-surface">Breakeven Timeline</span>
+<div class="relative flex items-center">
+<span class="font-headline-md text-headline-md text-on-surface blur-md select-none opacity-60">Month 4</span>
+<span class="material-symbols-outlined absolute right-0 text-outline group-hover:text-primary transition-colors">lock</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 30-Day Plan Preview -->
+<section class="flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">calendar_today</span> 30-Day Action Plan
+                    </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">A step-by-step operational roadmap to launch your #1 match.</p>
+<div class="ml-sm">
+<!-- Week 1: Visible -->
+<div class="border-l-2 border-primary pl-lg pb-xl relative">
+<div class="absolute w-4 h-4 rounded-full bg-primary -left-[9px] top-1 border-2 border-surface"></div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Week 1: Market Validation &amp; Setup</h3>
+<div class="bg-surface-container-lowest rounded-xl p-md border border-surface-variant shadow-sm inline-block w-full md:w-2/3">
+<ul class="flex flex-col gap-sm">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+<span class="font-body-md text-body-md text-on-surface">Secure domain name and basic social handles.</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+<span class="font-body-md text-body-md text-on-surface">Run 3 low-budget test ads to gauge demand CPL.</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+<span class="font-body-md text-body-md text-on-surface">Draft initial vendor outreach template.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Week 2: Locked -->
+<div class="border-l-2 border-surface-variant pl-lg pb-xl relative opacity-70">
+<div class="absolute w-4 h-4 rounded-full bg-surface-variant -left-[9px] top-1 border-2 border-surface"></div>
+<div class="flex items-center gap-sm mb-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface blur-[2px] select-none">Week 2: Product &amp; Vendor Sourcing</h3>
+<span class="material-symbols-outlined text-outline">lock</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-md border border-surface-variant border-dashed inline-block w-full md:w-2/3">
+<div class="h-4 bg-surface-variant/50 rounded w-3/4 mb-2"></div>
+<div class="h-4 bg-surface-variant/50 rounded w-1/2 mb-2"></div>
+<div class="h-4 bg-surface-variant/50 rounded w-5/6"></div>
+</div>
+</div>
+<!-- Week 3 & 4: Locked collapsed -->
+<div class="border-l-2 border-surface-variant pl-lg relative opacity-50 pb-sm">
+<div class="absolute w-4 h-4 rounded-full bg-surface-variant -left-[9px] top-1 border-2 border-surface"></div>
+<div class="flex items-center gap-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface blur-[2px] select-none">Weeks 3-4: Launch &amp; Scaling Prep</h3>
+<span class="material-symbols-outlined text-outline">lock</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface full-width bottom-0 mt-xl border-t border-surface-variant/50">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-xl gap-lg max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<span class="text-label-md font-label-md font-bold text-on-surface dark:text-inverse-on-surface">EscapePlan</span>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant text-sm">© 2024 EscapePlan. No hype. Just clarity.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md md:gap-lg">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors text-label-sm font-label-sm Standard link hover transitions" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors text-label-sm font-label-sm Standard link hover transitions" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors text-label-sm font-label-sm Standard link hover transitions" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

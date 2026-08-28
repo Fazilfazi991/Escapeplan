@@ -1,0 +1,738 @@
+{
+  "versions": {
+    "scoring_model_version": "2.0.0",
+    "business_dataset_version": "business-models-v2.0.0",
+    "country_overlay_version": "IN-2026.08-v1",
+    "financial_engine_version": "1.1.0"
+  },
+  "original_personas": {
+    "qa-persona-a": {
+      "top5": [
+        {
+          "id": "digital-downloads",
+          "score": 80.4,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "ai-utility-website",
+          "score": 79.2,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "print-on-demand",
+          "score": 76.6,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "freelancing",
+          "score": 74.4,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "lead-generation-asset",
+          "score": 71.9,
+          "state": "lean_to_comfortable_launch"
+        }
+      ],
+      "excluded": 1,
+      "readiness": 69.5
+    },
+    "qa-persona-b": {
+      "top5": [
+        {
+          "id": "property-service",
+          "score": 81.8,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "agency",
+          "score": 80.2,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "professional-practice",
+          "score": 79.6,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "niche-ecommerce",
+          "score": 79.4,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "specialized-recruitment",
+          "score": 79.3,
+          "state": "comfortable_or_excess"
+        }
+      ],
+      "excluded": 0,
+      "readiness": 81.1
+    },
+    "qa-persona-c": {
+      "top5": [
+        {
+          "id": "digital-downloads",
+          "score": 73.7,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "paid-newsletter",
+          "score": 71.8,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "print-on-demand",
+          "score": 71.3,
+          "state": "validation_only"
+        },
+        {
+          "id": "affiliate-content",
+          "score": 71.1,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "freelancing",
+          "score": 71,
+          "state": "lean_to_comfortable_launch"
+        }
+      ],
+      "excluded": 6,
+      "readiness": 61.6
+    },
+    "qa-persona-d": {
+      "top5": [
+        {
+          "id": "freelancing",
+          "score": 78.4,
+          "state": "zero_cost_validation_only"
+        },
+        {
+          "id": "consulting",
+          "score": 68.6,
+          "state": "zero_cost_validation_only"
+        },
+        {
+          "id": "specialized-recruitment",
+          "score": 66.1,
+          "state": "zero_cost_validation_only"
+        },
+        {
+          "id": "property-service",
+          "score": 65.6,
+          "state": "zero_cost_validation_only"
+        },
+        {
+          "id": "local-service-brand",
+          "score": 65.3,
+          "state": "zero_cost_validation_only"
+        }
+      ],
+      "excluded": 7,
+      "readiness": 57.7
+    },
+    "qa-persona-e": {
+      "top5": [
+        {
+          "id": "ai-utility-website",
+          "score": 72.6,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "digital-downloads",
+          "score": 72.4,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "micro-saas",
+          "score": 69.4,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "business-data-product",
+          "score": 68.5,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "niche-community",
+          "score": 68.5,
+          "state": "comfortable_or_excess"
+        }
+      ],
+      "excluded": 0,
+      "readiness": 78.1
+    },
+    "qa-persona-f": {
+      "top5": [
+        {
+          "id": "freelancing",
+          "score": 79.4,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "digital-downloads",
+          "score": 78.5,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "niche-community",
+          "score": 77.2,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "paid-newsletter",
+          "score": 77.1,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "lead-generation-asset",
+          "score": 76.8,
+          "state": "lean_to_comfortable_launch"
+        }
+      ],
+      "excluded": 3,
+      "readiness": 64.5
+    },
+    "qa-persona-g": {
+      "top5": [
+        {
+          "id": "digital-downloads",
+          "score": 84.7,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "paid-newsletter",
+          "score": 84.4,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "niche-community",
+          "score": 82.8,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "online-course",
+          "score": 82.5,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "consumer-digital-tool",
+          "score": 79.3,
+          "state": "lean_to_comfortable_launch"
+        }
+      ],
+      "excluded": 18,
+      "readiness": 77.6
+    },
+    "qa-persona-h": {
+      "top5": [
+        {
+          "id": "b2b-marketplace",
+          "score": 79.1,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "booking-marketplace",
+          "score": 77.8,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "home-services-platform",
+          "score": 77.7,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "job-marketplace",
+          "score": 77.6,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "subscription-commerce",
+          "score": 76.7,
+          "state": "comfortable_or_excess"
+        }
+      ],
+      "excluded": 0,
+      "readiness": 82.7
+    },
+    "qa-persona-i": {
+      "top5": [
+        {
+          "id": "lead-generation-asset",
+          "score": 77,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "specialized-recruitment",
+          "score": 76.7,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "niche-ecommerce",
+          "score": 75,
+          "state": "lean_to_comfortable_launch"
+        },
+        {
+          "id": "ai-utility-website",
+          "score": 74.5,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "business-data-product",
+          "score": 74.3,
+          "state": "comfortable_or_excess"
+        }
+      ],
+      "excluded": 0,
+      "readiness": 82.2
+    },
+    "qa-persona-j": {
+      "top5": [
+        {
+          "id": "digital-downloads",
+          "score": 54.8,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "ai-utility-website",
+          "score": 52.6,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "lead-generation-asset",
+          "score": 52.5,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "business-data-product",
+          "score": 51.9,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "niche-ecommerce",
+          "score": 51.5,
+          "state": "lean_to_comfortable_launch"
+        }
+      ],
+      "excluded": 0,
+      "readiness": 50
+    },
+    "qa-persona-k": {
+      "top5": [],
+      "excluded": 50,
+      "readiness": 64.3
+    },
+    "qa-persona-l": {
+      "top5": [
+        {
+          "id": "software-marketplace",
+          "score": 81.6,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "job-marketplace",
+          "score": 80.8,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "booking-marketplace",
+          "score": 80.3,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "b2b-marketplace",
+          "score": 80.2,
+          "state": "comfortable_or_excess"
+        },
+        {
+          "id": "vertical-saas",
+          "score": 78.3,
+          "state": "comfortable_or_excess"
+        }
+      ],
+      "excluded": 0,
+      "readiness": 82.5
+    }
+  },
+  "regression": {
+    "passed": 17,
+    "total": 17,
+    "failures": []
+  },
+  "stress": {
+    "persona_count": 80,
+    "scored_pairs": 3803,
+    "batch7_baseline": {
+      "average": 76.1,
+      "median": 76.4,
+      "p90": 87.4,
+      "minimum": 46,
+      "maximum": 91.7,
+      "bands": {
+        "below_50": 20,
+        "50_59": 195,
+        "60_69": 578,
+        "70_79": 1479,
+        "80_89": 1255,
+        "90_100": 51
+      }
+    },
+    "batch8": {
+      "average": 60,
+      "median": 59.7,
+      "p90": 77.6,
+      "minimum": 25.7,
+      "maximum": 91.2,
+      "bands": {
+        "below_50": 784,
+        "50_59": 1142,
+        "60_69": 993,
+        "70_79": 620,
+        "80_89": 263,
+        "90_100": 1
+      }
+    },
+    "top_model_frequency": [
+      [
+        "ai-utility-website",
+        19
+      ],
+      [
+        "digital-downloads",
+        15
+      ],
+      [
+        "micro-saas",
+        10
+      ],
+      [
+        "freelancing",
+        9
+      ],
+      [
+        "specialized-recruitment",
+        6
+      ],
+      [
+        "mobile-service-business",
+        5
+      ],
+      [
+        "consumer-digital-tool",
+        4
+      ],
+      [
+        "niche-community",
+        4
+      ],
+      [
+        "lead-generation-asset",
+        2
+      ],
+      [
+        "property-service",
+        2
+      ],
+      [
+        "niche-ecommerce",
+        2
+      ],
+      [
+        "local-service-brand",
+        1
+      ],
+      [
+        "agency",
+        1
+      ]
+    ],
+    "top3_frequency": [
+      [
+        "freelancing",
+        30
+      ],
+      [
+        "lead-generation-asset",
+        29
+      ],
+      [
+        "digital-downloads",
+        28
+      ],
+      [
+        "ai-utility-website",
+        25
+      ],
+      [
+        "micro-saas",
+        15
+      ],
+      [
+        "specialized-recruitment",
+        15
+      ],
+      [
+        "business-data-product",
+        14
+      ],
+      [
+        "niche-community",
+        14
+      ],
+      [
+        "mobile-service-business",
+        11
+      ],
+      [
+        "consumer-digital-tool",
+        11
+      ],
+      [
+        "directory-platform",
+        9
+      ],
+      [
+        "niche-ecommerce",
+        7
+      ],
+      [
+        "agency",
+        6
+      ],
+      [
+        "paid-newsletter",
+        5
+      ],
+      [
+        "local-service-brand",
+        4
+      ],
+      [
+        "consulting",
+        4
+      ],
+      [
+        "property-service",
+        4
+      ],
+      [
+        "affiliate-content",
+        3
+      ],
+      [
+        "local-experiences",
+        3
+      ],
+      [
+        "education-membership",
+        2
+      ],
+      [
+        "private-label-product",
+        1
+      ]
+    ],
+    "avoid_frequency": [
+      [
+        "franchise",
+        65
+      ],
+      [
+        "physical-manufacturing",
+        65
+      ],
+      [
+        "restaurant-cafe",
+        63
+      ],
+      [
+        "small-retail-store",
+        58
+      ],
+      [
+        "local-logistics",
+        56
+      ],
+      [
+        "small-distribution",
+        55
+      ],
+      [
+        "cloud-kitchen",
+        53
+      ],
+      [
+        "wholesale-distribution",
+        52
+      ],
+      [
+        "automotive-service",
+        48
+      ],
+      [
+        "rental-business",
+        35
+      ],
+      [
+        "self-service-kiosk",
+        34
+      ],
+      [
+        "vending-automated-retail",
+        31
+      ],
+      [
+        "import-resale",
+        29
+      ],
+      [
+        "local-same-day-commerce",
+        27
+      ],
+      [
+        "professional-practice",
+        23
+      ],
+      [
+        "specialist-food-brand",
+        22
+      ],
+      [
+        "home-services-platform",
+        20
+      ],
+      [
+        "technical-trade-service",
+        19
+      ],
+      [
+        "event-business",
+        17
+      ],
+      [
+        "mobile-service-business",
+        15
+      ],
+      [
+        "local-experiences",
+        15
+      ],
+      [
+        "d2c-beauty",
+        14
+      ],
+      [
+        "b2b-marketplace",
+        13
+      ],
+      [
+        "local-service-brand",
+        13
+      ],
+      [
+        "property-service",
+        13
+      ],
+      [
+        "subscription-commerce",
+        12
+      ],
+      [
+        "private-label-product",
+        11
+      ],
+      [
+        "affiliate-content",
+        11
+      ],
+      [
+        "vertical-saas",
+        9
+      ],
+      [
+        "booking-marketplace",
+        8
+      ],
+      [
+        "niche-ecommerce",
+        8
+      ],
+      [
+        "software-marketplace",
+        7
+      ],
+      [
+        "job-marketplace",
+        6
+      ],
+      [
+        "agency",
+        6
+      ],
+      [
+        "online-course",
+        6
+      ],
+      [
+        "consulting",
+        6
+      ],
+      [
+        "creator-commerce",
+        5
+      ],
+      [
+        "paid-newsletter",
+        5
+      ],
+      [
+        "freelancing",
+        4
+      ],
+      [
+        "micro-saas",
+        3
+      ],
+      [
+        "print-on-demand",
+        3
+      ],
+      [
+        "education-membership",
+        3
+      ],
+      [
+        "niche-community",
+        3
+      ],
+      [
+        "specialized-recruitment",
+        3
+      ],
+      [
+        "directory-platform",
+        2
+      ],
+      [
+        "ai-utility-website",
+        1
+      ],
+      [
+        "consumer-digital-tool",
+        1
+      ],
+      [
+        "business-data-product",
+        1
+      ],
+      [
+        "digital-downloads",
+        1
+      ],
+      [
+        "lead-generation-asset",
+        1
+      ]
+    ],
+    "average_exclusions": 2.5
+  }
+}

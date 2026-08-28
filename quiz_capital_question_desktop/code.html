@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Question 4</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS Setup -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#410006",
+                        "tertiary": "#a53337",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdad8",
+                        "outline": "#767586",
+                        "background": "#fcf9f8",
+                        "surface-tint": "#494bd6",
+                        "surface-container": "#f0eded",
+                        "secondary-fixed-dim": "#a4d64c",
+                        "on-secondary-fixed": "#131f00",
+                        "on-secondary-fixed-variant": "#354e00",
+                        "on-primary-fixed": "#07006c",
+                        "primary-fixed": "#e1e0ff",
+                        "on-surface": "#1c1b1b",
+                        "surface-dim": "#dcd9d9",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "surface": "#fcf9f8",
+                        "on-background": "#1c1b1b",
+                        "surface-container-low": "#f6f3f2",
+                        "on-surface-variant": "#464554",
+                        "inverse-on-surface": "#f3f0ef",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#4b6d00",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary": "#4648d4",
+                        "surface-container-highest": "#e5e2e1",
+                        "outline-variant": "#c7c4d7",
+                        "surface-container-high": "#eae7e7",
+                        "tertiary-container": "#c64b4d",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c0c1ff",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#6063ee",
+                        "secondary": "#476800",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "secondary-fixed": "#bff365",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#bcf063",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-tertiary-fixed-variant": "#881d24"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "md": "16px",
+                        "unit": "4px",
+                        "sm": "8px",
+                        "gutter": "20px",
+                        "xs": "4px"
+                    },
+                    fontFamily: {
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    fontSize: {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    },
+                    boxShadow: {
+                        'level-1': '0 10px 30px -5px rgba(0, 0, 0, 0.04)',
+                        'level-2': '0 15px 40px -5px rgba(70, 72, 212, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dcd9d9;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c7c4d7;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Minimal Header Shell (Transactional Flow) -->
+<header class="w-full py-lg px-margin-mobile md:px-margin-desktop flex justify-center items-center fixed top-0 bg-surface/90 backdrop-blur-md z-50 transition-all duration-300 border-b border-transparent">
+<a class="text-headline-md font-headline-md font-bold text-primary tracking-tight select-none" href="#">
+            EscapePlan
+        </a>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center justify-center pt-24 pb-xl px-margin-mobile md:px-margin-desktop w-full max-w-3xl mx-auto relative z-10">
+<!-- Progress Container -->
+<div class="w-full max-w-xl mb-xl opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]">
+<div class="flex justify-between items-end mb-sm">
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Question 4 of 14</span>
+<span class="text-label-md font-label-md text-primary font-bold">28%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-1000 ease-in-out w-[28%] relative">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent w-full h-full -translate-x-full animate-[shimmer_2s_infinite]"></div>
+</div>
+</div>
+</div>
+<!-- Question Section -->
+<div class="w-full max-w-2xl flex flex-col items-center text-center space-y-md mb-xl opacity-0 animate-[slideUp_0.6s_ease-out_0.1s_forwards]">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/30 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest shadow-sm">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+                YOUR MONEY
+            </div>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface balance-text">
+                If the right opportunity appeared tomorrow, how much could you comfortably invest?
+            </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto">
+                Be realistic. This helps us tailor strategies that fit your actual liquidity.
+            </p>
+</div>
+<!-- Interactive Choices Grid (Bento Style) -->
+<div class="w-full max-w-2xl grid grid-cols-1 sm:grid-cols-2 gap-md opacity-0 animate-[slideUp_0.6s_ease-out_0.2s_forwards]" id="choices-grid">
+<!-- Option 1 -->
+<button class="choice-card group relative w-full p-lg bg-surface-container-lowest rounded-xl border-2 border-surface-container-highest shadow-level-1 hover:shadow-level-2 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 text-left flex flex-col items-start gap-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
+<div class="flex justify-between items-center w-full">
+<span class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">Under ₹25K</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary/50 flex items-center justify-center transition-colors indicator">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 transition-transform duration-200 fill-dot"></div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant m-0">Starting out. Building the foundation.</p>
+</button>
+<!-- Option 2 -->
+<button class="choice-card group relative w-full p-lg bg-surface-container-lowest rounded-xl border-2 border-surface-container-highest shadow-level-1 hover:shadow-level-2 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 text-left flex flex-col items-start gap-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
+<div class="flex justify-between items-center w-full">
+<span class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">₹25K–₹1L</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary/50 flex items-center justify-center transition-colors indicator">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 transition-transform duration-200 fill-dot"></div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant m-0">Ready for initial strategic moves.</p>
+</button>
+<!-- Option 3 -->
+<button class="choice-card group relative w-full p-lg bg-surface-container-lowest rounded-xl border-2 border-surface-container-highest shadow-level-1 hover:shadow-level-2 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 text-left flex flex-col items-start gap-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
+<div class="flex justify-between items-center w-full">
+<span class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">₹1L–₹3L</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary/50 flex items-center justify-center transition-colors indicator">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 transition-transform duration-200 fill-dot"></div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant m-0">Comfortable buffer for growth plays.</p>
+</button>
+<!-- Option 4 -->
+<button class="choice-card group relative w-full p-lg bg-surface-container-lowest rounded-xl border-2 border-surface-container-highest shadow-level-1 hover:shadow-level-2 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 text-left flex flex-col items-start gap-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
+<div class="flex justify-between items-center w-full">
+<span class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">₹3L–₹7L</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary/50 flex items-center justify-center transition-colors indicator">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 transition-transform duration-200 fill-dot"></div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant m-0">Substantial capital for diverse assets.</p>
+</button>
+<!-- Option 5 -->
+<button class="choice-card group relative w-full p-lg bg-surface-container-lowest rounded-xl border-2 border-surface-container-highest shadow-level-1 hover:shadow-level-2 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 text-left flex flex-col items-start gap-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
+<div class="flex justify-between items-center w-full">
+<span class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">₹7L–₹15L</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary/50 flex items-center justify-center transition-colors indicator">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 transition-transform duration-200 fill-dot"></div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant m-0">High conviction, serious leverage potential.</p>
+</button>
+<!-- Option 6 -->
+<button class="choice-card group relative w-full p-lg bg-surface-container-lowest rounded-xl border-2 border-surface-container-highest shadow-level-1 hover:shadow-level-2 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 text-left flex flex-col items-start gap-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
+<div class="flex justify-between items-center w-full">
+<span class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">₹15L+</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary/50 flex items-center justify-center transition-colors indicator">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 transition-transform duration-200 fill-dot"></div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant m-0">Significant dry powder for major plays.</p>
+</button>
+</div>
+<!-- Dynamic Insight Panel (Hidden by default) -->
+<div class="w-full max-w-2xl mt-xl hidden opacity-0 transition-all duration-500 ease-out transform translate-y-4" id="insight-panel">
+<div class="bg-primary/5 border border-primary/20 rounded-xl p-lg flex items-start gap-md relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary rounded-l-xl"></div>
+<span class="material-symbols-outlined text-primary text-[24px] mt-1 icon-fill">lightbulb</span>
+<div>
+<h4 class="text-label-md font-label-md text-primary uppercase tracking-wider mb-1">Insight Logged</h4>
+<p class="text-body-lg font-body-lg text-on-surface">Good. That gives us a much clearer capital range to work with.</p>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="w-full max-w-2xl mt-xl flex justify-between items-center opacity-0 animate-[slideUp_0.6s_ease-out_0.3s_forwards]">
+<button class="flex items-center gap-2 text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors p-2">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+                Back
+            </button>
+<button class="h-[56px] px-8 bg-surface-container-highest text-on-surface-variant rounded-xl text-label-md font-label-md font-bold transition-all duration-300 flex items-center justify-center gap-2 cursor-not-allowed opacity-70" disabled="" id="next-btn">
+                Continue
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Excluded Standard Footer as this is a focused Linear/Transactional flow (Quiz), 
+         adhering to the Shell Visibility & Relevance mandate. -->
+<!-- Animations -->
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shimmer {
+            100% { transform: translateX(100%); }
+        }
+        .balance-text {
+            text-wrap: balance;
+        }
+    </style>
+<!-- Logic -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.choice-card');
+            const insightPanel = document.getElementById('insight-panel');
+            const nextBtn = document.getElementById('next-btn');
+
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    // Reset all cards
+                    cards.forEach(c => {
+                        c.classList.remove('border-primary', 'bg-primary/5', 'shadow-level-2');
+                        c.classList.add('border-surface-container-highest', 'bg-surface-container-lowest', 'shadow-level-1');
+                        
+                        // Reset text colors
+                        c.querySelector('span.text-headline-md').classList.remove('text-primary');
+                        c.querySelector('span.text-headline-md').classList.add('text-on-surface');
+                        
+                        // Reset indicators
+                        const indicator = c.querySelector('.indicator');
+                        indicator.classList.remove('border-primary');
+                        indicator.classList.add('border-outline-variant');
+                        
+                        const dot = c.querySelector('.fill-dot');
+                        dot.classList.remove('scale-100');
+                        dot.classList.add('scale-0');
+                    });
+
+                    // Set active state
+                    card.classList.remove('border-surface-container-highest', 'bg-surface-container-lowest', 'shadow-level-1');
+                    card.classList.add('border-primary', 'bg-primary/5', 'shadow-level-2');
+                    
+                    // Set active text
+                    card.querySelector('span.text-headline-md').classList.remove('text-on-surface');
+                    card.querySelector('span.text-headline-md').classList.add('text-primary');
+
+                    // Set active indicator
+                    const indicator = card.querySelector('.indicator');
+                    indicator.classList.remove('border-outline-variant');
+                    indicator.classList.add('border-primary');
+                    
+                    const dot = card.querySelector('.fill-dot');
+                    dot.classList.remove('scale-0');
+                    dot.classList.add('scale-100');
+
+                    // Show Insight
+                    insightPanel.classList.remove('hidden');
+                    // Slight delay to allow display block to apply before animating opacity/transform
+                    setTimeout(() => {
+                        insightPanel.classList.remove('opacity-0', 'translate-y-4');
+                        insightPanel.classList.add('opacity-100', 'translate-y-0');
+                    }, 50);
+
+                    // Enable Next Button
+                    nextBtn.disabled = false;
+                    nextBtn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant', 'cursor-not-allowed', 'opacity-70');
+                    nextBtn.classList.add('bg-primary', 'text-white', 'hover:bg-primary-container', 'hover:shadow-level-2', 'cursor-pointer', 'opacity-100');
+                });
+            });
+        });
+    </script>
+</body></html>

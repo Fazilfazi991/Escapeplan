@@ -1,0 +1,1188 @@
+{
+  "version": "regression-personas-v1.0.0",
+  "scoring_model_version": "2.0.0",
+  "personas": [
+    {
+      "persona_id": "qa-persona-a",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "online",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-a",
+        "label": "Employed technical cautious",
+        "employment_status": "full_time_job",
+        "money": {
+          "available_capital_minor": 10000000,
+          "safe_risk_capital_minor": 4000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 5000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 2,
+        "strengths": [
+          "technology"
+        ],
+        "risk_tolerance": 2,
+        "time_to_first_income_requirement": "3_months",
+        "savings_runway_months": 8
+      },
+      "expectations": {
+        "top5_must_include": [
+          "ai-utility-website",
+          "digital-downloads"
+        ],
+        "top10_must_exclude": [
+          "restaurant-cafe"
+        ],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          4000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-b",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "offline",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-b",
+        "label": "Funded full-time operator",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 100000000,
+          "safe_risk_capital_minor": 50000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 15000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 8,
+        "strengths": [
+          "operations"
+        ],
+        "risk_tolerance": 4,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          50000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-c",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "online",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-c",
+        "label": "Patient creative student",
+        "employment_status": "student",
+        "money": {
+          "available_capital_minor": 2000000,
+          "safe_risk_capital_minor": 1000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 2000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 1.5,
+        "strengths": [
+          "creative"
+        ],
+        "risk_tolerance": 3,
+        "time_to_first_income_requirement": "long_term",
+        "savings_runway_months": 6
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          1000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-d",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "hybrid",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-d",
+        "label": "Zero-capital commercial seller",
+        "employment_status": "unemployed",
+        "money": {
+          "available_capital_minor": 0,
+          "safe_risk_capital_minor": 0,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 4000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 6,
+        "strengths": [
+          "sales",
+          "networking"
+        ],
+        "risk_tolerance": 3,
+        "time_to_first_income_requirement": "30_days",
+        "savings_runway_months": 1
+      },
+      "expectations": {
+        "top5_must_include": [
+          "freelancing"
+        ],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          0
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-e",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "no_preference",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-e",
+        "label": "High-capital low-risk executive",
+        "employment_status": "full_time_job",
+        "money": {
+          "available_capital_minor": 500000000,
+          "safe_risk_capital_minor": 50000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 20000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 2,
+        "strengths": [
+          "finance_analysis",
+          "operations"
+        ],
+        "risk_tolerance": 1,
+        "time_to_first_income_requirement": "12_months",
+        "savings_runway_months": 18
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          50000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-f",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "no_preference",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-f",
+        "label": "No declared strengths explorer",
+        "employment_status": "part_time_job",
+        "money": {
+          "available_capital_minor": 7500000,
+          "safe_risk_capital_minor": 2500000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 3000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 3,
+        "strengths": [
+          "none_identified"
+        ],
+        "risk_tolerance": 3,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 5
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          2500000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-g",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "online",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 0,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-g",
+        "label": "Inventory-refusing digital builder",
+        "employment_status": "full_time_job",
+        "money": {
+          "available_capital_minor": 25000000,
+          "safe_risk_capital_minor": 7500000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 10000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 3,
+        "strengths": [
+          "technology",
+          "creative"
+        ],
+        "risk_tolerance": 3,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 10
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          7500000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-h",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "hybrid",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-h",
+        "label": "Aggressive income growth seeker",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 200000000,
+          "safe_risk_capital_minor": 100000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 1000000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 10,
+        "strengths": [
+          "sales",
+          "operations"
+        ],
+        "risk_tolerance": 5,
+        "time_to_first_income_requirement": "12_months",
+        "savings_runway_months": 15
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          100000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-i",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "hybrid",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-i",
+        "label": "Existing business owner",
+        "employment_status": "existing_business",
+        "money": {
+          "available_capital_minor": 60000000,
+          "safe_risk_capital_minor": 25000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 20000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 4,
+        "strengths": [
+          "product_sourcing",
+          "sales"
+        ],
+        "risk_tolerance": 4,
+        "time_to_first_income_requirement": "3_months",
+        "savings_runway_months": 9
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          25000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-j",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "offline",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-j",
+        "label": "Contradictory urgent cautious profile",
+        "employment_status": "full_time_job",
+        "money": {
+          "available_capital_minor": 30000000,
+          "safe_risk_capital_minor": 21000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 10000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 1,
+        "strengths": [
+          "operations"
+        ],
+        "risk_tolerance": 1,
+        "time_to_first_income_requirement": "30_days",
+        "savings_runway_months": 2
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          21000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-k",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "online",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-k",
+        "label": "Zero available hours edge case",
+        "employment_status": "full_time_job",
+        "money": {
+          "available_capital_minor": 50000000,
+          "safe_risk_capital_minor": 10000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 5000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 0,
+        "strengths": [
+          "technology"
+        ],
+        "risk_tolerance": 2,
+        "time_to_first_income_requirement": "3_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          10000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "qa-persona-l",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "online",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 3,
+          "staff_management_tolerance": 3,
+          "inventory_tolerance": 3,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 3,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": []
+        },
+        "assessment_id": "qa-persona-l",
+        "label": "Extreme target edge case",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 1000000000,
+          "safe_risk_capital_minor": 200000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 100000000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 12,
+        "strengths": [
+          "technology",
+          "sales"
+        ],
+        "risk_tolerance": 5,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 24
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top10_must_exclude": [],
+        "readiness_score_range": [
+          20,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          200000000
+        ],
+        "notes": "Original Batch 7 persona; ranking bands are locked more tightly after V2 baseline run."
+      }
+    },
+    {
+      "persona_id": "offline-a-operator-15l",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "offline",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 5,
+          "staff_management_tolerance": 5,
+          "inventory_tolerance": 4,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 2,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": [],
+          "industry_experience": [
+            "service"
+          ]
+        },
+        "assessment_id": "offline-a-operator-15l",
+        "label": "offline-a-operator-15l",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 150000000,
+          "safe_risk_capital_minor": 90000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 15000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 9,
+        "strengths": [
+          "operations"
+        ],
+        "risk_tolerance": 4,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [
+          "property-service"
+        ],
+        "top5_category_must_include": [
+          "service",
+          "food",
+          "retail",
+          "b2b",
+          "rental"
+        ],
+        "top10_must_not_be_all_online": true,
+        "readiness_score_range": [
+          55,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          90000000
+        ],
+        "notes": "Offline/operator calibration fixture."
+      }
+    },
+    {
+      "persona_id": "offline-b-sourcing-sales-5l",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "hybrid",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 5,
+          "staff_management_tolerance": 5,
+          "inventory_tolerance": 4,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 2,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": [],
+          "industry_experience": [
+            "commerce"
+          ]
+        },
+        "assessment_id": "offline-b-sourcing-sales-5l",
+        "label": "offline-b-sourcing-sales-5l",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 50000000,
+          "safe_risk_capital_minor": 30000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 15000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 8,
+        "strengths": [
+          "product_sourcing",
+          "sales"
+        ],
+        "risk_tolerance": 4,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [
+          "private-label-product",
+          "niche-ecommerce"
+        ],
+        "top5_category_must_include": [
+          "service",
+          "food",
+          "retail",
+          "b2b",
+          "rental"
+        ],
+        "top10_must_not_be_all_online": true,
+        "readiness_score_range": [
+          55,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          30000000
+        ],
+        "notes": "Offline/operator calibration fixture."
+      }
+    },
+    {
+      "persona_id": "offline-c-owner-25l",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "offline",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 5,
+          "staff_management_tolerance": 5,
+          "inventory_tolerance": 4,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 2,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": [],
+          "industry_experience": [
+            "retail",
+            "b2b"
+          ]
+        },
+        "assessment_id": "offline-c-owner-25l",
+        "label": "offline-c-owner-25l",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 250000000,
+          "safe_risk_capital_minor": 120000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 15000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 7,
+        "strengths": [
+          "operations",
+          "finance_analysis"
+        ],
+        "risk_tolerance": 3,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [],
+        "top5_category_must_include": [
+          "service",
+          "food",
+          "retail",
+          "b2b",
+          "rental"
+        ],
+        "top10_must_not_be_all_online": true,
+        "readiness_score_range": [
+          55,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          120000000
+        ],
+        "notes": "Offline/operator calibration fixture."
+      }
+    },
+    {
+      "persona_id": "offline-d-automotive-8l",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "offline",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 5,
+          "staff_management_tolerance": 5,
+          "inventory_tolerance": 4,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 2,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": [],
+          "industry_experience": [
+            "automotive"
+          ]
+        },
+        "assessment_id": "offline-d-automotive-8l",
+        "label": "offline-d-automotive-8l",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 80000000,
+          "safe_risk_capital_minor": 50000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 15000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 9,
+        "strengths": [
+          "technical_trade",
+          "operations"
+        ],
+        "risk_tolerance": 4,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [
+          "automotive-service"
+        ],
+        "top5_category_must_include": [
+          "service",
+          "food",
+          "retail",
+          "b2b",
+          "rental"
+        ],
+        "top10_must_not_be_all_online": true,
+        "readiness_score_range": [
+          55,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          50000000
+        ],
+        "notes": "Offline/operator calibration fixture."
+      }
+    },
+    {
+      "persona_id": "offline-e-food-20l",
+      "assessment": {
+        "schema_version": "assessment-v1.0.0",
+        "locale": {
+          "country": "IN",
+          "region": null,
+          "currency": "INR"
+        },
+        "primary_motivation": "extra_income",
+        "preferred_business_environment": "offline",
+        "operational_preferences": {
+          "customer_interaction_tolerance": 5,
+          "staff_management_tolerance": 5,
+          "inventory_tolerance": 4,
+          "content_creation_tolerance": 3,
+          "computer_work_tolerance": 2,
+          "system_building_preference": 3
+        },
+        "biggest_fear": "wrong_idea",
+        "optional": {
+          "business_experience": 2,
+          "network_strength": 2,
+          "technical_skill_depth": 2,
+          "sales_skill_depth": 2,
+          "access_to_suppliers": 1,
+          "access_to_existing_customers": 1,
+          "operating_partner_available": false,
+          "credential_ids": [],
+          "industry_experience": [
+            "food"
+          ]
+        },
+        "assessment_id": "offline-e-food-20l",
+        "label": "offline-e-food-20l",
+        "employment_status": "ready_full_time",
+        "money": {
+          "available_capital_minor": 200000000,
+          "safe_risk_capital_minor": 140000000,
+          "safe_risk_percentage": null,
+          "monthly_income_target_minor": 15000000,
+          "cash_savings_minor": null,
+          "monthly_personal_expenses_minor": null,
+          "monthly_salary_minor": null,
+          "monthly_debt_commitments_minor": null
+        },
+        "available_hours_daily": 10,
+        "strengths": [
+          "operations",
+          "product_sourcing"
+        ],
+        "risk_tolerance": 4,
+        "time_to_first_income_requirement": "6_months",
+        "savings_runway_months": 12
+      },
+      "expectations": {
+        "top5_must_include": [
+          "specialist-food-brand"
+        ],
+        "top5_category_must_include": [
+          "service",
+          "food",
+          "retail",
+          "b2b",
+          "rental"
+        ],
+        "top10_must_not_be_all_online": true,
+        "readiness_score_range": [
+          55,
+          95
+        ],
+        "safe_test_budget_range_minor": [
+          0,
+          140000000
+        ],
+        "notes": "Offline/operator calibration fixture."
+      }
+    }
+  ]
+}

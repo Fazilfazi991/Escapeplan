@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#881d24",
+                    "surface-container-high": "#eae7e7",
+                    "primary": "#4648d4",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#c64b4d",
+                    "inverse-surface": "#313030",
+                    "surface-container": "#f0eded",
+                    "surface-variant": "#e5e2e1",
+                    "tertiary": "#a53337",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#131f00",
+                    "on-tertiary-fixed": "#410006",
+                    "outline": "#767586",
+                    "tertiary-fixed": "#ffdad8",
+                    "on-error": "#ffffff",
+                    "secondary": "#476800",
+                    "on-surface": "#1c1b1b",
+                    "surface": "#fcf9f8",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-container": "#fffbff",
+                    "surface-tint": "#494bd6",
+                    "on-primary-fixed": "#07006c",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#bff365",
+                    "secondary-fixed-dim": "#a4d64c",
+                    "on-background": "#1c1b1b",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#354e00",
+                    "secondary-container": "#bcf063",
+                    "on-surface-variant": "#464554",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#4b6d00",
+                    "background": "#fcf9f8",
+                    "surface-container-low": "#f6f3f2",
+                    "primary-container": "#6063ee",
+                    "inverse-primary": "#c0c1ff",
+                    "primary-fixed": "#e1e0ff",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary-fixed-dim": "#ffb3b0",
+                    "surface-dim": "#dcd9d9",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c7c4d7",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-tertiary-container": "#fffbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "40px",
+                    "margin-mobile": "20px",
+                    "gutter": "20px",
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "xs": "4px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "44px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #fcf9f8;
+            -webkit-font-smoothing: antialiased;
+        }
+        .layer-1-shadow {
+            box-shadow: 0 10px 30px -10px rgba(28, 27, 27, 0.08);
+        }
+        .layer-2-shadow {
+            box-shadow: 0 20px 40px -15px rgba(28, 27, 27, 0.12);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #4648d4 0%, #a53337 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .soft-underline {
+            position: relative;
+        }
+        .soft-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #e1e0ff;
+            z-index: -1;
+            border-radius: 3px;
+        }
+        
+        @keyframes fillProgress {
+            from { width: 0%; }
+            to { width: 81%; }
+        }
+        .animate-progress {
+            animation: fillProgress 1.5s ease-out forwards;
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scoreElement = document.getElementById('countup-score');
+            if (scoreElement) {
+                let current = 0;
+                const target = 81;
+                const duration = 1500; // 1.5s
+                const stepTime = Math.abs(Math.floor(duration / target));
+                
+                const timer = setInterval(() => {
+                    current += 1;
+                    scoreElement.textContent = current;
+                    if (current === target) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            }
+        });
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden pb-[100px]">
+<!-- TopNavBar (Rendered on mobile, hiding text links as per rules, keeping action) -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/30 flex justify-between items-center w-full px-margin-mobile py-md max-w-7xl mx-auto z-50">
+<div class="flex items-center gap-sm hover:opacity-80 transition-opacity duration-200">
+<img alt="EscapePlan Logo" class="h-8 w-8 object-contain rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8DrDwNf_H3eHBq54HH2dpQUlFUySKPT-8S4KIBaOi-vcf8sexcPxf6Sfj2VJ9N3I8BwZqXSGoOOrEYcKKRoyvrdG8n4KG0iVlny3mAh2s1eMG98rbD5yE5m_D-XxKZLgh4Mt7oSvf3SVBQTcPaCO3Ux0ZeFFjR8V724XOu8N_9O1sTxe0iWkJUcgliZo1OY9gCVnMJ0JmEk5iCvlXhPhYC1im7hCPXEZWNAvyR9PIeoOvicOLzbKguw"/>
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">EscapePlan</span>
+</div>
+<!-- Mobile Links Hidden, Action Present -->
+<button class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-md py-sm rounded-lg hover:opacity-80 transition-opacity duration-200 active:scale-95 transition-transform duration-150">
+            Take the test
+        </button>
+</header>
+<main class="w-full flex flex-col items-center">
+<!-- Hero Section -->
+<section class="w-full px-margin-mobile pt-lg pb-md flex flex-col items-center text-center gap-md">
+<div class="flex flex-col gap-sm">
+<h1 class="text-display-lg-mobile font-display-lg-mobile text-on-surface">
+                    Find the business you were <br/>
+<span class="text-gradient soft-underline">meant to build.</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md mx-auto">
+                    Stop guessing. Use data to uncover your perfect entrepreneurial match.
+                </p>
+</div>
+<!-- Result Preview Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl layer-2-shadow p-lg flex flex-col gap-md border border-primary-fixed mt-sm relative overflow-hidden group transform hover:scale-[1.02] transition-transform duration-300">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/20 to-transparent opacity-50"></div>
+<div class="relative z-10 flex flex-col gap-sm">
+<div class="flex justify-between items-center w-full">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span>
+                                Your #1 Match
+                            </span>
+<div class="bg-primary-fixed text-on-primary-fixed px-sm py-xs rounded-full flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span class="text-label-sm font-label-sm font-bold"><span id="countup-score">0</span>/100 Score</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden mt-1 mb-2">
+<div class="h-full bg-primary animate-progress rounded-full w-0"></div>
+</div>
+<div class="w-full h-16 bg-surface-variant rounded-lg relative overflow-hidden backdrop-blur-sm border border-outline-variant/30 flex items-center justify-center">
+<span class="text-headline-md font-headline-md text-on-surface-variant opacity-30 filter blur-sm select-none">Boutique Agency</span>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant text-[32px] opacity-50">lock</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant text-left mt-xs">
+                        High alignment with your desire for creative autonomy and strategic thinking.
+                    </p>
+</div>
+</div>
+<!-- Primary CTA -->
+<button class="w-full h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-sm mt-md layer-1-shadow hover:opacity-90 active:scale-95 transition-all">
+                Find My Business Match
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</section>
+<!-- Thoughts / Social Proof Section -->
+<section class="w-full px-margin-mobile py-lg bg-surface flex flex-col gap-md items-center relative overflow-hidden">
+<div class="absolute inset-0 bg-surface-container-low/50 -z-10 rounded-3xl mx-2"></div>
+<h2 class="text-headline-md font-headline-md text-on-surface text-center mb-sm flex items-center gap-2 justify-center">
+<span class="material-symbols-outlined text-tertiary">chat_bubble</span>
+                The noise in your head
+            </h2>
+<div class="flex flex-col gap-4 w-full max-w-sm relative px-4">
+<!-- Central connecting element (visual anchor) -->
+<div class="absolute left-1/2 top-4 bottom-4 w-px bg-outline-variant/30 -translate-x-1/2 z-0 hidden md:block"></div>
+<!-- Staggered Thought 1 -->
+<div class="self-start bg-surface-container-lowest rounded-2xl p-md layer-1-shadow border border-surface-variant rounded-tl-none relative w-[85%] z-10 transform -rotate-1">
+<p class="text-body-md font-body-md text-on-surface-variant italic">"I have so many ideas, but I don't know where to start."</p>
+</div>
+<!-- Staggered Thought 2 -->
+<div class="self-end bg-primary-fixed/30 rounded-2xl p-md layer-1-shadow border border-primary-fixed rounded-tr-none relative w-[85%] z-10 transform rotate-1 mt-[-10px]">
+<p class="text-body-md font-body-md text-on-surface font-medium">"What if I choose the wrong path and waste years?"</p>
+</div>
+<!-- Staggered Thought 3 -->
+<div class="self-start bg-surface-container-lowest rounded-2xl p-md layer-1-shadow border border-surface-variant rounded-bl-none relative w-[85%] z-10 transform -rotate-1 mt-[-10px]">
+<p class="text-body-md font-body-md text-on-surface-variant italic">"I want freedom, but I need security."</p>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="w-full px-margin-mobile py-lg flex flex-col gap-lg">
+<h2 class="text-headline-md font-headline-md text-on-surface text-center">Clarity in 3 steps</h2>
+<div class="flex flex-col gap-md relative pl-2">
+<!-- Vertical connecting line -->
+<div class="absolute left-[34px] top-[30px] bottom-[30px] w-0.5 bg-surface-variant z-0"></div>
+<!-- Step 1 -->
+<div class="flex gap-md relative z-10 items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 layer-1-shadow border-4 border-background mt-1">
+<span class="text-label-md font-label-md font-bold">01</span>
+</div>
+<div class="flex flex-col gap-xs pt-2">
+<h3 class="text-label-md font-label-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">assignment</span>
+                            The Assessment
+                        </h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Answer deep psychological and practical questions about your goals.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-md relative z-10 items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center flex-shrink-0 layer-1-shadow border-4 border-background mt-1">
+<span class="text-label-md font-label-md font-bold">02</span>
+</div>
+<div class="flex flex-col gap-xs pt-2">
+<h3 class="text-label-md font-label-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">analytics</span>
+                            The Analysis
+                        </h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Our model cross-references your traits with hundreds of business archetypes.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-md relative z-10 items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center flex-shrink-0 layer-1-shadow border-4 border-background mt-1">
+<span class="text-label-md font-label-md font-bold">03</span>
+</div>
+<div class="flex flex-col gap-xs pt-2">
+<h3 class="text-label-md font-label-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">flight_takeoff</span>
+                            The Escape Plan
+                        </h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Get a detailed brief of your top matches, strengths, and blind spots.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface full-width bottom-0 flex flex-col justify-between items-center w-full px-margin-mobile py-lg gap-md max-w-7xl mx-auto mt-md pb-24">
+<span class="text-label-md font-label-md font-bold text-on-surface dark:text-inverse-on-surface">EscapePlan</span>
+<div class="flex flex-row flex-wrap justify-center items-center gap-md">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Contact Support</a>
+</div>
+<p class="text-body-sm font-body-md text-on-surface-variant text-center opacity-70">© 2024 EscapePlan. No hype. Just clarity.</p>
+</footer>
+<!-- Sticky Footer CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-margin-mobile pb-8 bg-gradient-to-t from-background via-background/90 to-transparent z-40 flex justify-center backdrop-blur-sm">
+<button class="w-full max-w-sm h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-sm shadow-[0_15px_40px_-10px_rgba(70,72,212,0.4)] hover:opacity-90 active:scale-95 transition-all group">
+            Find Mine
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</body></html>

@@ -1,0 +1,600 @@
+{
+  "dataset_version": "qa-personas-v1.0.0",
+  "currency_minor_unit": 2,
+  "personas": [
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "online",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-a",
+      "label": "Employed technical cautious",
+      "employment_status": "full_time_job",
+      "money": {
+        "available_capital_minor": 10000000,
+        "safe_risk_capital_minor": 4000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 5000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 2,
+      "strengths": [
+        "technology"
+      ],
+      "risk_tolerance": 2,
+      "time_to_first_income_requirement": "3_months",
+      "savings_runway_months": 8
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "offline",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-b",
+      "label": "Funded full-time operator",
+      "employment_status": "ready_full_time",
+      "money": {
+        "available_capital_minor": 100000000,
+        "safe_risk_capital_minor": 50000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 15000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 8,
+      "strengths": [
+        "operations"
+      ],
+      "risk_tolerance": 4,
+      "time_to_first_income_requirement": "6_months",
+      "savings_runway_months": 12
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "online",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-c",
+      "label": "Patient creative student",
+      "employment_status": "student",
+      "money": {
+        "available_capital_minor": 2000000,
+        "safe_risk_capital_minor": 1000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 2000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 1.5,
+      "strengths": [
+        "creative"
+      ],
+      "risk_tolerance": 3,
+      "time_to_first_income_requirement": "long_term",
+      "savings_runway_months": 6
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "hybrid",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-d",
+      "label": "Zero-capital commercial seller",
+      "employment_status": "unemployed",
+      "money": {
+        "available_capital_minor": 0,
+        "safe_risk_capital_minor": 0,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 4000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 6,
+      "strengths": [
+        "sales",
+        "networking"
+      ],
+      "risk_tolerance": 3,
+      "time_to_first_income_requirement": "30_days",
+      "savings_runway_months": 1
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "no_preference",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-e",
+      "label": "High-capital low-risk executive",
+      "employment_status": "full_time_job",
+      "money": {
+        "available_capital_minor": 500000000,
+        "safe_risk_capital_minor": 50000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 20000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 2,
+      "strengths": [
+        "finance_analysis",
+        "operations"
+      ],
+      "risk_tolerance": 1,
+      "time_to_first_income_requirement": "12_months",
+      "savings_runway_months": 18
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "no_preference",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-f",
+      "label": "No declared strengths explorer",
+      "employment_status": "part_time_job",
+      "money": {
+        "available_capital_minor": 7500000,
+        "safe_risk_capital_minor": 2500000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 3000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 3,
+      "strengths": [
+        "none_identified"
+      ],
+      "risk_tolerance": 3,
+      "time_to_first_income_requirement": "6_months",
+      "savings_runway_months": 5
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "online",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 0,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-g",
+      "label": "Inventory-refusing digital builder",
+      "employment_status": "full_time_job",
+      "money": {
+        "available_capital_minor": 25000000,
+        "safe_risk_capital_minor": 7500000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 10000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 3,
+      "strengths": [
+        "technology",
+        "creative"
+      ],
+      "risk_tolerance": 3,
+      "time_to_first_income_requirement": "6_months",
+      "savings_runway_months": 10
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "hybrid",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-h",
+      "label": "Aggressive income growth seeker",
+      "employment_status": "ready_full_time",
+      "money": {
+        "available_capital_minor": 200000000,
+        "safe_risk_capital_minor": 100000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 1000000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 10,
+      "strengths": [
+        "sales",
+        "operations"
+      ],
+      "risk_tolerance": 5,
+      "time_to_first_income_requirement": "12_months",
+      "savings_runway_months": 15
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "hybrid",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-i",
+      "label": "Existing business owner",
+      "employment_status": "existing_business",
+      "money": {
+        "available_capital_minor": 60000000,
+        "safe_risk_capital_minor": 25000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 20000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 4,
+      "strengths": [
+        "product_sourcing",
+        "sales"
+      ],
+      "risk_tolerance": 4,
+      "time_to_first_income_requirement": "3_months",
+      "savings_runway_months": 9
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "offline",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-j",
+      "label": "Contradictory urgent cautious profile",
+      "employment_status": "full_time_job",
+      "money": {
+        "available_capital_minor": 30000000,
+        "safe_risk_capital_minor": 21000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 10000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 1,
+      "strengths": [
+        "operations"
+      ],
+      "risk_tolerance": 1,
+      "time_to_first_income_requirement": "30_days",
+      "savings_runway_months": 2
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "online",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-k",
+      "label": "Zero available hours edge case",
+      "employment_status": "full_time_job",
+      "money": {
+        "available_capital_minor": 50000000,
+        "safe_risk_capital_minor": 10000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 5000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 0,
+      "strengths": [
+        "technology"
+      ],
+      "risk_tolerance": 2,
+      "time_to_first_income_requirement": "3_months",
+      "savings_runway_months": 12
+    },
+    {
+      "schema_version": "assessment-v1.0.0",
+      "locale": {
+        "country": "IN",
+        "region": null,
+        "currency": "INR"
+      },
+      "primary_motivation": "extra_income",
+      "preferred_business_environment": "online",
+      "operational_preferences": {
+        "customer_interaction_tolerance": 3,
+        "staff_management_tolerance": 3,
+        "inventory_tolerance": 3,
+        "content_creation_tolerance": 3,
+        "computer_work_tolerance": 3,
+        "system_building_preference": 3
+      },
+      "biggest_fear": "wrong_idea",
+      "optional": {
+        "business_experience": 2,
+        "network_strength": 2,
+        "technical_skill_depth": 2,
+        "sales_skill_depth": 2,
+        "access_to_suppliers": 1,
+        "access_to_existing_customers": 1,
+        "operating_partner_available": false,
+        "credential_ids": []
+      },
+      "assessment_id": "qa-persona-l",
+      "label": "Extreme target edge case",
+      "employment_status": "ready_full_time",
+      "money": {
+        "available_capital_minor": 1000000000,
+        "safe_risk_capital_minor": 200000000,
+        "safe_risk_percentage": null,
+        "monthly_income_target_minor": 100000000000,
+        "cash_savings_minor": null,
+        "monthly_personal_expenses_minor": null,
+        "monthly_salary_minor": null,
+        "monthly_debt_commitments_minor": null
+      },
+      "available_hours_daily": 12,
+      "strengths": [
+        "technology",
+        "sales"
+      ],
+      "risk_tolerance": 5,
+      "time_to_first_income_requirement": "6_months",
+      "savings_runway_months": 24
+    }
+  ]
+}

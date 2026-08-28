@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Free Result Reveal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Mobile-optimized hide scrollbar */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb3b0",
+                    "surface-container-low": "#f6f3f2",
+                    "tertiary-fixed": "#ffdad8",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "inverse-surface": "#313030",
+                    "on-secondary-fixed": "#131f00",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed": "#07006c",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary-container": "#c64b4d",
+                    "primary": "#4648d4",
+                    "background": "#fcf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed": "#410006",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "outline": "#767586",
+                    "on-tertiary-fixed-variant": "#881d24",
+                    "surface": "#fcf9f8",
+                    "secondary-container": "#bcf063",
+                    "on-primary-container": "#fffbff",
+                    "on-background": "#1c1b1b",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#4b6d00",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#494bd6",
+                    "surface-variant": "#e5e2e1",
+                    "secondary": "#476800",
+                    "inverse-primary": "#c0c1ff",
+                    "tertiary": "#a53337",
+                    "on-surface": "#1c1b1b",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#354e00",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#464554",
+                    "surface-container": "#f0eded",
+                    "secondary-fixed-dim": "#a4d64c",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-fixed": "#bff365",
+                    "outline-variant": "#c7c4d7",
+                    "surface-container-high": "#eae7e7",
+                    "primary-fixed": "#e1e0ff",
+                    "primary-container": "#6063ee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "xl": "40px",
+                    "lg": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "20px",
+                    "unit": "4px",
+                    "xs": "4px",
+                    "md": "16px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "44px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased pb-[100px]">
+<!-- TopAppBar -->
+<header class="bg-background/80 backdrop-blur-md full-width top-0 z-50 sticky px-margin-mobile md:px-margin-desktop h-20 w-full max-w-[1280px] mx-auto flex justify-between items-center no shadows">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">EscapePlan</div>
+<div class="flex items-center gap-md text-on-surface-variant">
+<!-- Navigation items intentionally suppressed for Result Reveal per semantic logic -->
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<main class="w-full max-w-md mx-auto px-margin-mobile flex flex-col gap-xl">
+<!-- Header / Profile Section -->
+<section class="flex flex-col items-center text-center mt-lg pt-lg border-t border-surface-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-xs">Your Profile</p>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-md">The Digital Operator</h1>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-full px-lg py-sm shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary fill-icon" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md text-on-surface">78/100 Readiness Score</span>
+</div>
+</section>
+<!-- #1 Match Highlight -->
+<section class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] border border-surface-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10"></div>
+<div class="flex justify-between items-start mb-lg">
+<div class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="award_star">award_star</span>
+                    #1 Match
+                </div>
+<div class="font-headline-md text-headline-md text-primary">92% <span class="font-body-md text-body-md text-on-surface-variant">Fit</span></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Niche E-commerce Brand</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">A low-overhead, highly automated business model perfectly suited for digital operators looking for passive scaling.</p>
+<!-- Why it fits stacked cards -->
+<div class="flex flex-col gap-sm">
+<div class="bg-surface-container rounded-lg p-md flex gap-md items-start">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Skills Alignment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Leverages your strong background in digital marketing and remote team management.</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-md flex gap-md items-start">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Time Commitment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Requires 15-20 hours/week to maintain, fitting your 'side-hustle first' preference.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Money & Reality -->
+<section class="flex flex-col gap-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">The Reality Check</h3>
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] border border-surface-variant">
+<div class="flex justify-between items-end border-b border-surface-variant pb-md mb-md">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Avg. Startup Capital</p>
+<p class="font-headline-md text-headline-md text-on-surface">$15k - $25k</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="payments">payments</span>
+</div>
+<div class="pt-sm">
+<p class="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="warning">warning</span>
+                        Should you quit your job?
+                    </p>
+<div class="bg-surface-container rounded-lg p-md mt-sm">
+<p class="font-headline-md text-headline-md text-tertiary mb-1">Not yet.</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Build this alongside your 9-to-5 until monthly net profit consistently covers 120% of your current living expenses.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Locked Matches -->
+<section class="flex flex-col gap-md pb-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface">Your Top Alternative Paths</h3>
+<div class="flex flex-col gap-sm">
+<!-- Locked Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-md border border-surface-variant shadow-sm relative overflow-hidden flex items-center justify-between blur-[2px] opacity-70">
+<div class="flex flex-col">
+<div class="w-24 h-4 bg-outline-variant/30 rounded mb-2"></div>
+<div class="w-48 h-6 bg-outline-variant/40 rounded"></div>
+</div>
+<div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-outline" data-icon="lock">lock</span>
+</div>
+</div>
+<!-- Locked Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-md border border-surface-variant shadow-sm relative overflow-hidden flex items-center justify-between blur-[3px] opacity-50">
+<div class="flex flex-col">
+<div class="w-20 h-4 bg-outline-variant/30 rounded mb-2"></div>
+<div class="w-40 h-6 bg-outline-variant/40 rounded"></div>
+</div>
+<div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-outline" data-icon="lock">lock</span>
+</div>
+</div>
+<!-- Locked Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-md border border-surface-variant shadow-sm relative overflow-hidden flex items-center justify-between blur-[4px] opacity-30">
+<div class="flex flex-col">
+<div class="w-32 h-4 bg-outline-variant/30 rounded mb-2"></div>
+<div class="w-36 h-6 bg-outline-variant/40 rounded"></div>
+</div>
+<div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-outline" data-icon="lock">lock</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Fixed Bottom CTA -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-container-lowest/90 backdrop-blur-md border-t border-surface-variant p-margin-mobile z-50">
+<button class="w-full max-w-md mx-auto h-[56px] bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 shadow-[0_15px_40px_-15px_rgba(70,72,212,0.4)] hover:bg-primary-container transition-colors">
+            See All Matched Paths
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</body></html>

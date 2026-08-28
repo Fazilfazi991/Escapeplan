@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Question 8</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#410006",
+                    "tertiary": "#a53337",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdad8",
+                    "outline": "#767586",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#494bd6",
+                    "surface-container": "#f0eded",
+                    "secondary-fixed-dim": "#a4d64c",
+                    "on-secondary-fixed": "#131f00",
+                    "on-secondary-fixed-variant": "#354e00",
+                    "on-primary-fixed": "#07006c",
+                    "primary-fixed": "#e1e0ff",
+                    "on-surface": "#1c1b1b",
+                    "surface-dim": "#dcd9d9",
+                    "tertiary-fixed-dim": "#ffb3b0",
+                    "surface": "#fcf9f8",
+                    "on-background": "#1c1b1b",
+                    "surface-container-low": "#f6f3f2",
+                    "on-surface-variant": "#464554",
+                    "inverse-on-surface": "#f3f0ef",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#4b6d00",
+                    "on-tertiary-container": "#fffbff",
+                    "surface-variant": "#e5e2e1",
+                    "inverse-surface": "#313030",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#4648d4",
+                    "surface-container-highest": "#e5e2e1",
+                    "outline-variant": "#c7c4d7",
+                    "surface-container-high": "#eae7e7",
+                    "tertiary-container": "#c64b4d",
+                    "surface-bright": "#fcf9f8",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#c0c1ff",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#6063ee",
+                    "secondary": "#476800",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "secondary-fixed": "#bff365",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#bcf063",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-tertiary-fixed-variant": "#881d24"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "lg": "24px",
+                    "xl": "40px",
+                    "md": "16px",
+                    "unit": "4px",
+                    "sm": "8px",
+                    "gutter": "20px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "44px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .progress-bar-fill {
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-select {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-select:active {
+            transform: scale(0.98);
+        }
+        
+        .card-select.selected {
+            border-color: #4648d4;
+            background-color: #f6f3f2;
+            box-shadow: 0 10px 30px rgba(70, 72, 212, 0.08);
+        }
+        
+        .card-select.selected .icon-container {
+            color: #4648d4;
+        }
+
+        .icon-container {
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased md:hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Placeholder (suppressed for transactional flow, but keeping brand anchor minimal) -->
+<header class="w-full px-margin-mobile py-md flex items-center justify-between z-50">
+<div class="text-label-md font-label-md font-bold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+            Back
+        </div>
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight">EscapePlan</div>
+</header>
+<main class="flex-grow flex flex-col px-margin-mobile pt-lg pb-xl max-w-lg mx-auto w-full relative">
+<!-- Progress Indicator -->
+<div class="mb-xl w-full">
+<div class="flex justify-between items-center mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">YOUR BUSINESS STYLE</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">57%</span>
+</div>
+<div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary progress-bar-fill rounded-full" style="width: 57%;"></div>
+</div>
+</div>
+<!-- Question Header -->
+<div class="mb-xl">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-md">Which sounds more like you?</h1>
+</div>
+<!-- Options Grid (Bento style for mobile) -->
+<div class="grid grid-cols-1 gap-md mb-xl flex-grow">
+<!-- Option 1 -->
+<button class="card-select w-full bg-surface-container-lowest border border-surface-variant rounded-xl p-lg flex flex-col items-start text-left relative overflow-hidden group shadow-sm" onclick="selectCard(this)">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md icon-container text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">public</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Online-first</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Digital products, remote services, e-commerce</p>
+<div class="absolute top-lg right-lg w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center selection-indicator opacity-0 transition-opacity">
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+</div>
+</button>
+<!-- Option 2 -->
+<button class="card-select w-full bg-surface-container-lowest border border-surface-variant rounded-xl p-lg flex flex-col items-start text-left relative overflow-hidden group shadow-sm" onclick="selectCard(this)">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md icon-container text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">storefront</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Physical/Local</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Brick &amp; mortar, local services, physical goods</p>
+<div class="absolute top-lg right-lg w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center selection-indicator opacity-0 transition-opacity">
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+</div>
+</button>
+<!-- Option 3 -->
+<button class="card-select w-full bg-surface-container-lowest border border-surface-variant rounded-xl p-lg flex flex-col items-start text-left relative overflow-hidden group shadow-sm" onclick="selectCard(this)">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md icon-container text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">layers</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">A Mix</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Both online presence and physical operations</p>
+<div class="absolute top-lg right-lg w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center selection-indicator opacity-0 transition-opacity">
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+</div>
+</button>
+<!-- Option 4 -->
+<button class="card-select w-full bg-surface-container-lowest border border-surface-variant rounded-xl p-md flex flex-row items-center justify-between text-left relative overflow-hidden group shadow-sm" onclick="selectCard(this)">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center icon-container text-on-surface-variant">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 0;">question_mark</span>
+</div>
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface">I don't care</h3>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center selection-indicator opacity-0 transition-opacity">
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+</div>
+</button>
+</div>
+<!-- Insight Teaser -->
+<div class="bg-surface-container-low rounded-xl p-md flex items-start gap-md mb-xl border border-surface-variant/50">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Your profile currently favors <span class="font-bold text-on-surface">3 business styles</span>. Let's narrow it down.</p>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 w-full p-margin-mobile bg-background/90 backdrop-blur-md border-t border-surface-variant/30 pb-8 z-40">
+<button class="w-full h-[56px] bg-primary text-on-primary font-label-md text-label-md rounded-xl opacity-50 cursor-not-allowed transition-all duration-300 flex items-center justify-center shadow-[0_10px_30px_rgba(70,72,212,0.2)]" disabled="" id="continueBtn">
+            Continue
+        </button>
+</div>
+<!-- Padding for fixed bottom bar -->
+<div class="h-24"></div>
+<script>
+        function selectCard(selectedEl) {
+            // Remove selected class from all
+            const cards = document.querySelectorAll('.card-select');
+            cards.forEach(card => {
+                card.classList.remove('selected', 'border-primary');
+                card.classList.add('border-surface-variant');
+                const indicator = card.querySelector('.selection-indicator');
+                if(indicator) indicator.classList.remove('opacity-100');
+                
+                const iconBg = card.querySelector('.icon-container');
+                if(iconBg && !card.classList.contains('selected')) {
+                    iconBg.classList.remove('bg-primary-container/20');
+                    iconBg.classList.add('bg-surface-container');
+                }
+            });
+
+            // Add to selected
+            selectedEl.classList.add('selected');
+            selectedEl.classList.remove('border-surface-variant');
+            
+            const indicator = selectedEl.querySelector('.selection-indicator');
+            if(indicator) {
+                indicator.classList.remove('border-outline-variant');
+                indicator.classList.add('border-primary', 'opacity-100');
+            }
+            
+            const iconBg = selectedEl.querySelector('.icon-container');
+            if(iconBg) {
+                iconBg.classList.remove('bg-surface-container');
+                iconBg.classList.add('bg-primary-container/20');
+            }
+
+            // Enable Continue Button
+            const btn = document.getElementById('continueBtn');
+            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+            btn.classList.add('hover:opacity-90', 'active:scale-95');
+            btn.removeAttribute('disabled');
+        }
+    </script>
+</body></html>

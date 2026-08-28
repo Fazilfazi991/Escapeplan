@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Analysis</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "background": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary-fixed": "#07006c",
+                        "primary": "#4648d4",
+                        "surface-tint": "#494bd6",
+                        "primary-container": "#6063ee",
+                        "secondary-fixed-dim": "#a4d64c",
+                        "error-container": "#ffdad6",
+                        "outline": "#767586",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "on-surface": "#1c1b1b",
+                        "inverse-surface": "#313030",
+                        "tertiary-container": "#c64b4d",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-container": "#fffbff",
+                        "tertiary-fixed": "#ffdad8",
+                        "inverse-primary": "#c0c1ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#4b6d00",
+                        "on-secondary-fixed": "#131f00",
+                        "outline-variant": "#c7c4d7",
+                        "secondary-container": "#bcf063",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary": "#a53337",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#354e00",
+                        "error": "#ba1a1a",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-fixed": "#410006",
+                        "on-tertiary-fixed-variant": "#881d24",
+                        "on-primary": "#ffffff",
+                        "secondary": "#476800",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "primary-fixed": "#e1e0ff",
+                        "on-surface-variant": "#464554",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-fixed": "#bff365"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "md": "16px",
+                        "gutter": "20px",
+                        "sm": "8px",
+                        "margin-desktop": "64px",
+                        "lg": "24px",
+                        "margin-mobile": "20px",
+                        "xs": "4px",
+                        "xl": "40px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    },
+                    "animation": {
+                        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'flow-dash': 'flow-dash 2s linear infinite',
+                    },
+                    "keyframes": {
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px 0 rgba(70, 72, 212, 0.2)' },
+                            '50%': { opacity: .8, boxShadow: '0 0 30px 5px rgba(70, 72, 212, 0.4)' },
+                        },
+                        'flow-dash': {
+                            'to': { strokeDashoffset: -24 }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom minimal scrollbar for any overflow elements */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e5e2e1; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-surface-bright text-on-surface font-sans antialiased min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Ambient Background Elements (Level 0 depth) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden flex justify-center items-center opacity-40">
+<div class="w-[800px] h-[800px] bg-primary/5 rounded-full blur-[100px] absolute top-[-20%] right-[-10%]"></div>
+<div class="w-[600px] h-[600px] bg-secondary-fixed/5 rounded-full blur-[80px] absolute bottom-[-10%] left-[-10%]"></div>
+</div>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl relative z-10 flex flex-col min-h-screen justify-center gap-xl">
+<!-- Progress Indicator -->
+<header class="w-full max-w-2xl mx-auto text-center flex flex-col gap-sm">
+<div class="flex justify-between items-center px-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Model Comparison</span>
+<span class="text-label-sm font-label-sm text-primary font-bold">85%</span>
+</div>
+<div class="h-unit w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-1000 ease-out" style="width: 85%;"></div>
+</div>
+</header>
+<!-- Asymmetric Layout: Context vs Visual -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-lg lg:gap-margin-desktop items-center w-full">
+<!-- Left Column: Context & Checklist -->
+<div class="col-span-1 lg:col-span-5 flex flex-col gap-xl z-20">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface leading-tight">
+                    Ranking your <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">strongest paths...</span>
+</h1>
+<!-- Tactile Card (Level 1 Elevation) -->
+<div class="bg-surface-container-lowest rounded-xl p-lg border border-surface-variant/50 shadow-[0_10px_30px_rgba(28,27,27,0.04)] flex flex-col gap-md">
+<h2 class="text-label-md font-label-md text-outline mb-sm uppercase tracking-wider">Applied Filters</h2>
+<ul class="flex flex-col gap-md">
+<li class="flex items-center gap-md">
+<div class="w-6 h-6 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px] font-bold" data-icon="check" data-weight="fill">check</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">Working style</span>
+<span class="text-body-md font-body-md text-on-surface">Online-first</span>
+</div>
+</li>
+<li class="flex items-center gap-md">
+<div class="w-6 h-6 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px] font-bold" data-icon="check" data-weight="fill">check</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">Strengths</span>
+<span class="text-body-md font-body-md text-on-surface">Technology + Sales</span>
+</div>
+</li>
+<li class="flex items-center gap-md">
+<div class="w-6 h-6 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px] font-bold" data-icon="check" data-weight="fill">check</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">Risk tolerance</span>
+<span class="text-body-md font-body-md text-on-surface">Medium</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: The Decision Map (Visual) -->
+<div class="col-span-1 lg:col-span-7 relative h-[500px] w-full rounded-xl bg-surface-container-lowest/50 border border-surface-variant/30 backdrop-blur-sm shadow-[0_10px_30px_rgba(28,27,27,0.02)] overflow-hidden flex items-center">
+<!-- SVG Connection Lines -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<!-- Faded Paths (Eliminated) -->
+<path d="M 50,250 C 150,250 200,100 350,100" fill="none" stroke="#e5e2e1" stroke-dasharray="4 4" stroke-width="2"></path>
+<path d="M 50,250 C 150,250 200,400 350,400" fill="none" stroke="#e5e2e1" stroke-dasharray="4 4" stroke-width="2"></path>
+<path d="M 350,100 C 450,100 500,200 650,250" fill="none" stroke="#e5e2e1" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Semi-active Path (Subscription) -->
+<path d="M 50,250 C 150,250 200,250 350,250" fill="none" stroke="#c7c4d7" stroke-width="3"></path>
+<path d="M 350,250 C 450,250 500,250 650,250" fill="none" opacity="0.5" stroke="#c7c4d7" stroke-width="3"></path>
+<!-- Glowing Active Path (Commerce) -->
+<path d="M 50,250 C 200,250 250,350 400,350" fill="none" opacity="0.2" stroke="#4648d4" stroke-width="4"></path>
+<path class="animate-flow-dash" d="M 50,250 C 200,250 250,350 400,350" fill="none" stroke="#4648d4" stroke-dasharray="8 16" stroke-width="2"></path>
+</svg>
+<!-- Map Nodes (HTML Overlay for crisp typography) -->
+<div class="relative w-full h-full">
+<!-- Origin Node (User Profile) -->
+<div class="absolute left-8 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-surface-container border-2 border-outline-variant flex items-center justify-center z-10 shadow-sm">
+<div class="w-3 h-3 bg-outline rounded-full"></div>
+</div>
+<!-- Stage 1 Nodes (Faded/Eliminated) -->
+<div class="absolute left-[350px] top-[100px] -translate-x-1/2 -translate-y-1/2 px-md py-sm rounded-lg bg-surface-container-low border border-surface-variant opacity-40 flex items-center gap-sm">
+<span class="material-symbols-outlined text-[18px] text-outline" data-icon="storefront">storefront</span>
+<span class="text-label-sm font-label-sm text-outline">Retail</span>
+</div>
+<div class="absolute left-[350px] top-[400px] -translate-x-1/2 -translate-y-1/2 px-md py-sm rounded-lg bg-surface-container-low border border-surface-variant opacity-40 flex items-center gap-sm">
+<span class="material-symbols-outlined text-[18px] text-outline" data-icon="handshake">handshake</span>
+<span class="text-label-sm font-label-sm text-outline">Consulting</span>
+</div>
+<!-- Stage 2 Nodes (Viable but secondary) -->
+<div class="absolute left-[350px] top-[250px] -translate-x-1/2 -translate-y-1/2 px-md py-sm rounded-lg bg-surface-container-lowest border border-outline-variant shadow-sm flex items-center gap-sm z-10">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-icon="autorenew">autorenew</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Subscription</span>
+</div>
+<!-- Stage 3 Node (The Glowing Winner) -->
+<div class="absolute right-[80px] top-[350px] -translate-y-1/2 px-lg py-md rounded-xl bg-primary text-on-primary shadow-[0_15px_40px_rgba(70,72,212,0.3)] animate-pulse-glow flex items-center gap-md z-20 border border-primary-container">
+<div class="p-sm bg-on-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-on-primary" data-icon="shopping_cart" data-weight="fill">shopping_cart</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-primary-fixed-dim uppercase tracking-wider opacity-80">Top Match</span>
+<span class="text-headline-md font-headline-md text-on-primary">Commerce</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curiosity Teaser (Floating Level 2) -->
+<div class="absolute bottom-margin-desktop left-1/2 -translate-x-1/2 w-full max-w-lg px-margin-mobile md:px-0 z-30">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md border border-primary/20 rounded-full p-sm pl-lg pr-sm shadow-[0_15px_40px_rgba(28,27,27,0.08)] flex items-center justify-between gap-md">
+<div class="flex items-center gap-md overflow-hidden whitespace-nowrap">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="auto_awesome">auto_awesome</span>
+<p class="text-body-md font-body-md text-on-surface-variant truncate">
+<span class="text-label-md font-label-md text-primary font-bold mr-2">MATCH SIGNAL:</span> 
+                        One category scored unusually high... <span class="filter blur-[5px] select-none text-on-surface ml-1 bg-surface-variant/30 rounded px-2">High Margin SaaS</span>
+</p>
+</div>
+<!-- Subtle indicator to suggest waiting -->
+<div class="flex gap-1 pr-md">
+<div class="w-1.5 h-1.5 rounded-full bg-primary/40 animate-bounce" style="animation-delay: 0s;"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-primary/60 animate-bounce" style="animation-delay: 0.2s;"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce" style="animation-delay: 0.4s;"></div>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Inline script to handle specific Material Symbols logic if dynamically added later,
+        // though static HTML handles it via the class.
+        document.addEventListener("DOMContentLoaded", () => {
+            const icons = document.querySelectorAll('[data-icon]');
+            icons.forEach(icon => {
+                if(!icon.classList.contains('material-symbols-outlined')) {
+                    icon.classList.add('material-symbols-outlined');
+                }
+                icon.textContent = icon.getAttribute('data-icon');
+                if (icon.getAttribute('data-weight') === 'fill') {
+                    icon.style.fontVariationSettings = "'FILL' 1";
+                }
+            });
+        });
+    </script>
+</body></html>

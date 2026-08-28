@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Question 14</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#410006",
+                      "tertiary": "#a53337",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#ffdad8",
+                      "outline": "#767586",
+                      "background": "#fcf9f8",
+                      "surface-tint": "#494bd6",
+                      "surface-container": "#f0eded",
+                      "secondary-fixed-dim": "#a4d64c",
+                      "on-secondary-fixed": "#131f00",
+                      "on-secondary-fixed-variant": "#354e00",
+                      "on-primary-fixed": "#07006c",
+                      "primary-fixed": "#e1e0ff",
+                      "on-surface": "#1c1b1b",
+                      "surface-dim": "#dcd9d9",
+                      "tertiary-fixed-dim": "#ffb3b0",
+                      "surface": "#fcf9f8",
+                      "on-background": "#1c1b1b",
+                      "surface-container-low": "#f6f3f2",
+                      "on-surface-variant": "#464554",
+                      "inverse-on-surface": "#f3f0ef",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#4b6d00",
+                      "on-tertiary-container": "#fffbff",
+                      "surface-variant": "#e5e2e1",
+                      "inverse-surface": "#313030",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "primary": "#4648d4",
+                      "surface-container-highest": "#e5e2e1",
+                      "outline-variant": "#c7c4d7",
+                      "surface-container-high": "#eae7e7",
+                      "tertiary-container": "#c64b4d",
+                      "surface-bright": "#fcf9f8",
+                      "on-primary-container": "#fffbff",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#c0c1ff",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#6063ee",
+                      "secondary": "#476800",
+                      "primary-fixed-dim": "#c0c1ff",
+                      "secondary-fixed": "#bff365",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#bcf063",
+                      "on-primary-fixed-variant": "#2f2ebe",
+                      "on-tertiary-fixed-variant": "#881d24"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "lg": "24px",
+                      "xl": "40px",
+                      "md": "16px",
+                      "unit": "4px",
+                      "sm": "8px",
+                      "gutter": "20px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "display-lg-mobile": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased md:hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Area (Suppressed Main Nav for Transactional Flow, Minimal Branding Header instead) -->
+<header class="w-full px-margin-mobile py-md flex justify-between items-center z-50 sticky top-0 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+<button aria-label="Back" class="p-sm rounded-full hover:bg-surface-variant transition-colors flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight">EscapePlan</div>
+<button aria-label="Close" class="p-sm rounded-full hover:bg-surface-variant transition-colors flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col px-margin-mobile pt-lg pb-xl max-w-full overflow-x-hidden">
+<!-- Progress Section -->
+<div class="w-full mb-xl">
+<div class="flex justify-between items-center mb-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Question 14 of 14</span>
+<span class="text-label-sm font-label-sm text-primary font-bold">96%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 96%; transition: width 0.5s ease-in-out;"></div>
+</div>
+</div>
+<!-- Question Header -->
+<div class="mb-xl flex flex-col gap-sm">
+<p class="text-label-md font-label-md text-primary tracking-wide">One last thing.</p>
+<h1 class="text-display-lg-mobile font-display-lg-mobile text-on-surface">What scares you most about starting a business?</h1>
+</div>
+<!-- Choices (Bento/Card List) -->
+<div class="flex flex-col gap-md mb-xl flex-1">
+<label class="relative flex items-center justify-between p-lg rounded-xl border border-surface-variant bg-surface-container-lowest hover:border-primary hover:shadow-[0_15px_40px_-15px_rgba(99,102,241,0.08)] transition-all cursor-pointer group">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface font-medium">Losing my savings</span>
+</div>
+<input class="w-5 h-5 text-primary border-outline-variant focus:ring-primary bg-transparent rounded-full" name="fear" type="radio"/>
+</label>
+<label class="relative flex items-center justify-between p-lg rounded-xl border border-surface-variant bg-surface-container-lowest hover:border-primary hover:shadow-[0_15px_40px_-15px_rgba(99,102,241,0.08)] transition-all cursor-pointer group">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface font-medium">Picking the wrong idea</span>
+</div>
+<input class="w-5 h-5 text-primary border-outline-variant focus:ring-primary bg-transparent rounded-full" name="fear" type="radio"/>
+</label>
+<label class="relative flex items-center justify-between p-lg rounded-xl border border-surface-variant bg-surface-container-lowest hover:border-primary hover:shadow-[0_15px_40px_-15px_rgba(99,102,241,0.08)] transition-all cursor-pointer group">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface font-medium">Failing publicly</span>
+</div>
+<input class="w-5 h-5 text-primary border-outline-variant focus:ring-primary bg-transparent rounded-full" name="fear" type="radio"/>
+</label>
+<label class="relative flex items-center justify-between p-lg rounded-xl border border-surface-variant bg-surface-container-lowest hover:border-primary hover:shadow-[0_15px_40px_-15px_rgba(99,102,241,0.08)] transition-all cursor-pointer group">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface font-medium">Not having enough time</span>
+</div>
+<input class="w-5 h-5 text-primary border-outline-variant focus:ring-primary bg-transparent rounded-full" name="fear" type="radio"/>
+</label>
+</div>
+<!-- Sticky Bottom CTA Area -->
+<div class="mt-auto pt-lg">
+<button class="w-full h-[56px] bg-primary text-on-primary rounded-xl text-label-md font-label-md flex items-center justify-center gap-sm hover:opacity-90 active:scale-[0.98] transition-all shadow-[0_10px_30px_-10px_rgba(70,72,212,0.4)]">
+                 Build My EscapePlan 
+                 <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant mt-sm">Your answers are ready.</p>
+</div>
+</main>
+<!-- Footer omitted for transactional flow as per guidelines -->
+</body></html>

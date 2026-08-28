@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Analysis Mid-state</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "background": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary-fixed": "#07006c",
+                        "primary": "#4648d4",
+                        "surface-tint": "#494bd6",
+                        "primary-container": "#6063ee",
+                        "secondary-fixed-dim": "#a4d64c",
+                        "error-container": "#ffdad6",
+                        "outline": "#767586",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "on-surface": "#1c1b1b",
+                        "inverse-surface": "#313030",
+                        "tertiary-container": "#c64b4d",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-container": "#fffbff",
+                        "tertiary-fixed": "#ffdad8",
+                        "inverse-primary": "#c0c1ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#4b6d00",
+                        "on-secondary-fixed": "#131f00",
+                        "outline-variant": "#c7c4d7",
+                        "secondary-container": "#bcf063",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary": "#a53337",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#354e00",
+                        "error": "#ba1a1a",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-fixed": "#410006",
+                        "on-tertiary-fixed-variant": "#881d24",
+                        "on-primary": "#ffffff",
+                        "secondary": "#476800",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "primary-fixed": "#e1e0ff",
+                        "on-surface-variant": "#464554",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-fixed": "#bff365"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "md": "16px",
+                        "gutter": "20px",
+                        "sm": "8px",
+                        "margin-desktop": "64px",
+                        "lg": "24px",
+                        "margin-mobile": "20px",
+                        "xs": "4px",
+                        "xl": "40px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        
+        .pulse-ring {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col items-center justify-center font-sans antialiased px-margin-mobile">
+<!-- Top AppBar (Simplified for mid-state analysis) -->
+<header class="w-full max-w-md absolute top-0 left-0 right-0 p-margin-mobile flex justify-center z-50">
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight">EscapePlan</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-md flex flex-col items-center gap-xl py-xl">
+<!-- Progress Ring Section -->
+<div class="relative w-64 h-64 flex items-center justify-center fade-in-up" style="animation-delay: 0.1s;">
+<!-- Background Ring -->
+<svg class="absolute inset-0 w-full h-full" viewbox="0 0 120 120">
+<circle class="text-surface-variant stroke-[8px]" cx="60" cy="60" fill="none" r="54" stroke="currentColor"></circle>
+</svg>
+<!-- Animated Progress Ring (62%) -->
+<svg class="absolute inset-0 w-full h-full drop-shadow-[0_10px_15px_rgba(70,72,212,0.15)]" viewbox="0 0 120 120">
+<circle class="progress-ring__circle text-primary stroke-[8px] stroke-current" cx="60" cy="60" fill="none" r="54" stroke-dasharray="339.292" stroke-dashoffset="128.93" stroke-linecap="round">
+</circle>
+</svg>
+<!-- Central Percentage -->
+<div class="flex flex-col items-center justify-center z-10 text-center">
+<span class="text-display-lg-mobile font-display-lg-mobile text-on-background">62%</span>
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider mt-1">Analyzing</span>
+</div>
+</div>
+<!-- Status & Details -->
+<div class="flex flex-col items-center text-center gap-sm fade-in-up" style="animation-delay: 0.2s;">
+<h2 class="text-headline-md font-headline-md text-on-background pulse-ring">Checking your income target...</h2>
+<div class="bg-primary-fixed/30 text-on-primary-fixed px-md py-sm rounded-full text-label-md font-label-md border border-primary-fixed-dim/20 shadow-[0_4px_10px_rgba(70,72,212,0.05)]">
+                ₹1L / month
+            </div>
+</div>
+<!-- Insight Box (Glassmorphism/Card) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-lg shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-surface-variant fade-in-up" style="animation-delay: 0.3s;">
+<div class="flex gap-md items-start">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary-fixed/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-fixed" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div>
+<h3 class="text-label-md font-label-md text-on-background mb-unit">Early Insight</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Your goal requires a business capable of scaling beyond self-employment.</p>
+</div>
+</div>
+</div>
+<!-- Completed Checks List -->
+<div class="w-full flex flex-col gap-sm mt-md fade-in-up" style="animation-delay: 0.4s;">
+<!-- Check 1 -->
+<div class="flex items-center gap-md p-md bg-surface-container-low rounded-lg border border-surface-variant/50 opacity-80">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-md font-body-md text-on-background">Capital constraints verified</span>
+</div>
+<!-- Check 2 -->
+<div class="flex items-center gap-md p-md bg-surface-container-low rounded-lg border border-surface-variant/50 opacity-80">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-md font-body-md text-on-background">Time availability logged</span>
+</div>
+<!-- Check 3 -->
+<div class="flex items-center gap-md p-md bg-surface-container-low rounded-lg border border-surface-variant/50 opacity-80">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-md font-body-md text-on-background">Risk tolerance assessed</span>
+</div>
+<!-- Active Check -->
+<div class="flex items-center gap-md p-md rounded-lg relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 pulse-ring"></div>
+<span class="material-symbols-outlined text-primary pulse-ring">progress_activity</span>
+<span class="text-body-md font-body-md text-primary font-medium z-10">Evaluating business models...</span>
+</div>
+</div>
+</main>
+<script>
+        // Simple script to animate the progress ring smoothly on load if needed, 
+        // though CSS handles the initial offset.
+        document.addEventListener("DOMContentLoaded", () => {
+            const circle = document.querySelector('.progress-ring__circle');
+            const radius = circle.r.baseVal.value;
+            const circumference = radius * 2 * Math.PI;
+            
+            circle.style.strokeDasharray = `${circumference} ${circumference}`;
+            circle.style.strokeDashoffset = `${circumference}`;
+
+            // Set to 62%
+            const percent = 62;
+            const offset = circumference - percent / 100 * circumference;
+            
+            // Small delay to allow CSS transition to catch
+            setTimeout(() => {
+                circle.style.strokeDashoffset = offset;
+            }, 100);
+        });
+    </script>
+</body></html>

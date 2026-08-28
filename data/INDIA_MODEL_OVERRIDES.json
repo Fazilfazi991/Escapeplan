@@ -1,0 +1,2197 @@
+{
+  "overlay_version": "IN-2026.08-v1",
+  "base_dataset_version": "business-models-in-v1.0.0",
+  "country": "IN",
+  "currency": "INR",
+  "overrides": [
+    {
+      "business_model_id": "niche-ecommerce",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 1000000,
+        "indicative_high_minor": 2500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 1000000,
+        "typical_startup_low_minor": 10000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 10000000,
+        "ideal_high_minor": 60000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 60,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:niche-ecommerce:minimum_validation_cash_required:v1",
+        "IN:niche-ecommerce:typical_startup_capital_range:v1",
+        "IN:niche-ecommerce:time_to_validation_days:v1",
+        "IN:niche-ecommerce:time_to_first_revenue_days:v1",
+        "IN:niche-ecommerce:regulatory_complexity_score:v1",
+        "IN:niche-ecommerce:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "local-same-day-commerce",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 1500000,
+        "indicative_high_minor": 3750000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 1500000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 80000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 80000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 80,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:local-same-day-commerce:minimum_validation_cash_required:v1",
+        "IN:local-same-day-commerce:typical_startup_capital_range:v1",
+        "IN:local-same-day-commerce:time_to_validation_days:v1",
+        "IN:local-same-day-commerce:time_to_first_revenue_days:v1",
+        "IN:local-same-day-commerce:regulatory_complexity_score:v1",
+        "IN:local-same-day-commerce:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "subscription-commerce",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 2000000,
+        "indicative_high_minor": 5000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 2000000,
+        "typical_startup_low_minor": 20000000,
+        "typical_startup_high_minor": 90000000,
+        "ideal_low_minor": 20000000,
+        "ideal_high_minor": 90000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 80,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:subscription-commerce:minimum_validation_cash_required:v1",
+        "IN:subscription-commerce:typical_startup_capital_range:v1",
+        "IN:subscription-commerce:time_to_validation_days:v1",
+        "IN:subscription-commerce:time_to_first_revenue_days:v1",
+        "IN:subscription-commerce:regulatory_complexity_score:v1",
+        "IN:subscription-commerce:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "import-resale",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 3000000,
+        "indicative_high_minor": 7500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 3000000,
+        "typical_startup_low_minor": 30000000,
+        "typical_startup_high_minor": 150000000,
+        "ideal_low_minor": 30000000,
+        "ideal_high_minor": 150000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 80,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:import-resale:minimum_validation_cash_required:v1",
+        "IN:import-resale:typical_startup_capital_range:v1",
+        "IN:import-resale:time_to_validation_days:v1",
+        "IN:import-resale:time_to_first_revenue_days:v1",
+        "IN:import-resale:regulatory_complexity_score:v1",
+        "IN:import-resale:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "wholesale-distribution",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 6000000,
+        "indicative_high_minor": 15000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 6000000,
+        "typical_startup_low_minor": 60000000,
+        "typical_startup_high_minor": 300000000,
+        "ideal_low_minor": 60000000,
+        "ideal_high_minor": 300000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 80,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel.",
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:wholesale-distribution:minimum_validation_cash_required:v1",
+        "IN:wholesale-distribution:typical_startup_capital_range:v1",
+        "IN:wholesale-distribution:time_to_validation_days:v1",
+        "IN:wholesale-distribution:time_to_first_revenue_days:v1",
+        "IN:wholesale-distribution:regulatory_complexity_score:v1",
+        "IN:wholesale-distribution:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "private-label-product",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 2500000,
+        "indicative_high_minor": 6250000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 2500000,
+        "typical_startup_low_minor": 25000000,
+        "typical_startup_high_minor": 120000000,
+        "ideal_low_minor": 25000000,
+        "ideal_high_minor": 120000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 70,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:private-label-product:minimum_validation_cash_required:v1",
+        "IN:private-label-product:typical_startup_capital_range:v1",
+        "IN:private-label-product:time_to_validation_days:v1",
+        "IN:private-label-product:time_to_first_revenue_days:v1",
+        "IN:private-label-product:regulatory_complexity_score:v1",
+        "IN:private-label-product:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "print-on-demand",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Publish mock-ups and collect paid pre-orders before placing any production order.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 15000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:print-on-demand:minimum_validation_cash_required:v1",
+        "IN:print-on-demand:typical_startup_capital_range:v1",
+        "IN:print-on-demand:time_to_validation_days:v1",
+        "IN:print-on-demand:time_to_first_revenue_days:v1",
+        "IN:print-on-demand:regulatory_complexity_score:v1",
+        "IN:print-on-demand:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "creator-commerce",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Test audience response and pre-orders through an existing social channel before holding stock.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 3000000,
+        "typical_startup_high_minor": 25000000,
+        "ideal_low_minor": 3000000,
+        "ideal_high_minor": 25000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:creator-commerce:minimum_validation_cash_required:v1",
+        "IN:creator-commerce:typical_startup_capital_range:v1",
+        "IN:creator-commerce:time_to_validation_days:v1",
+        "IN:creator-commerce:time_to_first_revenue_days:v1",
+        "IN:creator-commerce:regulatory_complexity_score:v1",
+        "IN:creator-commerce:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "d2c-beauty",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 4000000,
+        "indicative_high_minor": 10000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 4000000,
+        "typical_startup_low_minor": 40000000,
+        "typical_startup_high_minor": 180000000,
+        "ideal_low_minor": 40000000,
+        "ideal_high_minor": 180000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 90,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "GST and marketplace obligations depend on turnover, supply pattern and channel."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:d2c-beauty:minimum_validation_cash_required:v1",
+        "IN:d2c-beauty:typical_startup_capital_range:v1",
+        "IN:d2c-beauty:time_to_validation_days:v1",
+        "IN:d2c-beauty:time_to_first_revenue_days:v1",
+        "IN:d2c-beauty:regulatory_complexity_score:v1",
+        "IN:d2c-beauty:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "shopify",
+        "ondc",
+        "gst",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "vending-automated-retail",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 5000000,
+        "indicative_high_minor": 12500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 5000000,
+        "typical_startup_low_minor": 50000000,
+        "typical_startup_high_minor": 250000000,
+        "ideal_low_minor": 50000000,
+        "ideal_high_minor": 250000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 70,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:vending-automated-retail:minimum_validation_cash_required:v1",
+        "IN:vending-automated-retail:typical_startup_capital_range:v1",
+        "IN:vending-automated-retail:time_to_validation_days:v1",
+        "IN:vending-automated-retail:time_to_first_revenue_days:v1",
+        "IN:vending-automated-retail:regulatory_complexity_score:v1",
+        "IN:vending-automated-retail:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "micro-saas",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 300000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 3000000,
+        "typical_startup_high_minor": 25000000,
+        "ideal_low_minor": 3000000,
+        "ideal_high_minor": 25000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:micro-saas:minimum_validation_cash_required:v1",
+        "IN:micro-saas:typical_startup_capital_range:v1",
+        "IN:micro-saas:time_to_validation_days:v1",
+        "IN:micro-saas:time_to_first_revenue_days:v1",
+        "IN:micro-saas:regulatory_complexity_score:v1",
+        "IN:micro-saas:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "vertical-saas",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 60000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 40,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:vertical-saas:minimum_validation_cash_required:v1",
+        "IN:vertical-saas:typical_startup_capital_range:v1",
+        "IN:vertical-saas:time_to_validation_days:v1",
+        "IN:vertical-saas:time_to_first_revenue_days:v1",
+        "IN:vertical-saas:regulatory_complexity_score:v1",
+        "IN:vertical-saas:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "ai-utility-website",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 200000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 20000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 20000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:ai-utility-website:minimum_validation_cash_required:v1",
+        "IN:ai-utility-website:typical_startup_capital_range:v1",
+        "IN:ai-utility-website:time_to_validation_days:v1",
+        "IN:ai-utility-website:time_to_first_revenue_days:v1",
+        "IN:ai-utility-website:regulatory_complexity_score:v1",
+        "IN:ai-utility-website:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "consumer-digital-tool",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 400000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 4000000,
+        "typical_startup_high_minor": 30000000,
+        "ideal_low_minor": 4000000,
+        "ideal_high_minor": 30000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:consumer-digital-tool:minimum_validation_cash_required:v1",
+        "IN:consumer-digital-tool:typical_startup_capital_range:v1",
+        "IN:consumer-digital-tool:time_to_validation_days:v1",
+        "IN:consumer-digital-tool:time_to_first_revenue_days:v1",
+        "IN:consumer-digital-tool:regulatory_complexity_score:v1",
+        "IN:consumer-digital-tool:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "business-data-product",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 300000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 18000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 18000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:business-data-product:minimum_validation_cash_required:v1",
+        "IN:business-data-product:typical_startup_capital_range:v1",
+        "IN:business-data-product:time_to_validation_days:v1",
+        "IN:business-data-product:time_to_first_revenue_days:v1",
+        "IN:business-data-product:regulatory_complexity_score:v1",
+        "IN:business-data-product:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "paid-newsletter",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 100000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 8000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 8000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:paid-newsletter:minimum_validation_cash_required:v1",
+        "IN:paid-newsletter:typical_startup_capital_range:v1",
+        "IN:paid-newsletter:time_to_validation_days:v1",
+        "IN:paid-newsletter:time_to_first_revenue_days:v1",
+        "IN:paid-newsletter:regulatory_complexity_score:v1",
+        "IN:paid-newsletter:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "education-membership",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 200000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 15000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:education-membership:minimum_validation_cash_required:v1",
+        "IN:education-membership:typical_startup_capital_range:v1",
+        "IN:education-membership:time_to_validation_days:v1",
+        "IN:education-membership:time_to_first_revenue_days:v1",
+        "IN:education-membership:regulatory_complexity_score:v1",
+        "IN:education-membership:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "online-course",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 200000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 1500000,
+        "typical_startup_high_minor": 12000000,
+        "ideal_low_minor": 1500000,
+        "ideal_high_minor": 12000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:online-course:minimum_validation_cash_required:v1",
+        "IN:online-course:typical_startup_capital_range:v1",
+        "IN:online-course:time_to_validation_days:v1",
+        "IN:online-course:time_to_first_revenue_days:v1",
+        "IN:online-course:regulatory_complexity_score:v1",
+        "IN:online-course:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "digital-downloads",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 100000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 500000,
+        "typical_startup_high_minor": 5000000,
+        "ideal_low_minor": 500000,
+        "ideal_high_minor": 5000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 10,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:digital-downloads:minimum_validation_cash_required:v1",
+        "IN:digital-downloads:typical_startup_capital_range:v1",
+        "IN:digital-downloads:time_to_validation_days:v1",
+        "IN:digital-downloads:time_to_first_revenue_days:v1",
+        "IN:digital-downloads:regulatory_complexity_score:v1",
+        "IN:digital-downloads:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "affiliate-content",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 100000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 10000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 10000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 10,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:affiliate-content:minimum_validation_cash_required:v1",
+        "IN:affiliate-content:typical_startup_capital_range:v1",
+        "IN:affiliate-content:time_to_validation_days:v1",
+        "IN:affiliate-content:time_to_first_revenue_days:v1",
+        "IN:affiliate-content:regulatory_complexity_score:v1",
+        "IN:affiliate-content:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "lead-generation-asset",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 200000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 15000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:lead-generation-asset:minimum_validation_cash_required:v1",
+        "IN:lead-generation-asset:typical_startup_capital_range:v1",
+        "IN:lead-generation-asset:time_to_validation_days:v1",
+        "IN:lead-generation-asset:time_to_first_revenue_days:v1",
+        "IN:lead-generation-asset:regulatory_complexity_score:v1",
+        "IN:lead-generation-asset:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "directory-platform",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 300000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 18000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 18000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:directory-platform:minimum_validation_cash_required:v1",
+        "IN:directory-platform:typical_startup_capital_range:v1",
+        "IN:directory-platform:time_to_validation_days:v1",
+        "IN:directory-platform:time_to_first_revenue_days:v1",
+        "IN:directory-platform:regulatory_complexity_score:v1",
+        "IN:directory-platform:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "job-marketplace",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 6000000,
+        "typical_startup_high_minor": 45000000,
+        "ideal_low_minor": 6000000,
+        "ideal_high_minor": 45000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 40,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:job-marketplace:minimum_validation_cash_required:v1",
+        "IN:job-marketplace:typical_startup_capital_range:v1",
+        "IN:job-marketplace:time_to_validation_days:v1",
+        "IN:job-marketplace:time_to_first_revenue_days:v1",
+        "IN:job-marketplace:regulatory_complexity_score:v1",
+        "IN:job-marketplace:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "booking-marketplace",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 60000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 40,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:booking-marketplace:minimum_validation_cash_required:v1",
+        "IN:booking-marketplace:typical_startup_capital_range:v1",
+        "IN:booking-marketplace:time_to_validation_days:v1",
+        "IN:booking-marketplace:time_to_first_revenue_days:v1",
+        "IN:booking-marketplace:regulatory_complexity_score:v1",
+        "IN:booking-marketplace:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "b2b-marketplace",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 100000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 100000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 50,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:b2b-marketplace:minimum_validation_cash_required:v1",
+        "IN:b2b-marketplace:typical_startup_capital_range:v1",
+        "IN:b2b-marketplace:time_to_validation_days:v1",
+        "IN:b2b-marketplace:time_to_first_revenue_days:v1",
+        "IN:b2b-marketplace:regulatory_complexity_score:v1",
+        "IN:b2b-marketplace:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "software-marketplace",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 7000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 7000000,
+        "ideal_high_minor": 50000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:software-marketplace:minimum_validation_cash_required:v1",
+        "IN:software-marketplace:typical_startup_capital_range:v1",
+        "IN:software-marketplace:time_to_validation_days:v1",
+        "IN:software-marketplace:time_to_first_revenue_days:v1",
+        "IN:software-marketplace:regulatory_complexity_score:v1",
+        "IN:software-marketplace:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "niche-community",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 100000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Use a free landing page, direct outreach, or manual prototype to collect qualified intent before building.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 10000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 10000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:niche-community:minimum_validation_cash_required:v1",
+        "IN:niche-community:typical_startup_capital_range:v1",
+        "IN:niche-community:time_to_validation_days:v1",
+        "IN:niche-community:time_to_first_revenue_days:v1",
+        "IN:niche-community:regulatory_complexity_score:v1",
+        "IN:niche-community:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "aws",
+        "mca",
+        "gst",
+        "scheme"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "freelancing",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 500000,
+        "typical_startup_high_minor": 3000000,
+        "ideal_low_minor": 500000,
+        "ideal_high_minor": 3000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 10,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:freelancing:minimum_validation_cash_required:v1",
+        "IN:freelancing:typical_startup_capital_range:v1",
+        "IN:freelancing:time_to_validation_days:v1",
+        "IN:freelancing:time_to_first_revenue_days:v1",
+        "IN:freelancing:regulatory_complexity_score:v1",
+        "IN:freelancing:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "agency",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 200000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 15000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:agency:minimum_validation_cash_required:v1",
+        "IN:agency:typical_startup_capital_range:v1",
+        "IN:agency:time_to_validation_days:v1",
+        "IN:agency:time_to_first_revenue_days:v1",
+        "IN:agency:regulatory_complexity_score:v1",
+        "IN:agency:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "consulting",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 100000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 8000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 8000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 20,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:consulting:minimum_validation_cash_required:v1",
+        "IN:consulting:typical_startup_capital_range:v1",
+        "IN:consulting:time_to_validation_days:v1",
+        "IN:consulting:time_to_first_revenue_days:v1",
+        "IN:consulting:regulatory_complexity_score:v1",
+        "IN:consulting:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "specialized-recruitment",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 300000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 18000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 18000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:specialized-recruitment:minimum_validation_cash_required:v1",
+        "IN:specialized-recruitment:typical_startup_capital_range:v1",
+        "IN:specialized-recruitment:time_to_validation_days:v1",
+        "IN:specialized-recruitment:time_to_first_revenue_days:v1",
+        "IN:specialized-recruitment:regulatory_complexity_score:v1",
+        "IN:specialized-recruitment:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "local-service-brand",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 3000000,
+        "typical_startup_high_minor": 20000000,
+        "ideal_low_minor": 3000000,
+        "ideal_high_minor": 20000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:local-service-brand:minimum_validation_cash_required:v1",
+        "IN:local-service-brand:typical_startup_capital_range:v1",
+        "IN:local-service-brand:time_to_validation_days:v1",
+        "IN:local-service-brand:time_to_first_revenue_days:v1",
+        "IN:local-service-brand:regulatory_complexity_score:v1",
+        "IN:local-service-brand:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "mobile-service-business",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 5000000,
+        "typical_startup_high_minor": 30000000,
+        "ideal_low_minor": 5000000,
+        "ideal_high_minor": 30000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:mobile-service-business:minimum_validation_cash_required:v1",
+        "IN:mobile-service-business:typical_startup_capital_range:v1",
+        "IN:mobile-service-business:time_to_validation_days:v1",
+        "IN:mobile-service-business:time_to_first_revenue_days:v1",
+        "IN:mobile-service-business:regulatory_complexity_score:v1",
+        "IN:mobile-service-business:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "home-services-platform",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 1500000,
+        "indicative_high_minor": 3750000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 1500000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 90000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 90000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 50,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:home-services-platform:minimum_validation_cash_required:v1",
+        "IN:home-services-platform:typical_startup_capital_range:v1",
+        "IN:home-services-platform:time_to_validation_days:v1",
+        "IN:home-services-platform:time_to_first_revenue_days:v1",
+        "IN:home-services-platform:regulatory_complexity_score:v1",
+        "IN:home-services-platform:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "property-service",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 50000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 50,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:property-service:minimum_validation_cash_required:v1",
+        "IN:property-service:typical_startup_capital_range:v1",
+        "IN:property-service:time_to_validation_days:v1",
+        "IN:property-service:time_to_first_revenue_days:v1",
+        "IN:property-service:regulatory_complexity_score:v1",
+        "IN:property-service:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "automotive-service",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 2500000,
+        "indicative_high_minor": 6000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 2500000,
+        "typical_startup_low_minor": 25000000,
+        "typical_startup_high_minor": 120000000,
+        "ideal_low_minor": 25000000,
+        "ideal_high_minor": 120000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 60,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Vehicle and operating permits depend on route and state."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:automotive-service:minimum_validation_cash_required:v1",
+        "IN:automotive-service:typical_startup_capital_range:v1",
+        "IN:automotive-service:time_to_validation_days:v1",
+        "IN:automotive-service:time_to_first_revenue_days:v1",
+        "IN:automotive-service:regulatory_complexity_score:v1",
+        "IN:automotive-service:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "permit",
+        "udyam",
+        "gst"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "event-business",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 50000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 50,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:event-business:minimum_validation_cash_required:v1",
+        "IN:event-business:typical_startup_capital_range:v1",
+        "IN:event-business:time_to_validation_days:v1",
+        "IN:event-business:time_to_first_revenue_days:v1",
+        "IN:event-business:regulatory_complexity_score:v1",
+        "IN:event-business:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "local-experiences",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 5000000,
+        "typical_startup_high_minor": 30000000,
+        "ideal_low_minor": 5000000,
+        "ideal_high_minor": 30000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 30,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:local-experiences:minimum_validation_cash_required:v1",
+        "IN:local-experiences:typical_startup_capital_range:v1",
+        "IN:local-experiences:time_to_validation_days:v1",
+        "IN:local-experiences:time_to_first_revenue_days:v1",
+        "IN:local-experiences:regulatory_complexity_score:v1",
+        "IN:local-experiences:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "rental-business",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 2500000,
+        "indicative_high_minor": 6000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 2500000,
+        "typical_startup_low_minor": 25000000,
+        "typical_startup_high_minor": 150000000,
+        "ideal_low_minor": 25000000,
+        "ideal_high_minor": 150000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 50,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Vehicle and operating permits depend on route and state.",
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:rental-business:minimum_validation_cash_required:v1",
+        "IN:rental-business:typical_startup_capital_range:v1",
+        "IN:rental-business:time_to_validation_days:v1",
+        "IN:rental-business:time_to_first_revenue_days:v1",
+        "IN:rental-business:regulatory_complexity_score:v1",
+        "IN:rental-business:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "permit",
+        "udyam",
+        "gst"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "cloud-kitchen",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 4000000,
+        "indicative_high_minor": 10000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 4000000,
+        "typical_startup_low_minor": 40000000,
+        "typical_startup_high_minor": 200000000,
+        "ideal_low_minor": 40000000,
+        "ideal_high_minor": 200000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 100,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "FSSAI registration or licence applies to food businesses.",
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:cloud-kitchen:minimum_validation_cash_required:v1",
+        "IN:cloud-kitchen:typical_startup_capital_range:v1",
+        "IN:cloud-kitchen:time_to_validation_days:v1",
+        "IN:cloud-kitchen:time_to_first_revenue_days:v1",
+        "IN:cloud-kitchen:regulatory_complexity_score:v1",
+        "IN:cloud-kitchen:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "fssai",
+        "startup",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "specialist-food-brand",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 1500000,
+        "indicative_high_minor": 3750000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 1500000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 80000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 80000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 90,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "FSSAI registration or licence applies to food businesses."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:specialist-food-brand:minimum_validation_cash_required:v1",
+        "IN:specialist-food-brand:typical_startup_capital_range:v1",
+        "IN:specialist-food-brand:time_to_validation_days:v1",
+        "IN:specialist-food-brand:time_to_first_revenue_days:v1",
+        "IN:specialist-food-brand:regulatory_complexity_score:v1",
+        "IN:specialist-food-brand:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "fssai",
+        "startup",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "restaurant-cafe",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 10000000,
+        "indicative_high_minor": 20000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 10000000,
+        "typical_startup_low_minor": 100000000,
+        "typical_startup_high_minor": 500000000,
+        "ideal_low_minor": 100000000,
+        "ideal_high_minor": 500000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 100,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "FSSAI registration or licence applies to food businesses.",
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:restaurant-cafe:minimum_validation_cash_required:v1",
+        "IN:restaurant-cafe:typical_startup_capital_range:v1",
+        "IN:restaurant-cafe:time_to_validation_days:v1",
+        "IN:restaurant-cafe:time_to_first_revenue_days:v1",
+        "IN:restaurant-cafe:regulatory_complexity_score:v1",
+        "IN:restaurant-cafe:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "fssai",
+        "startup",
+        "udyam"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "small-retail-store",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 6000000,
+        "indicative_high_minor": 15000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 6000000,
+        "typical_startup_low_minor": 60000000,
+        "typical_startup_high_minor": 300000000,
+        "ideal_low_minor": 60000000,
+        "ideal_high_minor": 300000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 80,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:small-retail-store:minimum_validation_cash_required:v1",
+        "IN:small-retail-store:typical_startup_capital_range:v1",
+        "IN:small-retail-store:time_to_validation_days:v1",
+        "IN:small-retail-store:time_to_first_revenue_days:v1",
+        "IN:small-retail-store:regulatory_complexity_score:v1",
+        "IN:small-retail-store:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "self-service-kiosk",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 5000000,
+        "indicative_high_minor": 12000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 5000000,
+        "typical_startup_low_minor": 50000000,
+        "typical_startup_high_minor": 250000000,
+        "ideal_low_minor": 50000000,
+        "ideal_high_minor": 250000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 70,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:self-service-kiosk:minimum_validation_cash_required:v1",
+        "IN:self-service-kiosk:typical_startup_capital_range:v1",
+        "IN:self-service-kiosk:time_to_validation_days:v1",
+        "IN:self-service-kiosk:time_to_first_revenue_days:v1",
+        "IN:self-service-kiosk:regulatory_complexity_score:v1",
+        "IN:self-service-kiosk:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "franchise",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 12000000,
+        "indicative_high_minor": 30000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 12000000,
+        "typical_startup_low_minor": 120000000,
+        "typical_startup_high_minor": 600000000,
+        "ideal_low_minor": 120000000,
+        "ideal_high_minor": 600000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 100,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:franchise:minimum_validation_cash_required:v1",
+        "IN:franchise:typical_startup_capital_range:v1",
+        "IN:franchise:time_to_validation_days:v1",
+        "IN:franchise:time_to_first_revenue_days:v1",
+        "IN:franchise:regulatory_complexity_score:v1",
+        "IN:franchise:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "local-logistics",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 3000000,
+        "indicative_high_minor": 7500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 3000000,
+        "typical_startup_low_minor": 30000000,
+        "typical_startup_high_minor": 180000000,
+        "ideal_low_minor": 30000000,
+        "ideal_high_minor": 180000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 60,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Vehicle and operating permits depend on route and state.",
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "medium",
+      "evidence_ids": [
+        "IN:local-logistics:minimum_validation_cash_required:v1",
+        "IN:local-logistics:typical_startup_capital_range:v1",
+        "IN:local-logistics:time_to_validation_days:v1",
+        "IN:local-logistics:time_to_first_revenue_days:v1",
+        "IN:local-logistics:regulatory_complexity_score:v1",
+        "IN:local-logistics:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "permit",
+        "udyam",
+        "gst"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "physical-manufacturing",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 12000000,
+        "indicative_high_minor": 30000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 12000000,
+        "typical_startup_low_minor": 120000000,
+        "typical_startup_high_minor": 800000000,
+        "ideal_low_minor": 120000000,
+        "ideal_high_minor": 800000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 90,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:physical-manufacturing:minimum_validation_cash_required:v1",
+        "IN:physical-manufacturing:typical_startup_capital_range:v1",
+        "IN:physical-manufacturing:time_to_validation_days:v1",
+        "IN:physical-manufacturing:time_to_first_revenue_days:v1",
+        "IN:physical-manufacturing:regulatory_complexity_score:v1",
+        "IN:physical-manufacturing:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "small-distribution",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 5000000,
+        "indicative_high_minor": 12000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": null,
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 5000000,
+        "typical_startup_low_minor": 50000000,
+        "typical_startup_high_minor": 250000000,
+        "ideal_low_minor": 50000000,
+        "ideal_high_minor": 250000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 70,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [
+        "Premises, trade-licence and state/local requirements vary by city."
+      ],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:small-distribution:minimum_validation_cash_required:v1",
+        "IN:small-distribution:typical_startup_capital_range:v1",
+        "IN:small-distribution:time_to_validation_days:v1",
+        "IN:small-distribution:time_to_first_revenue_days:v1",
+        "IN:small-distribution:regulatory_complexity_score:v1",
+        "IN:small-distribution:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "professional-practice",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 800000,
+        "indicative_high_minor": 2000000,
+        "currency": "INR",
+        "zero_cost_validation_supported": false,
+        "concept_validation_possible_without_launch": false,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 800000,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 50000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 80,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:professional-practice:minimum_validation_cash_required:v1",
+        "IN:professional-practice:typical_startup_capital_range:v1",
+        "IN:professional-practice:time_to_validation_days:v1",
+        "IN:professional-practice:time_to_first_revenue_days:v1",
+        "IN:professional-practice:regulatory_complexity_score:v1",
+        "IN:professional-practice:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    },
+    {
+      "business_model_id": "technical-trade-service",
+      "country": "IN",
+      "currency": "INR",
+      "overlay_version": "IN-2026.08-v1",
+      "validation_capital": {
+        "minimum_cash_required_minor": 0,
+        "indicative_high_minor": 500000,
+        "currency": "INR",
+        "zero_cost_validation_supported": true,
+        "concept_validation_possible_without_launch": true,
+        "zero_cost_validation_method": "Offer a narrowly scoped paid pilot through direct outreach before buying equipment or hiring.",
+        "launch_readiness_separate": true
+      },
+      "capital_range_override": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 10000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 10000000,
+        "ideal_high_minor": 60000000
+      },
+      "score_overrides": {},
+      "regulatory_difficulty": 50,
+      "market_maturity": null,
+      "competition_level": null,
+      "india_constraints": [],
+      "evidence_confidence": "low",
+      "evidence_ids": [
+        "IN:technical-trade-service:minimum_validation_cash_required:v1",
+        "IN:technical-trade-service:typical_startup_capital_range:v1",
+        "IN:technical-trade-service:time_to_validation_days:v1",
+        "IN:technical-trade-service:time_to_first_revenue_days:v1",
+        "IN:technical-trade-service:regulatory_complexity_score:v1",
+        "IN:technical-trade-service:zero_cost_validation_supported:v1"
+      ],
+      "source_ids": [
+        "udyam",
+        "gst",
+        "startup",
+        "profiles"
+      ],
+      "last_reviewed_at": "2026-08-28"
+    }
+  ]
+}

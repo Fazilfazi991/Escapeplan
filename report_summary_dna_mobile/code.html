@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Executive Summary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#f0eded",
+                      "secondary-container": "#bcf063",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#494bd6",
+                      "on-primary-container": "#fffbff",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary-fixed-variant": "#881d24",
+                      "surface": "#fcf9f8",
+                      "outline-variant": "#c7c4d7",
+                      "background": "#fcf9f8",
+                      "inverse-on-surface": "#f3f0ef",
+                      "inverse-primary": "#c0c1ff",
+                      "surface-container-low": "#f6f3f2",
+                      "tertiary-fixed-dim": "#ffb3b0",
+                      "on-primary-fixed-variant": "#2f2ebe",
+                      "tertiary-fixed": "#ffdad8",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary": "#476800",
+                      "secondary-fixed": "#bff365",
+                      "on-tertiary-fixed": "#410006",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed-dim": "#a4d64c",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#464554",
+                      "primary-fixed-dim": "#c0c1ff",
+                      "tertiary-container": "#c64b4d",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed": "#131f00",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#dcd9d9",
+                      "primary-fixed": "#e1e0ff",
+                      "primary": "#4648d4",
+                      "on-surface": "#1c1b1b",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-secondary-fixed-variant": "#354e00",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#07006c",
+                      "error": "#ba1a1a",
+                      "primary-container": "#6063ee",
+                      "surface-variant": "#e5e2e1",
+                      "on-secondary-container": "#4b6d00",
+                      "tertiary": "#a53337",
+                      "outline": "#767586",
+                      "on-background": "#1c1b1b",
+                      "surface-bright": "#fcf9f8",
+                      "inverse-surface": "#313030"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "lg": "24px",
+                      "margin-desktop": "64px",
+                      "gutter": "20px",
+                      "sm": "8px",
+                      "md": "16px",
+                      "margin-mobile": "20px",
+                      "xl": "40px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #F9F9F8;
+            -webkit-font-smoothing: antialiased;
+        }
+        .shadow-level-1 {
+            box-shadow: 0px 10px 30px 0px rgba(28, 27, 27, 0.04);
+        }
+        .shadow-level-2 {
+            box-shadow: 0px 15px 40px 0px rgba(70, 72, 212, 0.08);
+        }
+        .gradient-top-down {
+            background: linear-gradient(180deg, #FFFFFF 0%, #F9F9F8 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-background/80 backdrop-blur-md text-primary font-headline-md sticky full-width top-0 z-50 transition-opacity">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-[1280px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">EscapePlan</div>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col px-margin-mobile pb-xl max-w-[1280px] mx-auto w-full md:px-margin-desktop">
+<!-- Section: Executive Summary -->
+<section class="mt-xl flex flex-col gap-lg">
+<!-- Header Area -->
+<div class="flex flex-col gap-sm">
+<div class="inline-flex items-center gap-xs px-sm py-[2px] rounded-full bg-secondary-fixed/15 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Analysis Complete</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface">Executive Summary</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Your readiness profile indicates a strong foundation. The transition window is optimal within the next 18-24 months.
+                </p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mt-md">
+<!-- Readiness Score Card (Takes full width on mobile, 5 cols on md) -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-level-1 border border-surface-variant flex flex-col justify-between md:col-span-5 h-[280px]">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-md text-headline-md text-on-surface">Readiness Score</h2>
+<button class="text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+</button>
+</div>
+<div class="flex flex-col items-center justify-center flex-grow">
+<div class="relative w-40 h-40 flex items-center justify-center">
+<!-- Circular Progress Placeholder -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="45" stroke="#F3F4F6" stroke-width="8"></circle>
+<circle class="transition-all duration-1000 ease-out" cx="50" cy="50" fill="none" r="45" stroke="#4648d4" stroke-dasharray="283" stroke-dashoffset="42" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary">85</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Very High</span>
+</div>
+</div>
+</div>
+</div>
+<!-- #1 Match Reveal (Takes full width on mobile, 7 cols on md) -->
+<div class="bg-surface-container-lowest rounded-xl p-0 shadow-level-2 border border-surface-variant flex flex-col overflow-hidden relative md:col-span-7 h-[280px] gradient-top-down group cursor-pointer">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="A modern, abstract representation of a prosperous future path, featuring soft, glowing geometric pathways navigating through a clean, light-mode minimalist space. The palette uses pristine whites, subtle silvers, and gentle indigo accents. The mood is optimistic, forward-looking, and sophisticated, reflecting a premium fintech aspiration." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIUPszgmlbiNbKqIqb6slSoHGpKCf8AvjokACcg7V9xHOiAYwDBybRR0HnONWzPqlymyV-cT6GCefuctDrxEmNv-GNj-AcAoZNyWhSf4iuyGoaiVCzm_DZ_6_OaM77lt_ivrzdkVZLLRcibDgt9uZwCWTM_tGxgkfS6bWeJKZgTHLeXA1EleVgyK1LYnKXksV3oph7wAHjV2V-BLlYN82c5zbXPcE4HUmiGgBfgQdeptrdr976KNozFA')"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
+<div class="relative z-20 p-lg flex flex-col justify-between h-full">
+<div class="inline-flex items-center gap-xs px-sm py-[2px] rounded-full bg-primary/10 text-primary w-fit">
+<span class="material-symbols-outlined text-[16px]" data-icon="star">star</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Top Match</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Boutique Agency Acquisition</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md line-clamp-2">
+                                Based on your leadership profile and capital reserves, acquiring a smaller, established marketing firm offers the highest probability of success.
+                            </p>
+<button class="mt-md text-primary font-label-md text-label-md flex items-center gap-xs hover:gap-sm transition-all">
+                                View Strategy <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Business DNA -->
+<section class="mt-xl flex flex-col gap-lg">
+<div class="flex flex-col gap-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Business DNA</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Your core operational strengths and risk tolerance profile.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-level-1 border border-surface-variant">
+<div class="flex flex-col gap-md">
+<!-- DNA Trait 1 -->
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface">Risk Tolerance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Moderate (60%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[60%]"></div>
+</div>
+</div>
+<!-- DNA Trait 2 -->
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface">Operational Control</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">High (85%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full w-[85%]"></div>
+</div>
+</div>
+<!-- DNA Trait 3 -->
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface">Capital Deployment</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aggressive (75%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[75%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="mt-xl flex justify-center pb-xl">
+<button class="bg-primary text-on-primary font-label-md text-label-md h-14 px-xl rounded-full shadow-level-2 hover:opacity-90 transition-opacity flex items-center justify-center w-full md:w-auto">
+                Explore Full Analysis
+             </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-surface-container mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center py-lg px-margin-mobile md:px-margin-desktop w-full max-w-[1280px] mx-auto gap-md">
+<div class="font-headline-md text-headline-md text-on-surface">EscapePlan</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Financial Disclosure</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Support</a>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant/70">© 2024 EscapePlan. All rights reserved.</div>
+</div>
+</footer>
+</body></html>

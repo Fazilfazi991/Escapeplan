@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Comparison</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#f0eded",
+                      "secondary-container": "#bcf063",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#494bd6",
+                      "on-primary-container": "#fffbff",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary-fixed-variant": "#881d24",
+                      "surface": "#fcf9f8",
+                      "outline-variant": "#c7c4d7",
+                      "background": "#fcf9f8",
+                      "inverse-on-surface": "#f3f0ef",
+                      "inverse-primary": "#c0c1ff",
+                      "surface-container-low": "#f6f3f2",
+                      "tertiary-fixed-dim": "#ffb3b0",
+                      "on-primary-fixed-variant": "#2f2ebe",
+                      "tertiary-fixed": "#ffdad8",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary": "#476800",
+                      "secondary-fixed": "#bff365",
+                      "on-tertiary-fixed": "#410006",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed-dim": "#a4d64c",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#464554",
+                      "primary-fixed-dim": "#c0c1ff",
+                      "tertiary-container": "#c64b4d",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed": "#131f00",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#dcd9d9",
+                      "primary-fixed": "#e1e0ff",
+                      "primary": "#4648d4",
+                      "on-surface": "#1c1b1b",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-secondary-fixed-variant": "#354e00",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#07006c",
+                      "error": "#ba1a1a",
+                      "primary-container": "#6063ee",
+                      "surface-variant": "#e5e2e1",
+                      "on-secondary-container": "#4b6d00",
+                      "tertiary": "#a53337",
+                      "outline": "#767586",
+                      "on-background": "#1c1b1b",
+                      "surface-bright": "#fcf9f8",
+                      "inverse-surface": "#313030"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "lg": "24px",
+                      "margin-desktop": "64px",
+                      "gutter": "20px",
+                      "sm": "8px",
+                      "md": "16px",
+                      "margin-mobile": "20px",
+                      "xl": "40px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(243, 244, 246, 0.8);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+        }
+        
+        .premium-shadow {
+            box-shadow: 0 15px 40px -10px rgba(99, 102, 241, 0.08);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #4648d4, #bcf063);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md sticky top-0 full-width z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight" href="#">EscapePlan</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-200 text-label-md font-label-md" href="#">How it works</a>
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary hover:opacity-80 transition-opacity duration-200 text-label-md font-label-md" href="#">Sample result</a>
+</div>
+<button class="bg-primary text-on-primary text-label-md font-label-md h-[56px] px-lg rounded-full hover:opacity-80 transition-opacity duration-200 active:scale-95 transition-transform duration-150">
+                Take the test
+            </button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-xl">
+<!-- Header -->
+<header class="text-center max-w-3xl mx-auto mb-lg">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface mb-sm">Your Best Path Forward</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">We analyzed 50+ business models against your profile. Here are the top 3 contenders for your capital and time constraints.</p>
+</header>
+<!-- Top 3 Comparison Table (Bento/Card Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Option 1: AI Utility -->
+<div class="glass-card rounded-xl p-lg flex flex-col hover:premium-shadow transition-shadow duration-300">
+<div class="flex items-center justify-between mb-md">
+<h3 class="text-headline-md font-headline-md text-on-surface">AI Utility App</h3>
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">psychology</span>
+</div>
+<div class="space-y-sm mb-lg flex-grow">
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Capital</span>
+<span class="text-body-md font-body-md">Low (₹10K - ₹30K)</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Time to Market</span>
+<span class="text-body-md font-body-md">Fast (2-4 weeks)</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Scalability</span>
+<span class="text-body-md font-body-md text-primary">High</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Risk Level</span>
+<span class="text-body-md font-body-md">Medium</span>
+</div>
+</div>
+</div>
+<!-- Option 2: Niche E-commerce (Winner) -->
+<div class="glass-card rounded-xl p-lg flex flex-col premium-shadow border-primary/20 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="flex items-center justify-between mb-md">
+<div class="flex items-center gap-xs">
+<h3 class="text-headline-md font-headline-md text-primary">Niche E-commerce</h3>
+<span class="bg-secondary-container text-on-secondary-container text-label-sm font-label-sm px-2 py-1 rounded-full">Winner</span>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div class="space-y-sm mb-lg flex-grow">
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Capital</span>
+<span class="text-body-md font-body-md">Medium (₹50K - ₹1L)</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Time to Market</span>
+<span class="text-body-md font-body-md">Medium (4-8 weeks)</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Scalability</span>
+<span class="text-body-md font-body-md text-primary">Very High</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Risk Level</span>
+<span class="text-body-md font-body-md">Low</span>
+</div>
+</div>
+</div>
+<!-- Option 3: Lead Gen -->
+<div class="glass-card rounded-xl p-lg flex flex-col hover:premium-shadow transition-shadow duration-300">
+<div class="flex items-center justify-between mb-md">
+<h3 class="text-headline-md font-headline-md text-on-surface">B2B Lead Gen</h3>
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">group_add</span>
+</div>
+<div class="space-y-sm mb-lg flex-grow">
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Capital</span>
+<span class="text-body-md font-body-md">Very Low (&lt; ₹10K)</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Time to Market</span>
+<span class="text-body-md font-body-md">Immediate</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Scalability</span>
+<span class="text-body-md font-body-md">Medium</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-xs">
+<span class="text-label-md font-label-md text-on-surface-variant">Risk Level</span>
+<span class="text-body-md font-body-md">Low</span>
+</div>
+</div>
+</div>
+</section>
+<!-- The 'Why it Wins' & Interactive Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-lg mt-md">
+<!-- Why E-commerce Wins -->
+<div class="bg-surface-container-lowest rounded-xl p-lg border border-surface-container-high">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Why Niche E-commerce Wins</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md">
+                    Based on your profile's preference for tangible assets and a moderate risk appetite, Niche E-commerce provides the perfect balance. It utilizes your available capital (₹75K) efficiently to build inventory, while avoiding the technical hurdles of an AI app.
+                </p>
+<ul class="space-y-sm">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-sm mt-1" style="font-variation-settings: 'FILL' 0;">arrow_right</span>
+<span class="text-body-md font-body-md"><strong>Asset Creation:</strong> Builds a sellable brand asset over time.</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-sm mt-1" style="font-variation-settings: 'FILL' 0;">arrow_right</span>
+<span class="text-body-md font-body-md"><strong>Skill Alignment:</strong> Matches your background in marketing.</span>
+</li>
+</ul>
+</div>
+<!-- What Would Change Interactive Block -->
+<div class="bg-surface-container-low rounded-xl p-lg border border-surface-container-high">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">tune</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">What would change our recommendation?</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md">
+                    Adjust your constraints below to see how the optimal path shifts.
+                </p>
+<div class="space-y-md">
+<label class="flex flex-col gap-xs cursor-pointer group">
+<div class="flex items-center justify-between p-sm rounded-lg border border-outline-variant/50 hover:border-primary/50 transition-colors bg-surface-container-lowest">
+<span class="text-label-md font-label-md text-on-surface">"I want to invest less than ₹50K."</span>
+<div class="w-5 h-5 rounded-full border border-outline flex items-center justify-center group-hover:border-primary">
+<div class="w-3 h-3 rounded-full bg-transparent group-hover:bg-primary/20"></div>
+</div>
+</div>
+</label>
+<label class="flex flex-col gap-xs cursor-pointer group">
+<div class="flex items-center justify-between p-sm rounded-lg border border-outline-variant/50 hover:border-primary/50 transition-colors bg-surface-container-lowest">
+<span class="text-label-md font-label-md text-on-surface">"I need cash flow within 14 days."</span>
+<div class="w-5 h-5 rounded-full border border-outline flex items-center justify-center group-hover:border-primary">
+<div class="w-3 h-3 rounded-full bg-transparent group-hover:bg-primary/20"></div>
+</div>
+</div>
+</label>
+</div>
+<div class="mt-md p-sm bg-primary-fixed/30 rounded-lg text-body-md font-body-md text-on-surface-variant">
+<span class="font-bold text-primary">Insight:</span> If capital drops below ₹50K, <strong>B2B Lead Gen</strong> becomes the superior choice due to near-zero setup costs.
+                </div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-xl gap-lg max-w-7xl mx-auto">
+<span class="text-label-md font-label-md font-bold text-on-surface dark:text-inverse-on-surface">© 2024 EscapePlan. No hype. Just clarity.</span>
+<div class="flex gap-lg">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors text-label-sm font-label-sm" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

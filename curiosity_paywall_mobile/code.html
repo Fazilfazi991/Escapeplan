@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EscapePlan - Curiosity Reveal</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#4b6d00",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#354e00",
+                        "secondary": "#476800",
+                        "outline-variant": "#c7c4d7",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-container": "#bcf063",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-bright": "#fcf9f8",
+                        "primary-container": "#6063ee",
+                        "background": "#fcf9f8",
+                        "on-tertiary-container": "#fffbff",
+                        "tertiary-container": "#c64b4d",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed": "#bff365",
+                        "on-tertiary-fixed-variant": "#881d24",
+                        "on-error-container": "#93000a",
+                        "outline": "#767586",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#a4d64c",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-container": "#fffbff",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed": "#e1e0ff",
+                        "on-surface": "#1c1b1b",
+                        "tertiary": "#a53337",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1c1b1b",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-surface-variant": "#464554",
+                        "surface-tint": "#494bd6",
+                        "on-tertiary-fixed": "#410006",
+                        "inverse-primary": "#c0c1ff",
+                        "surface": "#fcf9f8",
+                        "on-primary-fixed": "#07006c",
+                        "primary": "#4648d4",
+                        "on-secondary-fixed": "#131f00"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "unit": "4px",
+                        "gutter": "20px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    fontSize: {
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }]
+                    },
+                    boxShadow: {
+                        'soft-layer': '0 10px 30px -10px rgba(0, 0, 0, 0.04)',
+                        'active-layer': '0 15px 40px -15px rgba(70, 72, 212, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fcf9f8; /* bg-background */
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Hide scrollbar for clean mobile look */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .blur-content {
+            filter: blur(6px);
+            user-select: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen text-on-background relative">
+<!-- TopAppBar from JSON -->
+<header class="bg-background/80 backdrop-blur-md sticky top-0 z-50 flex justify-between items-center px-margin-mobile h-20 w-full max-w-[1280px] mx-auto flat no shadows border-b border-transparent">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">EscapePlan</div>
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined hover:text-primary transition-colors duration-200 cursor-pointer" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</div>
+</header>
+<!-- Main Content Area (Simulating Mobile Viewport logic via max-w-md for demo, but keeping fluid for full screen as requested, using margin-mobile) -->
+<main class="flex-grow flex flex-col px-margin-mobile py-lg gap-xl w-full max-w-md mx-auto">
+<!-- Context Intro -->
+<div class="text-center flex flex-col gap-sm">
+<h1 class="font-headline-md text-headline-md text-on-background">Your Path is Ready</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">We analyzed your profile. Here are the business models that match your risk tolerance and goals.</p>
+</div>
+<!-- Section 1: The Matches (Curiosity Reveal) -->
+<section class="flex flex-col gap-md">
+<!-- Visible Match #1 -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-active-layer border border-surface-container relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary-fixed"></div>
+<div class="flex justify-between items-start mb-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">#1 Match</span>
+<h2 class="font-headline-md text-headline-md text-on-background mt-xs">Specialized Consulting</h2>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-md text-headline-md text-secondary">94%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fit Score</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Leverages your existing corporate network with minimal upfront capital.</p>
+<div class="flex flex-wrap gap-sm">
+<span class="bg-secondary/10 text-secondary font-label-sm text-label-sm px-3 py-1 rounded-full">High Margin</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full">Quick Start</span>
+</div>
+</div>
+<!-- Blurred Match #2 -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-soft-layer border border-surface-container relative">
+<div class="flex justify-between items-start mb-md">
+<div class="relative w-2/3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">#2 Match</span>
+<div class="relative mt-xs">
+<h2 class="font-headline-md text-headline-md text-on-background blur-content">Franchise Option</h2>
+<!-- Overlay to prevent reading/clicking -->
+<div class="absolute inset-0 z-10 flex items-center justify-start">
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-md text-headline-md text-on-surface-variant">87%</span>
+</div>
+</div>
+<div class="flex items-center gap-sm mt-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+<span class="font-label-md text-label-md text-primary">Teaser: Lower startup cost</span>
+</div>
+</div>
+<!-- Blurred Match #3 -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-soft-layer border border-surface-container relative">
+<div class="flex justify-between items-start mb-md">
+<div class="relative w-2/3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">#3 Match</span>
+<div class="relative mt-xs">
+<h2 class="font-headline-md text-headline-md text-on-background blur-content">E-commerce Brand</h2>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-md text-headline-md text-on-surface-variant">84%</span>
+</div>
+</div>
+<div class="flex items-center gap-sm mt-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">trending_up</span>
+<span class="font-label-md text-label-md text-primary">Teaser: Fastest revenue potential</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Businesses to Avoid -->
+<section class="flex flex-col gap-md pt-md border-t border-surface-container">
+<h3 class="font-headline-md text-headline-md text-on-background flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary">warning</span>
+                Businesses to Avoid
+            </h3>
+<div class="flex flex-col gap-sm">
+<!-- Avoid Item 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-surface-container flex flex-col gap-xs">
+<div class="w-1/2 h-6 bg-surface-variant rounded blur-[2px] opacity-50"></div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">cancel</span>
+<span class="font-label-md text-label-md text-tertiary">Reason: High capital mismatch</span>
+</div>
+</div>
+<!-- Avoid Item 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-surface-container flex flex-col gap-xs">
+<div class="w-3/5 h-6 bg-surface-variant rounded blur-[2px] opacity-50"></div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">cancel</span>
+<span class="font-label-md text-label-md text-tertiary">Reason: Requires full-time pivot immediately</span>
+</div>
+</div>
+<!-- Avoid Item 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-surface-container flex flex-col gap-xs">
+<div class="w-2/5 h-6 bg-surface-variant rounded blur-[2px] opacity-50"></div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">cancel</span>
+<span class="font-label-md text-label-md text-tertiary">Reason: Misaligned risk tolerance</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Money Decisions -->
+<section class="flex flex-col gap-md pt-md border-t border-surface-container">
+<h3 class="font-headline-md text-headline-md text-on-background flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-surface">account_balance</span>
+                Critical Money Decisions
+            </h3>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-container divide-y divide-surface-container">
+<div class="flex justify-between items-center p-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Safe Test Budget</span>
+<div class="flex items-center gap-sm bg-surface-container rounded px-2 py-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">lock</span>
+<span class="font-label-md text-label-md text-on-surface-variant opacity-40">₹X,XXX</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Capital to Keep Untouched</span>
+<div class="flex items-center gap-sm bg-surface-container rounded px-2 py-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">lock</span>
+<span class="font-label-md text-label-md text-on-surface-variant opacity-40">₹XX,XXX</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Suggested Quit Trigger</span>
+<div class="flex items-center gap-sm bg-surface-container rounded px-2 py-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">lock</span>
+<span class="font-label-md text-label-md text-on-surface-variant opacity-40">XX% of Income</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Main Unlock CTA (Paywall) -->
+<section class="mt-md mb-xl">
+<div class="bg-surface-container-lowest rounded-2xl p-lg shadow-active-layer border-2 border-primary-fixed relative overflow-hidden">
+<!-- Subtle gradient background element for premium feel -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-fixed rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+<div class="text-center mb-md relative z-10">
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-background mb-xs">Unlock My EscapePlan</h2>
+<div class="flex items-baseline justify-center gap-xs">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary">₹199</span>
+</div>
+<div class="flex justify-center gap-sm mt-sm">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-1 rounded">One-time payment</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-1 rounded">No subscription</span>
+</div>
+</div>
+<ul class="flex flex-col gap-sm mb-lg relative z-10">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-xs">check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Reveal all 7 highly-rated business matches</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-xs">check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Match-by-match comparison &amp; risk analysis</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-xs">check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Actionable 30-day starter plan for your #1 match</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-xs">check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Specific capital allocation targets</span>
+</li>
+</ul>
+<button class="w-full h-[56px] bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-sm hover:opacity-90 transition-opacity relative z-10 shadow-md">
+<span class="material-symbols-outlined">lock_open</span>
+                    Reveal My Full Plan
+                </button>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-md relative z-10 opacity-80">
+                    You’re paying to make a better-informed decision before risking significantly more money.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer from JSON -->
+<footer class="bg-surface-container-lowest border-t border-surface-container flex flex-col md:flex-row justify-between items-center py-lg px-margin-mobile w-full max-w-[1280px] mx-auto gap-md mt-auto">
+<div class="font-headline-md text-headline-md text-on-surface">EscapePlan</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Financial Disclosure</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors" href="#">Support</a>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant/70">© 2024 EscapePlan. All rights reserved.</div>
+</footer>
+</body></html>

@@ -1,0 +1,231 @@
+{
+  "contract_version": "result-v1.1.0",
+  "assessment_id": "qa-persona-a",
+  "engine": {
+    "scoring_model_version": "2.0.0",
+    "business_dataset_version": "business-models-v2.0.0",
+    "country_overlay_version": "IN-2026.08-v1",
+    "evidence_version": "IN-evidence-2026.08-v1",
+    "financial_engine_version": "1.1.0",
+    "input_hash": "sha256:example"
+  },
+  "score_semantics": {
+    "label": "PROFILE MATCH",
+    "definition": "Alignment with stated profile; not probability of success.",
+    "is_success_probability": false
+  },
+  "readiness": {
+    "score": 72.4,
+    "band": "ready_to_test",
+    "confidence_level": "medium",
+    "components": [
+      {
+        "id": "financial_foundation",
+        "score": 67,
+        "weight": 25,
+        "contribution": 16.8
+      }
+    ],
+    "positives": [
+      "Stable employment supports low-pressure testing."
+    ],
+    "constraints": [
+      "Only two hours per day are available."
+    ]
+  },
+  "entrepreneur_profile": {
+    "id": "digital_operator",
+    "name": "The Digital Operator",
+    "confidence": 0.71,
+    "explanation_key": "profile.digital_operator"
+  },
+  "ranked_businesses": [
+    {
+      "business_model_id": "micro-saas",
+      "rank": 1,
+      "profile_match_score": 79.2,
+      "hard_excluded": false,
+      "factor_scores": {
+        "capital": 91,
+        "time": 83,
+        "skills": 90,
+        "risk": 82,
+        "income": 79,
+        "speed": 68,
+        "operating_style": 93,
+        "employment": 89,
+        "location": 70
+      },
+      "factor_contributions": {
+        "capital": 16.4,
+        "time": 10.8,
+        "skills": 11.7,
+        "risk": 9.8,
+        "income": 10.3,
+        "speed": 6.8,
+        "operating_style": 8.4,
+        "employment": 6.2,
+        "location": 3.5
+      },
+      "positives": [
+        {
+          "code": "SKILL_TECH_ALIGNMENT",
+          "factor": "skills"
+        }
+      ],
+      "conflicts": [
+        {
+          "code": "SPEED_WINDOW_GAP",
+          "factor": "speed"
+        }
+      ],
+      "estimated_parameters": {
+        "minimum_test_capital": {
+          "amount_minor": 300000,
+          "currency": "INR",
+          "confidence_level": "low",
+          "source_type": "model_assumption",
+          "last_reviewed_at": "2026-08-28"
+        },
+        "first_revenue_window_days": {
+          "low": 45,
+          "high": 120,
+          "confidence_level": "low"
+        }
+      },
+      "validation_template_id": "software",
+      "evidence_confidence": {
+        "level": "medium",
+        "country": "IN",
+        "coverage": "partial",
+        "consumer_note": "Some India cost estimates remain approximate.",
+        "evidence_ids": [
+          "IN:micro-saas:minimum_validation_cash_required:v1",
+          "IN:micro-saas:typical_startup_capital_range:v1"
+        ]
+      },
+      "capital_state": "lean_to_comfortable_launch",
+      "validation_worthy": true,
+      "launch_ready": true
+    }
+  ],
+  "excluded_models": [
+    {
+      "business_model_id": "restaurant-cafe",
+      "codes": [
+        "CAPITAL_BELOW_HARD_GATE"
+      ]
+    }
+  ],
+  "avoid_models": [
+    {
+      "business_model_id": "restaurant-cafe",
+      "profile_match_score": 18.2,
+      "label": "Poor fit for your current profile.",
+      "reasons": [
+        {
+          "code": "TIME_CRITICAL_CONFLICT"
+        },
+        {
+          "code": "CAPITAL_CRITICAL_CONFLICT"
+        }
+      ],
+      "what_would_need_to_change": [
+        {
+          "field": "available_hours_daily",
+          "current": 2,
+          "threshold": 8
+        },
+        {
+          "field": "safe_risk_capital_minor",
+          "current": 4000000,
+          "threshold": 25000000
+        }
+      ]
+    }
+  ],
+  "financial_plan": {
+    "status": "partial",
+    "safe_test_budget": {
+      "amount_minor": 1200000,
+      "currency": "INR",
+      "formula_version": "finance-v1.0.0"
+    },
+    "capital_reserve": {
+      "amount_minor": 2800000,
+      "currency": "INR"
+    },
+    "runway_while_employed": {
+      "status": "not_calculable",
+      "missing_inputs": [
+        "monthly_personal_expenses_minor",
+        "monthly_salary_minor"
+      ]
+    },
+    "runway_if_quit": {
+      "status": "not_calculable",
+      "missing_inputs": [
+        "monthly_personal_expenses_minor"
+      ]
+    },
+    "quit_trigger": {
+      "type": "planning_framework",
+      "not_financial_advice": true,
+      "profit_coverage_range": [
+        0.7,
+        1
+      ],
+      "consistency_months_range": [
+        3,
+        6
+      ],
+      "minimum_emergency_reserve_months": 6
+    }
+  },
+  "what_if_options": [
+    {
+      "patch": {
+        "available_hours_daily": 6
+      },
+      "old_rank": 4,
+      "new_rank": 1,
+      "score_delta": 8.7,
+      "movement": 3,
+      "reason_codes": [
+        "TIME_CAPACITY_IMPROVED"
+      ]
+    }
+  ],
+  "validation_plan": {
+    "template_id": "software",
+    "business_model_id": "micro-saas",
+    "weeks": [
+      {
+        "week": 1,
+        "objective": "Problem evidence",
+        "tasks": [
+          "Interview 12 target users"
+        ],
+        "evidence_gate": {
+          "metric": "confirmed_problem_interviews",
+          "minimum": 5
+        }
+      }
+    ]
+  },
+  "assumptions": [
+    {
+      "id": "assumption-micro-saas-in-v1",
+      "text": "Generalized India-first seed; requires focused research.",
+      "confidence_level": "low",
+      "source_type": "model_assumption"
+    }
+  ],
+  "warnings": [],
+  "disclaimers": [
+    "Profile match is not a probability of success.",
+    "Financial outputs are planning scenarios, not financial advice.",
+    "Evidence confidence describes estimate quality and is separate from profile match."
+  ],
+  "generated_copy": null
+}

@@ -1,0 +1,4963 @@
+{
+  "dataset_version": "business-models-in-v1.0.0",
+  "status": "qa_seed_not_market_verified",
+  "base_country": "IN",
+  "base_currency": "INR",
+  "generated_at": "2026-08-28",
+  "score_scale": {
+    "minimum": 1,
+    "maximum": 10
+  },
+  "models": [
+    {
+      "business_model_id": "niche-ecommerce",
+      "slug": "niche-ecommerce",
+      "display_name": "Niche E-commerce Brand",
+      "short_description": "A hybrid niche e-commerce brand model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1500000,
+        "typical_startup_low_minor": 10000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 10000000,
+        "ideal_high_minor": 60000000
+      },
+      "scores": {
+        "capital_intensity": 4,
+        "time_requirement": 5,
+        "operator_dependency": 5,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 6,
+        "scalability": 8,
+        "recurring_revenue": 5,
+        "inventory_requirement": 8,
+        "staff_requirement": 3,
+        "customer_interaction": 7,
+        "technical_complexity": 4,
+        "sales_dependency": 6,
+        "marketing_dependency": 8,
+        "creative_dependency": 7,
+        "operations_dependency": 6,
+        "product_dependency": 7,
+        "supplier_dependency": 8,
+        "regulatory_complexity": 6,
+        "fixed_cost_intensity": 3,
+        "working_capital_requirement": 4,
+        "financial_risk": 5,
+        "income_ceiling": 6,
+        "automation_potential": 6,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 6,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 6
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "creative",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-niche-ecommerce-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "local-same-day-commerce",
+      "slug": "local-same-day-commerce",
+      "display_name": "Local Same-Day Commerce",
+      "short_description": "A hybrid local same-day commerce model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 2500000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 80000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 80000000
+      },
+      "scores": {
+        "capital_intensity": 5,
+        "time_requirement": 7,
+        "operator_dependency": 8,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 8,
+        "scalability": 6,
+        "recurring_revenue": 3,
+        "inventory_requirement": 8,
+        "staff_requirement": 6,
+        "customer_interaction": 9,
+        "technical_complexity": 3,
+        "sales_dependency": 8,
+        "marketing_dependency": 7,
+        "creative_dependency": 3,
+        "operations_dependency": 9,
+        "product_dependency": 7,
+        "supplier_dependency": 7,
+        "regulatory_complexity": 8,
+        "fixed_cost_intensity": 6,
+        "working_capital_requirement": 4,
+        "financial_risk": 6,
+        "income_ceiling": 8,
+        "automation_potential": 7,
+        "location_dependency": 7,
+        "side_hustle_compatibility": 3,
+        "full_time_founder_requirement": 9,
+        "business_experience_requirement": 4
+      },
+      "best_strengths": [
+        "operations",
+        "networking",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-local-same-day-commerce-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "subscription-commerce",
+      "slug": "subscription-commerce",
+      "display_name": "Subscription Commerce",
+      "short_description": "A online subscription commerce model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 2500000,
+        "typical_startup_low_minor": 20000000,
+        "typical_startup_high_minor": 90000000,
+        "ideal_low_minor": 20000000,
+        "ideal_high_minor": 90000000
+      },
+      "scores": {
+        "capital_intensity": 5,
+        "time_requirement": 6,
+        "operator_dependency": 6,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 5,
+        "scalability": 8,
+        "recurring_revenue": 9,
+        "inventory_requirement": 8,
+        "staff_requirement": 4,
+        "customer_interaction": 7,
+        "technical_complexity": 4,
+        "sales_dependency": 7,
+        "marketing_dependency": 8,
+        "creative_dependency": 6,
+        "operations_dependency": 8,
+        "product_dependency": 7,
+        "supplier_dependency": 7,
+        "regulatory_complexity": 8,
+        "fixed_cost_intensity": 5,
+        "working_capital_requirement": 4,
+        "financial_risk": 5,
+        "income_ceiling": 8,
+        "automation_potential": 7,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 7,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 5
+      },
+      "best_strengths": [
+        "operations",
+        "technical_trade",
+        "sales"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-subscription-commerce-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "import-resale",
+      "slug": "import-resale",
+      "display_name": "Import & Resale",
+      "short_description": "A hybrid import & resale model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 4000000,
+        "typical_startup_low_minor": 30000000,
+        "typical_startup_high_minor": 150000000,
+        "ideal_low_minor": 30000000,
+        "ideal_high_minor": 150000000
+      },
+      "scores": {
+        "capital_intensity": 7,
+        "time_requirement": 6,
+        "operator_dependency": 6,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 6,
+        "scalability": 6,
+        "recurring_revenue": 4,
+        "inventory_requirement": 9,
+        "staff_requirement": 4,
+        "customer_interaction": 6,
+        "technical_complexity": 2,
+        "sales_dependency": 8,
+        "marketing_dependency": 6,
+        "creative_dependency": 3,
+        "operations_dependency": 8,
+        "product_dependency": 8,
+        "supplier_dependency": 9,
+        "regulatory_complexity": 8,
+        "fixed_cost_intensity": 7,
+        "working_capital_requirement": 6,
+        "financial_risk": 6,
+        "income_ceiling": 9,
+        "automation_potential": 8,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 3,
+        "full_time_founder_requirement": 7,
+        "business_experience_requirement": 4
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "sales",
+        "operations"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-import-resale-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "wholesale-distribution",
+      "slug": "wholesale-distribution",
+      "display_name": "Wholesale Distribution",
+      "short_description": "A offline wholesale distribution model evaluated as a category rather than a niche.",
+      "category": "b2b",
+      "validation_template_id": "b2b",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 8000000,
+        "typical_startup_low_minor": 60000000,
+        "typical_startup_high_minor": 300000000,
+        "ideal_low_minor": 60000000,
+        "ideal_high_minor": 300000000
+      },
+      "scores": {
+        "capital_intensity": 9,
+        "time_requirement": 8,
+        "operator_dependency": 8,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 6,
+        "scalability": 7,
+        "recurring_revenue": 6,
+        "inventory_requirement": 9,
+        "staff_requirement": 7,
+        "customer_interaction": 8,
+        "technical_complexity": 2,
+        "sales_dependency": 9,
+        "marketing_dependency": 4,
+        "creative_dependency": 2,
+        "operations_dependency": 9,
+        "product_dependency": 8,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 8,
+        "fixed_cost_intensity": 8,
+        "working_capital_requirement": 6,
+        "financial_risk": 8,
+        "income_ceiling": 10,
+        "automation_potential": 8,
+        "location_dependency": 9,
+        "side_hustle_compatibility": 4,
+        "full_time_founder_requirement": 8,
+        "business_experience_requirement": 2
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "sales",
+        "operations"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-wholesale-distribution-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "private-label-product",
+      "slug": "private-label-product",
+      "display_name": "Private Label Product",
+      "short_description": "A hybrid private label product model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 3500000,
+        "typical_startup_low_minor": 25000000,
+        "typical_startup_high_minor": 120000000,
+        "ideal_low_minor": 25000000,
+        "ideal_high_minor": 120000000
+      },
+      "scores": {
+        "capital_intensity": 7,
+        "time_requirement": 6,
+        "operator_dependency": 6,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 5,
+        "scalability": 8,
+        "recurring_revenue": 5,
+        "inventory_requirement": 9,
+        "staff_requirement": 3,
+        "customer_interaction": 5,
+        "technical_complexity": 4,
+        "sales_dependency": 7,
+        "marketing_dependency": 9,
+        "creative_dependency": 7,
+        "operations_dependency": 8,
+        "product_dependency": 9,
+        "supplier_dependency": 9,
+        "regulatory_complexity": 7,
+        "fixed_cost_intensity": 6,
+        "working_capital_requirement": 6,
+        "financial_risk": 6,
+        "income_ceiling": 9,
+        "automation_potential": 7,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 6,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 4
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-private-label-product-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "print-on-demand",
+      "slug": "print-on-demand",
+      "display_name": "Print-on-Demand Brand",
+      "short_description": "A online print-on-demand brand model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 500000,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 15000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 4,
+        "operator_dependency": 4,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 7,
+        "scalability": 6,
+        "recurring_revenue": 3,
+        "inventory_requirement": 2,
+        "staff_requirement": 1,
+        "customer_interaction": 5,
+        "technical_complexity": 3,
+        "sales_dependency": 4,
+        "marketing_dependency": 9,
+        "creative_dependency": 9,
+        "operations_dependency": 3,
+        "product_dependency": 7,
+        "supplier_dependency": 2,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 3,
+        "financial_risk": 2,
+        "income_ceiling": 3,
+        "automation_potential": 6,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 2,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "creative",
+        "finance_analysis",
+        "teaching"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        2
+      ],
+      "ideal_daily_hours_range": [
+        2,
+        5
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 77,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-print-on-demand-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "creator-commerce",
+      "slug": "creator-commerce",
+      "display_name": "Creator-led Commerce",
+      "short_description": "A online creator-led commerce model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 500000,
+        "typical_startup_low_minor": 3000000,
+        "typical_startup_high_minor": 25000000,
+        "ideal_low_minor": 3000000,
+        "ideal_high_minor": 25000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 6,
+        "operator_dependency": 7,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 6,
+        "scalability": 8,
+        "recurring_revenue": 5,
+        "inventory_requirement": 4,
+        "staff_requirement": 2,
+        "customer_interaction": 8,
+        "technical_complexity": 3,
+        "sales_dependency": 7,
+        "marketing_dependency": 10,
+        "creative_dependency": 10,
+        "operations_dependency": 4,
+        "product_dependency": 8,
+        "supplier_dependency": 5,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 4,
+        "financial_risk": 4,
+        "income_ceiling": 5,
+        "automation_potential": 7,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "creative",
+        "teaching",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-creator-commerce-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "d2c-beauty",
+      "slug": "d2c-beauty",
+      "display_name": "D2C Beauty Brand",
+      "short_description": "A hybrid d2c beauty brand model evaluated as a category rather than a niche.",
+      "category": "commerce",
+      "validation_template_id": "commerce",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 5000000,
+        "typical_startup_low_minor": 40000000,
+        "typical_startup_high_minor": 180000000,
+        "ideal_low_minor": 40000000,
+        "ideal_high_minor": 180000000
+      },
+      "scores": {
+        "capital_intensity": 8,
+        "time_requirement": 7,
+        "operator_dependency": 7,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 5,
+        "scalability": 8,
+        "recurring_revenue": 6,
+        "inventory_requirement": 9,
+        "staff_requirement": 4,
+        "customer_interaction": 7,
+        "technical_complexity": 5,
+        "sales_dependency": 8,
+        "marketing_dependency": 10,
+        "creative_dependency": 9,
+        "operations_dependency": 8,
+        "product_dependency": 9,
+        "supplier_dependency": 9,
+        "regulatory_complexity": 9,
+        "fixed_cost_intensity": 7,
+        "working_capital_requirement": 7,
+        "financial_risk": 7,
+        "income_ceiling": 9,
+        "automation_potential": 8,
+        "location_dependency": 9,
+        "side_hustle_compatibility": 6,
+        "full_time_founder_requirement": 6,
+        "business_experience_requirement": 3
+      },
+      "best_strengths": [
+        "creative",
+        "product_sourcing",
+        "teaching"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-d2c-beauty-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "vending-automated-retail",
+      "slug": "vending-automated-retail",
+      "display_name": "Vending / Automated Retail",
+      "short_description": "A offline vending / automated retail model evaluated as a category rather than a niche.",
+      "category": "retail",
+      "validation_template_id": "physical_retail",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 8000000,
+        "typical_startup_low_minor": 50000000,
+        "typical_startup_high_minor": 250000000,
+        "ideal_low_minor": 50000000,
+        "ideal_high_minor": 250000000
+      },
+      "scores": {
+        "capital_intensity": 9,
+        "time_requirement": 5,
+        "operator_dependency": 5,
+        "speed_to_validation": 4,
+        "speed_to_first_revenue": 6,
+        "scalability": 6,
+        "recurring_revenue": 2,
+        "inventory_requirement": 9,
+        "staff_requirement": 3,
+        "customer_interaction": 3,
+        "technical_complexity": 4,
+        "sales_dependency": 5,
+        "marketing_dependency": 3,
+        "creative_dependency": 1,
+        "operations_dependency": 8,
+        "product_dependency": 5,
+        "supplier_dependency": 8,
+        "regulatory_complexity": 7,
+        "fixed_cost_intensity": 8,
+        "working_capital_requirement": 7,
+        "financial_risk": 8,
+        "income_ceiling": 9,
+        "automation_potential": 7,
+        "location_dependency": 7,
+        "side_hustle_compatibility": 5,
+        "full_time_founder_requirement": 9,
+        "business_experience_requirement": 3
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 75,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-vending-automated-retail-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "micro-saas",
+      "slug": "micro-saas",
+      "display_name": "Micro-SaaS",
+      "short_description": "A online micro-saas model evaluated as a category rather than a niche.",
+      "category": "software",
+      "validation_template_id": "software",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 300000,
+        "typical_startup_low_minor": 3000000,
+        "typical_startup_high_minor": 25000000,
+        "ideal_low_minor": 3000000,
+        "ideal_high_minor": 25000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 5,
+        "operator_dependency": 4,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 4,
+        "scalability": 10,
+        "recurring_revenue": 9,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 4,
+        "technical_complexity": 8,
+        "sales_dependency": 6,
+        "marketing_dependency": 5,
+        "creative_dependency": 4,
+        "operations_dependency": 3,
+        "product_dependency": 8,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 2,
+        "financial_risk": 3,
+        "income_ceiling": 8,
+        "automation_potential": 10,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "finance_analysis",
+        "technology",
+        "sales"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 135,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-micro-saas-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "vertical-saas",
+      "slug": "vertical-saas",
+      "display_name": "Vertical SaaS",
+      "short_description": "A online vertical saas model evaluated as a category rather than a niche.",
+      "category": "software",
+      "validation_template_id": "software",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1000000,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 60000000
+      },
+      "scores": {
+        "capital_intensity": 4,
+        "time_requirement": 7,
+        "operator_dependency": 6,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 4,
+        "scalability": 10,
+        "recurring_revenue": 10,
+        "inventory_requirement": 1,
+        "staff_requirement": 2,
+        "customer_interaction": 6,
+        "technical_complexity": 9,
+        "sales_dependency": 8,
+        "marketing_dependency": 6,
+        "creative_dependency": 4,
+        "operations_dependency": 6,
+        "product_dependency": 9,
+        "supplier_dependency": 2,
+        "regulatory_complexity": 4,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 3,
+        "financial_risk": 5,
+        "income_ceiling": 9,
+        "automation_potential": 10,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "technology",
+        "sales",
+        "finance_analysis"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 135,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-vertical-saas-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "ai-utility-website",
+      "slug": "ai-utility-website",
+      "display_name": "AI Utility Website",
+      "short_description": "A online ai utility website model evaluated as a category rather than a niche.",
+      "category": "software",
+      "validation_template_id": "software",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 200000,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 20000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 20000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 4,
+        "operator_dependency": 3,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 6,
+        "scalability": 9,
+        "recurring_revenue": 6,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 3,
+        "technical_complexity": 9,
+        "sales_dependency": 5,
+        "marketing_dependency": 7,
+        "creative_dependency": 4,
+        "operations_dependency": 3,
+        "product_dependency": 7,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 2,
+        "financial_risk": 4,
+        "income_ceiling": 7,
+        "automation_potential": 10,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 2,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "technology",
+        "finance_analysis",
+        "sales"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        2,
+        5
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-ai-utility-website-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "consumer-digital-tool",
+      "slug": "consumer-digital-tool",
+      "display_name": "Consumer Digital Tool",
+      "short_description": "A online consumer digital tool model evaluated as a category rather than a niche.",
+      "category": "software",
+      "validation_template_id": "software",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 400000,
+        "typical_startup_low_minor": 4000000,
+        "typical_startup_high_minor": 30000000,
+        "ideal_low_minor": 4000000,
+        "ideal_high_minor": 30000000
+      },
+      "scores": {
+        "capital_intensity": 3,
+        "time_requirement": 5,
+        "operator_dependency": 4,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 5,
+        "scalability": 9,
+        "recurring_revenue": 6,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 4,
+        "technical_complexity": 8,
+        "sales_dependency": 5,
+        "marketing_dependency": 9,
+        "creative_dependency": 7,
+        "operations_dependency": 4,
+        "product_dependency": 8,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 2,
+        "financial_risk": 5,
+        "income_ceiling": 8,
+        "automation_potential": 9,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "technology",
+        "finance_analysis",
+        "creative"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-consumer-digital-tool-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "business-data-product",
+      "slug": "business-data-product",
+      "display_name": "Business Data Product",
+      "short_description": "A online business data product model evaluated as a category rather than a niche.",
+      "category": "digital",
+      "validation_template_id": "digital_product",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 300000,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 18000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 18000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 5,
+        "operator_dependency": 4,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 5,
+        "scalability": 9,
+        "recurring_revenue": 8,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 3,
+        "technical_complexity": 7,
+        "sales_dependency": 7,
+        "marketing_dependency": 5,
+        "creative_dependency": 3,
+        "operations_dependency": 3,
+        "product_dependency": 8,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 2,
+        "financial_risk": 3,
+        "income_ceiling": 8,
+        "automation_potential": 9,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "finance_analysis",
+        "sales",
+        "technology"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-business-data-product-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "paid-newsletter",
+      "slug": "paid-newsletter",
+      "display_name": "Paid Newsletter / Research Product",
+      "short_description": "A online paid newsletter / research product model evaluated as a category rather than a niche.",
+      "category": "content",
+      "validation_template_id": "content_education",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 100000,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 8000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 8000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 5,
+        "operator_dependency": 6,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 5,
+        "scalability": 7,
+        "recurring_revenue": 9,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 5,
+        "technical_complexity": 3,
+        "sales_dependency": 6,
+        "marketing_dependency": 7,
+        "creative_dependency": 8,
+        "operations_dependency": 3,
+        "product_dependency": 6,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 2,
+        "income_ceiling": 6,
+        "automation_potential": 8,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "creative",
+        "finance_analysis",
+        "teaching"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        2
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-paid-newsletter-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "education-membership",
+      "slug": "education-membership",
+      "display_name": "Education Membership",
+      "short_description": "A online education membership model evaluated as a category rather than a niche.",
+      "category": "content",
+      "validation_template_id": "content_education",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 200000,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 15000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 6,
+        "operator_dependency": 6,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 5,
+        "scalability": 8,
+        "recurring_revenue": 10,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 8,
+        "technical_complexity": 4,
+        "sales_dependency": 7,
+        "marketing_dependency": 8,
+        "creative_dependency": 8,
+        "operations_dependency": 4,
+        "product_dependency": 7,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 3,
+        "income_ceiling": 7,
+        "automation_potential": 8,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 4,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "creative",
+        "networking",
+        "finance_analysis"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-education-membership-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "online-course",
+      "slug": "online-course",
+      "display_name": "Online Course Business",
+      "short_description": "A online online course business model evaluated as a category rather than a niche.",
+      "category": "content",
+      "validation_template_id": "content_education",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 200000,
+        "typical_startup_low_minor": 1500000,
+        "typical_startup_high_minor": 12000000,
+        "ideal_low_minor": 1500000,
+        "ideal_high_minor": 12000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 5,
+        "operator_dependency": 6,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 5,
+        "scalability": 8,
+        "recurring_revenue": 4,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 6,
+        "technical_complexity": 3,
+        "sales_dependency": 7,
+        "marketing_dependency": 9,
+        "creative_dependency": 9,
+        "operations_dependency": 3,
+        "product_dependency": 7,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 3,
+        "income_ceiling": 7,
+        "automation_potential": 9,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "creative",
+        "teaching",
+        "finance_analysis"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-online-course-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "digital-downloads",
+      "slug": "digital-downloads",
+      "display_name": "Digital Downloads",
+      "short_description": "A online digital downloads model evaluated as a category rather than a niche.",
+      "category": "digital",
+      "validation_template_id": "digital_product",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 100000,
+        "typical_startup_low_minor": 500000,
+        "typical_startup_high_minor": 5000000,
+        "ideal_low_minor": 500000,
+        "ideal_high_minor": 5000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 3,
+        "operator_dependency": 2,
+        "speed_to_validation": 9,
+        "speed_to_first_revenue": 8,
+        "scalability": 8,
+        "recurring_revenue": 3,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 2,
+        "technical_complexity": 3,
+        "sales_dependency": 3,
+        "marketing_dependency": 9,
+        "creative_dependency": 9,
+        "operations_dependency": 2,
+        "product_dependency": 6,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 1,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 2,
+        "income_ceiling": 6,
+        "automation_potential": 10,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 1,
+        "business_experience_requirement": 10
+      },
+      "best_strengths": [
+        "finance_analysis",
+        "creative",
+        "teaching"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        2
+      ],
+      "ideal_daily_hours_range": [
+        2,
+        4
+      ],
+      "typical_validation_window_days": 33,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-digital-downloads-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "affiliate-content",
+      "slug": "affiliate-content",
+      "display_name": "Affiliate Content Business",
+      "short_description": "A online affiliate content business model evaluated as a category rather than a niche.",
+      "category": "content",
+      "validation_template_id": "content_education",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 100000,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 10000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 10000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 5,
+        "operator_dependency": 5,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 3,
+        "scalability": 8,
+        "recurring_revenue": 3,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 2,
+        "technical_complexity": 3,
+        "sales_dependency": 3,
+        "marketing_dependency": 9,
+        "creative_dependency": 9,
+        "operations_dependency": 2,
+        "product_dependency": 6,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 1,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 3,
+        "income_ceiling": 6,
+        "automation_potential": 9,
+        "location_dependency": 1,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "creative",
+        "finance_analysis",
+        "teaching"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 180,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-affiliate-content-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "lead-generation-asset",
+      "slug": "lead-generation-asset",
+      "display_name": "Lead Generation Asset",
+      "short_description": "A online lead generation asset model evaluated as a category rather than a niche.",
+      "category": "digital",
+      "validation_template_id": "digital_product",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 200000,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 15000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 5,
+        "operator_dependency": 4,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 6,
+        "scalability": 9,
+        "recurring_revenue": 4,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 4,
+        "technical_complexity": 6,
+        "sales_dependency": 8,
+        "marketing_dependency": 7,
+        "creative_dependency": 5,
+        "operations_dependency": 3,
+        "product_dependency": 7,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 3,
+        "income_ceiling": 7,
+        "automation_potential": 9,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 3,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "finance_analysis",
+        "sales",
+        "technology"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-lead-generation-asset-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "directory-platform",
+      "slug": "directory-platform",
+      "display_name": "Directory / Listing Platform",
+      "short_description": "A online directory / listing platform model evaluated as a category rather than a niche.",
+      "category": "market",
+      "validation_template_id": "marketplace",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 300000,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 18000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 18000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 5,
+        "operator_dependency": 4,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 4,
+        "scalability": 9,
+        "recurring_revenue": 5,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 5,
+        "technical_complexity": 7,
+        "sales_dependency": 8,
+        "marketing_dependency": 6,
+        "creative_dependency": 4,
+        "operations_dependency": 4,
+        "product_dependency": 8,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 2,
+        "financial_risk": 4,
+        "income_ceiling": 8,
+        "automation_potential": 9,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 4,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "sales",
+        "finance_analysis",
+        "technology"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 135,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-directory-platform-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "job-marketplace",
+      "slug": "job-marketplace",
+      "display_name": "Job Marketplace",
+      "short_description": "A online job marketplace model evaluated as a category rather than a niche.",
+      "category": "market",
+      "validation_template_id": "marketplace",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 800000,
+        "typical_startup_low_minor": 6000000,
+        "typical_startup_high_minor": 45000000,
+        "ideal_low_minor": 6000000,
+        "ideal_high_minor": 45000000
+      },
+      "scores": {
+        "capital_intensity": 3,
+        "time_requirement": 7,
+        "operator_dependency": 6,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 4,
+        "scalability": 10,
+        "recurring_revenue": 7,
+        "inventory_requirement": 1,
+        "staff_requirement": 2,
+        "customer_interaction": 8,
+        "technical_complexity": 8,
+        "sales_dependency": 9,
+        "marketing_dependency": 6,
+        "creative_dependency": 3,
+        "operations_dependency": 6,
+        "product_dependency": 9,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 4,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 2,
+        "financial_risk": 6,
+        "income_ceiling": 9,
+        "automation_potential": 9,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "sales",
+        "technology",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 135,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-job-marketplace-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "booking-marketplace",
+      "slug": "booking-marketplace",
+      "display_name": "Booking Marketplace",
+      "short_description": "A online booking marketplace model evaluated as a category rather than a niche.",
+      "category": "market",
+      "validation_template_id": "marketplace",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1000000,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 60000000
+      },
+      "scores": {
+        "capital_intensity": 4,
+        "time_requirement": 7,
+        "operator_dependency": 7,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 4,
+        "scalability": 10,
+        "recurring_revenue": 7,
+        "inventory_requirement": 1,
+        "staff_requirement": 3,
+        "customer_interaction": 8,
+        "technical_complexity": 8,
+        "sales_dependency": 9,
+        "marketing_dependency": 6,
+        "creative_dependency": 3,
+        "operations_dependency": 7,
+        "product_dependency": 9,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 4,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 3,
+        "financial_risk": 6,
+        "income_ceiling": 9,
+        "automation_potential": 9,
+        "location_dependency": 5,
+        "side_hustle_compatibility": 7,
+        "full_time_founder_requirement": 6,
+        "business_experience_requirement": 6
+      },
+      "best_strengths": [
+        "sales",
+        "technology",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 135,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-booking-marketplace-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "b2b-marketplace",
+      "slug": "b2b-marketplace",
+      "display_name": "B2B Marketplace",
+      "short_description": "A online b2b marketplace model evaluated as a category rather than a niche.",
+      "category": "market",
+      "validation_template_id": "marketplace",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 2000000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 100000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 100000000
+      },
+      "scores": {
+        "capital_intensity": 5,
+        "time_requirement": 8,
+        "operator_dependency": 8,
+        "speed_to_validation": 4,
+        "speed_to_first_revenue": 3,
+        "scalability": 10,
+        "recurring_revenue": 8,
+        "inventory_requirement": 1,
+        "staff_requirement": 4,
+        "customer_interaction": 9,
+        "technical_complexity": 8,
+        "sales_dependency": 10,
+        "marketing_dependency": 5,
+        "creative_dependency": 2,
+        "operations_dependency": 8,
+        "product_dependency": 10,
+        "supplier_dependency": 2,
+        "regulatory_complexity": 5,
+        "fixed_cost_intensity": 3,
+        "working_capital_requirement": 3,
+        "financial_risk": 7,
+        "income_ceiling": 10,
+        "automation_potential": 9,
+        "location_dependency": 4,
+        "side_hustle_compatibility": 6,
+        "full_time_founder_requirement": 7,
+        "business_experience_requirement": 5
+      },
+      "best_strengths": [
+        "sales",
+        "networking",
+        "technology"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 75,
+      "typical_first_revenue_window_days": 180,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-b2b-marketplace-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "software-marketplace",
+      "slug": "software-marketplace",
+      "display_name": "Software Marketplace",
+      "short_description": "A online software marketplace model evaluated as a category rather than a niche.",
+      "category": "market",
+      "validation_template_id": "marketplace",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 800000,
+        "typical_startup_low_minor": 7000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 7000000,
+        "ideal_high_minor": 50000000
+      },
+      "scores": {
+        "capital_intensity": 3,
+        "time_requirement": 7,
+        "operator_dependency": 6,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 4,
+        "scalability": 10,
+        "recurring_revenue": 8,
+        "inventory_requirement": 1,
+        "staff_requirement": 2,
+        "customer_interaction": 7,
+        "technical_complexity": 9,
+        "sales_dependency": 9,
+        "marketing_dependency": 5,
+        "creative_dependency": 3,
+        "operations_dependency": 5,
+        "product_dependency": 9,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 2,
+        "financial_risk": 5,
+        "income_ceiling": 9,
+        "automation_potential": 9,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "sales",
+        "technology",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 135,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-software-marketplace-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "niche-community",
+      "slug": "niche-community",
+      "display_name": "Niche Community",
+      "short_description": "A online niche community model evaluated as a category rather than a niche.",
+      "category": "content",
+      "validation_template_id": "content_education",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 100000,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 10000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 10000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 6,
+        "operator_dependency": 7,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 5,
+        "scalability": 8,
+        "recurring_revenue": 9,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 9,
+        "technical_complexity": 3,
+        "sales_dependency": 6,
+        "marketing_dependency": 7,
+        "creative_dependency": 7,
+        "operations_dependency": 4,
+        "product_dependency": 6,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 2,
+        "income_ceiling": 7,
+        "automation_potential": 7,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 4,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "networking",
+        "finance_analysis",
+        "creative"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        2
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-niche-community-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "freelancing",
+      "slug": "freelancing",
+      "display_name": "Freelancing",
+      "short_description": "A online freelancing model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "b2b",
+      "online_offline_type": "online",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 0,
+        "typical_startup_low_minor": 500000,
+        "typical_startup_high_minor": 3000000,
+        "ideal_low_minor": 500000,
+        "ideal_high_minor": 3000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 5,
+        "operator_dependency": 9,
+        "speed_to_validation": 10,
+        "speed_to_first_revenue": 10,
+        "scalability": 4,
+        "recurring_revenue": 2,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 8,
+        "technical_complexity": 4,
+        "sales_dependency": 7,
+        "marketing_dependency": 3,
+        "creative_dependency": 4,
+        "operations_dependency": 5,
+        "product_dependency": 3,
+        "supplier_dependency": 2,
+        "regulatory_complexity": 1,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 1,
+        "income_ceiling": 2,
+        "automation_potential": 3,
+        "location_dependency": 4,
+        "side_hustle_compatibility": 1,
+        "full_time_founder_requirement": 7,
+        "business_experience_requirement": 8
+      },
+      "best_strengths": [
+        "networking",
+        "finance_analysis",
+        "sales"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        2
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        6
+      ],
+      "typical_validation_window_days": 30,
+      "typical_first_revenue_window_days": 54,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-freelancing-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "agency",
+      "slug": "agency",
+      "display_name": "Agency",
+      "short_description": "A hybrid agency model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "b2b",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 200000,
+        "typical_startup_low_minor": 2000000,
+        "typical_startup_high_minor": 15000000,
+        "ideal_low_minor": 2000000,
+        "ideal_high_minor": 15000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 8,
+        "operator_dependency": 9,
+        "speed_to_validation": 9,
+        "speed_to_first_revenue": 9,
+        "scalability": 7,
+        "recurring_revenue": 7,
+        "inventory_requirement": 1,
+        "staff_requirement": 7,
+        "customer_interaction": 10,
+        "technical_complexity": 9,
+        "sales_dependency": 4,
+        "marketing_dependency": 5,
+        "creative_dependency": 4,
+        "operations_dependency": 9,
+        "product_dependency": 3,
+        "supplier_dependency": 2,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 2,
+        "working_capital_requirement": 4,
+        "financial_risk": 6,
+        "income_ceiling": 7,
+        "automation_potential": 2,
+        "location_dependency": 6,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 6,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "networking",
+        "technology",
+        "operations"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 33,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-agency-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "consulting",
+      "slug": "consulting",
+      "display_name": "Consulting",
+      "short_description": "A hybrid consulting model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "b2b",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 100000,
+        "typical_startup_low_minor": 1000000,
+        "typical_startup_high_minor": 8000000,
+        "ideal_low_minor": 1000000,
+        "ideal_high_minor": 8000000
+      },
+      "scores": {
+        "capital_intensity": 1,
+        "time_requirement": 6,
+        "operator_dependency": 9,
+        "speed_to_validation": 10,
+        "speed_to_first_revenue": 9,
+        "scalability": 6,
+        "recurring_revenue": 5,
+        "inventory_requirement": 1,
+        "staff_requirement": 1,
+        "customer_interaction": 9,
+        "technical_complexity": 3,
+        "sales_dependency": 8,
+        "marketing_dependency": 2,
+        "creative_dependency": 3,
+        "operations_dependency": 5,
+        "product_dependency": 3,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 2,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 1,
+        "financial_risk": 2,
+        "income_ceiling": 4,
+        "automation_potential": 6,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 8,
+        "full_time_founder_requirement": 8,
+        "business_experience_requirement": 9
+      },
+      "best_strengths": [
+        "networking",
+        "finance_analysis",
+        "sales"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        2
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 30,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-consulting-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "specialized-recruitment",
+      "slug": "specialized-recruitment",
+      "display_name": "Specialized Recruitment Platform",
+      "short_description": "A hybrid specialized recruitment platform model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "b2b",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 300000,
+        "typical_startup_low_minor": 2500000,
+        "typical_startup_high_minor": 18000000,
+        "ideal_low_minor": 2500000,
+        "ideal_high_minor": 18000000
+      },
+      "scores": {
+        "capital_intensity": 2,
+        "time_requirement": 7,
+        "operator_dependency": 8,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 8,
+        "scalability": 7,
+        "recurring_revenue": 5,
+        "inventory_requirement": 1,
+        "staff_requirement": 3,
+        "customer_interaction": 10,
+        "technical_complexity": 4,
+        "sales_dependency": 9,
+        "marketing_dependency": 3,
+        "creative_dependency": 2,
+        "operations_dependency": 7,
+        "product_dependency": 5,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 1,
+        "working_capital_requirement": 2,
+        "financial_risk": 4,
+        "income_ceiling": 7,
+        "automation_potential": 7,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 7,
+        "full_time_founder_requirement": 7,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "networking",
+        "sales",
+        "operations"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-specialized-recruitment-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "local-service-brand",
+      "slug": "local-service-brand",
+      "display_name": "Local Service Brand",
+      "short_description": "A offline local service brand model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 500000,
+        "typical_startup_low_minor": 3000000,
+        "typical_startup_high_minor": 20000000,
+        "ideal_low_minor": 3000000,
+        "ideal_high_minor": 20000000
+      },
+      "scores": {
+        "capital_intensity": 3,
+        "time_requirement": 7,
+        "operator_dependency": 9,
+        "speed_to_validation": 9,
+        "speed_to_first_revenue": 9,
+        "scalability": 5,
+        "recurring_revenue": 4,
+        "inventory_requirement": 2,
+        "staff_requirement": 3,
+        "customer_interaction": 9,
+        "technical_complexity": 3,
+        "sales_dependency": 8,
+        "marketing_dependency": 4,
+        "creative_dependency": 8,
+        "operations_dependency": 3,
+        "product_dependency": 9,
+        "supplier_dependency": 4,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 4,
+        "working_capital_requirement": 3,
+        "financial_risk": 4,
+        "income_ceiling": 5,
+        "automation_potential": 6,
+        "location_dependency": 4,
+        "side_hustle_compatibility": 9,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "networking",
+        "sales",
+        "creative"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 33,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-local-service-brand-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "mobile-service-business",
+      "slug": "mobile-service-business",
+      "display_name": "Mobile Service Business",
+      "short_description": "A offline mobile service business model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 800000,
+        "typical_startup_low_minor": 5000000,
+        "typical_startup_high_minor": 30000000,
+        "ideal_low_minor": 5000000,
+        "ideal_high_minor": 30000000
+      },
+      "scores": {
+        "capital_intensity": 3,
+        "time_requirement": 7,
+        "operator_dependency": 9,
+        "speed_to_validation": 9,
+        "speed_to_first_revenue": 9,
+        "scalability": 5,
+        "recurring_revenue": 3,
+        "inventory_requirement": 3,
+        "staff_requirement": 2,
+        "customer_interaction": 9,
+        "technical_complexity": 2,
+        "sales_dependency": 7,
+        "marketing_dependency": 3,
+        "creative_dependency": 9,
+        "operations_dependency": 4,
+        "product_dependency": 8,
+        "supplier_dependency": 5,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 4,
+        "working_capital_requirement": 3,
+        "financial_risk": 4,
+        "income_ceiling": 5,
+        "automation_potential": 6,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 5,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "creative",
+        "networking",
+        "teaching"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 33,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-mobile-service-business-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "home-services-platform",
+      "slug": "home-services-platform",
+      "display_name": "Home Services Platform",
+      "short_description": "A hybrid home services platform model evaluated as a category rather than a niche.",
+      "category": "market",
+      "validation_template_id": "marketplace",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 2000000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 90000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 90000000
+      },
+      "scores": {
+        "capital_intensity": 5,
+        "time_requirement": 9,
+        "operator_dependency": 9,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 5,
+        "scalability": 9,
+        "recurring_revenue": 7,
+        "inventory_requirement": 1,
+        "staff_requirement": 8,
+        "customer_interaction": 10,
+        "technical_complexity": 8,
+        "sales_dependency": 10,
+        "marketing_dependency": 4,
+        "creative_dependency": 2,
+        "operations_dependency": 10,
+        "product_dependency": 9,
+        "supplier_dependency": 1,
+        "regulatory_complexity": 5,
+        "fixed_cost_intensity": 4,
+        "working_capital_requirement": 4,
+        "financial_risk": 7,
+        "income_ceiling": 9,
+        "automation_potential": 8,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 7,
+        "full_time_founder_requirement": 8,
+        "business_experience_requirement": 4
+      },
+      "best_strengths": [
+        "sales",
+        "operations",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        11
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": true,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-home-services-platform-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "property-service",
+      "slug": "property-service",
+      "display_name": "Property-related Service",
+      "short_description": "A offline property-related service model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1000000,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 50000000
+      },
+      "scores": {
+        "capital_intensity": 4,
+        "time_requirement": 8,
+        "operator_dependency": 9,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 8,
+        "scalability": 6,
+        "recurring_revenue": 5,
+        "inventory_requirement": 2,
+        "staff_requirement": 5,
+        "customer_interaction": 10,
+        "technical_complexity": 3,
+        "sales_dependency": 9,
+        "marketing_dependency": 3,
+        "creative_dependency": 6,
+        "operations_dependency": 6,
+        "product_dependency": 9,
+        "supplier_dependency": 3,
+        "regulatory_complexity": 5,
+        "fixed_cost_intensity": 4,
+        "working_capital_requirement": 5,
+        "financial_risk": 6,
+        "income_ceiling": 7,
+        "automation_potential": 8,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 6,
+        "business_experience_requirement": 6
+      },
+      "best_strengths": [
+        "networking",
+        "sales",
+        "creative"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-property-service-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "automotive-service",
+      "slug": "automotive-service",
+      "display_name": "Automotive Service",
+      "short_description": "A offline automotive service model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 3000000,
+        "typical_startup_low_minor": 25000000,
+        "typical_startup_high_minor": 120000000,
+        "ideal_low_minor": 25000000,
+        "ideal_high_minor": 120000000
+      },
+      "scores": {
+        "capital_intensity": 7,
+        "time_requirement": 9,
+        "operator_dependency": 10,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 7,
+        "scalability": 5,
+        "recurring_revenue": 3,
+        "inventory_requirement": 7,
+        "staff_requirement": 8,
+        "customer_interaction": 9,
+        "technical_complexity": 3,
+        "sales_dependency": 8,
+        "marketing_dependency": 2,
+        "creative_dependency": 10,
+        "operations_dependency": 7,
+        "product_dependency": 9,
+        "supplier_dependency": 7,
+        "regulatory_complexity": 6,
+        "fixed_cost_intensity": 7,
+        "working_capital_requirement": 7,
+        "financial_risk": 8,
+        "income_ceiling": 8,
+        "automation_potential": 8,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 7,
+        "business_experience_requirement": 5
+      },
+      "best_strengths": [
+        "creative",
+        "teaching",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        11
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 77,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-automotive-service-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "event-business",
+      "slug": "event-business",
+      "display_name": "Event-related Business",
+      "short_description": "A offline event-related business model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1000000,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 50000000
+      },
+      "scores": {
+        "capital_intensity": 4,
+        "time_requirement": 8,
+        "operator_dependency": 9,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 9,
+        "scalability": 5,
+        "recurring_revenue": 2,
+        "inventory_requirement": 4,
+        "staff_requirement": 6,
+        "customer_interaction": 10,
+        "technical_complexity": 3,
+        "sales_dependency": 10,
+        "marketing_dependency": 8,
+        "creative_dependency": 9,
+        "operations_dependency": 4,
+        "product_dependency": 9,
+        "supplier_dependency": 4,
+        "regulatory_complexity": 5,
+        "fixed_cost_intensity": 4,
+        "working_capital_requirement": 4,
+        "financial_risk": 5,
+        "income_ceiling": 7,
+        "automation_potential": 7,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 7,
+        "business_experience_requirement": 6
+      },
+      "best_strengths": [
+        "sales",
+        "networking",
+        "creative"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-event-business-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "local-experiences",
+      "slug": "local-experiences",
+      "display_name": "Local Experience Business",
+      "short_description": "A offline local experience business model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 800000,
+        "typical_startup_low_minor": 5000000,
+        "typical_startup_high_minor": 30000000,
+        "ideal_low_minor": 5000000,
+        "ideal_high_minor": 30000000
+      },
+      "scores": {
+        "capital_intensity": 3,
+        "time_requirement": 7,
+        "operator_dependency": 9,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 8,
+        "scalability": 6,
+        "recurring_revenue": 3,
+        "inventory_requirement": 2,
+        "staff_requirement": 3,
+        "customer_interaction": 10,
+        "technical_complexity": 2,
+        "sales_dependency": 9,
+        "marketing_dependency": 7,
+        "creative_dependency": 8,
+        "operations_dependency": 4,
+        "product_dependency": 8,
+        "supplier_dependency": 3,
+        "regulatory_complexity": 3,
+        "fixed_cost_intensity": 3,
+        "working_capital_requirement": 4,
+        "financial_risk": 4,
+        "income_ceiling": 6,
+        "automation_potential": 7,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 6,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "networking",
+        "sales",
+        "creative"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        8
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-local-experiences-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "rental-business",
+      "slug": "rental-business",
+      "display_name": "Rental Business",
+      "short_description": "A offline rental business model evaluated as a category rather than a niche.",
+      "category": "rental",
+      "validation_template_id": "rental",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 3000000,
+        "typical_startup_low_minor": 25000000,
+        "typical_startup_high_minor": 150000000,
+        "ideal_low_minor": 25000000,
+        "ideal_high_minor": 150000000
+      },
+      "scores": {
+        "capital_intensity": 8,
+        "time_requirement": 6,
+        "operator_dependency": 6,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 7,
+        "scalability": 6,
+        "recurring_revenue": 4,
+        "inventory_requirement": 9,
+        "staff_requirement": 5,
+        "customer_interaction": 6,
+        "technical_complexity": 3,
+        "sales_dependency": 6,
+        "marketing_dependency": 5,
+        "creative_dependency": 2,
+        "operations_dependency": 9,
+        "product_dependency": 7,
+        "supplier_dependency": 8,
+        "regulatory_complexity": 5,
+        "fixed_cost_intensity": 5,
+        "working_capital_requirement": 7,
+        "financial_risk": 8,
+        "income_ceiling": 9,
+        "automation_potential": 7,
+        "location_dependency": 7,
+        "side_hustle_compatibility": 4,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 4
+      },
+      "best_strengths": [
+        "operations",
+        "technical_trade",
+        "product_sourcing"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 77,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-rental-business-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "cloud-kitchen",
+      "slug": "cloud-kitchen",
+      "display_name": "Cloud Kitchen",
+      "short_description": "A offline cloud kitchen model evaluated as a category rather than a niche.",
+      "category": "food",
+      "validation_template_id": "food",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 5000000,
+        "typical_startup_low_minor": 40000000,
+        "typical_startup_high_minor": 200000000,
+        "ideal_low_minor": 40000000,
+        "ideal_high_minor": 200000000
+      },
+      "scores": {
+        "capital_intensity": 8,
+        "time_requirement": 10,
+        "operator_dependency": 10,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 8,
+        "scalability": 6,
+        "recurring_revenue": 4,
+        "inventory_requirement": 10,
+        "staff_requirement": 9,
+        "customer_interaction": 7,
+        "technical_complexity": 3,
+        "sales_dependency": 8,
+        "marketing_dependency": 8,
+        "creative_dependency": 6,
+        "operations_dependency": 10,
+        "product_dependency": 9,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 10,
+        "fixed_cost_intensity": 10,
+        "working_capital_requirement": 8,
+        "financial_risk": 9,
+        "income_ceiling": 10,
+        "automation_potential": 9,
+        "location_dependency": 7,
+        "side_hustle_compatibility": 2,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 2
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        12
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-cloud-kitchen-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "specialist-food-brand",
+      "slug": "specialist-food-brand",
+      "display_name": "Specialist Food Brand",
+      "short_description": "A hybrid specialist food brand model evaluated as a category rather than a niche.",
+      "category": "food",
+      "validation_template_id": "food",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 2000000,
+        "typical_startup_low_minor": 15000000,
+        "typical_startup_high_minor": 80000000,
+        "ideal_low_minor": 15000000,
+        "ideal_high_minor": 80000000
+      },
+      "scores": {
+        "capital_intensity": 6,
+        "time_requirement": 8,
+        "operator_dependency": 8,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 7,
+        "scalability": 7,
+        "recurring_revenue": 5,
+        "inventory_requirement": 9,
+        "staff_requirement": 6,
+        "customer_interaction": 6,
+        "technical_complexity": 2,
+        "sales_dependency": 8,
+        "marketing_dependency": 9,
+        "creative_dependency": 7,
+        "operations_dependency": 9,
+        "product_dependency": 9,
+        "supplier_dependency": 9,
+        "regulatory_complexity": 9,
+        "fixed_cost_intensity": 8,
+        "working_capital_requirement": 7,
+        "financial_risk": 7,
+        "income_ceiling": 9,
+        "automation_potential": 8,
+        "location_dependency": 7,
+        "side_hustle_compatibility": 4,
+        "full_time_founder_requirement": 8,
+        "business_experience_requirement": 4
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        2,
+        4
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 77,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-specialist-food-brand-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "restaurant-cafe",
+      "slug": "restaurant-cafe",
+      "display_name": "Restaurant / Cafe",
+      "short_description": "A offline restaurant / cafe model evaluated as a category rather than a niche.",
+      "category": "food",
+      "validation_template_id": "food",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 10000000,
+        "typical_startup_low_minor": 100000000,
+        "typical_startup_high_minor": 500000000,
+        "ideal_low_minor": 100000000,
+        "ideal_high_minor": 500000000
+      },
+      "scores": {
+        "capital_intensity": 10,
+        "time_requirement": 10,
+        "operator_dependency": 10,
+        "speed_to_validation": 4,
+        "speed_to_first_revenue": 6,
+        "scalability": 6,
+        "recurring_revenue": 5,
+        "inventory_requirement": 10,
+        "staff_requirement": 10,
+        "customer_interaction": 10,
+        "technical_complexity": 3,
+        "sales_dependency": 8,
+        "marketing_dependency": 8,
+        "creative_dependency": 6,
+        "operations_dependency": 10,
+        "product_dependency": 10,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 10,
+        "fixed_cost_intensity": 10,
+        "working_capital_requirement": 9,
+        "financial_risk": 10,
+        "income_ceiling": 10,
+        "automation_potential": 9,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 1,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 2
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        12
+      ],
+      "typical_validation_window_days": 75,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-restaurant-cafe-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "small-retail-store",
+      "slug": "small-retail-store",
+      "display_name": "Small Retail Store",
+      "short_description": "A offline small retail store model evaluated as a category rather than a niche.",
+      "category": "retail",
+      "validation_template_id": "physical_retail",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 8000000,
+        "typical_startup_low_minor": 60000000,
+        "typical_startup_high_minor": 300000000,
+        "ideal_low_minor": 60000000,
+        "ideal_high_minor": 300000000
+      },
+      "scores": {
+        "capital_intensity": 9,
+        "time_requirement": 10,
+        "operator_dependency": 10,
+        "speed_to_validation": 5,
+        "speed_to_first_revenue": 7,
+        "scalability": 5,
+        "recurring_revenue": 3,
+        "inventory_requirement": 10,
+        "staff_requirement": 9,
+        "customer_interaction": 9,
+        "technical_complexity": 2,
+        "sales_dependency": 8,
+        "marketing_dependency": 6,
+        "creative_dependency": 3,
+        "operations_dependency": 10,
+        "product_dependency": 9,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 8,
+        "fixed_cost_intensity": 9,
+        "working_capital_requirement": 9,
+        "financial_risk": 9,
+        "income_ceiling": 10,
+        "automation_potential": 8,
+        "location_dependency": 6,
+        "side_hustle_compatibility": 2,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 2
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        12
+      ],
+      "typical_validation_window_days": 60,
+      "typical_first_revenue_window_days": 77,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-small-retail-store-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "self-service-kiosk",
+      "slug": "self-service-kiosk",
+      "display_name": "Self-service Kiosk Business",
+      "short_description": "A offline self-service kiosk business model evaluated as a category rather than a niche.",
+      "category": "retail",
+      "validation_template_id": "physical_retail",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 6000000,
+        "typical_startup_low_minor": 50000000,
+        "typical_startup_high_minor": 250000000,
+        "ideal_low_minor": 50000000,
+        "ideal_high_minor": 250000000
+      },
+      "scores": {
+        "capital_intensity": 9,
+        "time_requirement": 6,
+        "operator_dependency": 6,
+        "speed_to_validation": 4,
+        "speed_to_first_revenue": 6,
+        "scalability": 6,
+        "recurring_revenue": 2,
+        "inventory_requirement": 9,
+        "staff_requirement": 4,
+        "customer_interaction": 4,
+        "technical_complexity": 5,
+        "sales_dependency": 5,
+        "marketing_dependency": 4,
+        "creative_dependency": 2,
+        "operations_dependency": 9,
+        "product_dependency": 7,
+        "supplier_dependency": 9,
+        "regulatory_complexity": 7,
+        "fixed_cost_intensity": 8,
+        "working_capital_requirement": 8,
+        "financial_risk": 8,
+        "income_ceiling": 9,
+        "automation_potential": 7,
+        "location_dependency": 7,
+        "side_hustle_compatibility": 5,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 3
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        3,
+        7
+      ],
+      "typical_validation_window_days": 75,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": false,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-self-service-kiosk-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "franchise",
+      "slug": "franchise",
+      "display_name": "Franchise",
+      "short_description": "A offline franchise model evaluated as a category rather than a niche.",
+      "category": "retail",
+      "validation_template_id": "physical_retail",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 15000000,
+        "typical_startup_low_minor": 120000000,
+        "typical_startup_high_minor": 600000000,
+        "ideal_low_minor": 120000000,
+        "ideal_high_minor": 600000000
+      },
+      "scores": {
+        "capital_intensity": 10,
+        "time_requirement": 9,
+        "operator_dependency": 9,
+        "speed_to_validation": 3,
+        "speed_to_first_revenue": 6,
+        "scalability": 6,
+        "recurring_revenue": 5,
+        "inventory_requirement": 9,
+        "staff_requirement": 10,
+        "customer_interaction": 9,
+        "technical_complexity": 2,
+        "sales_dependency": 8,
+        "marketing_dependency": 7,
+        "creative_dependency": 3,
+        "operations_dependency": 10,
+        "product_dependency": 9,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 10,
+        "fixed_cost_intensity": 10,
+        "working_capital_requirement": 9,
+        "financial_risk": 10,
+        "income_ceiling": 10,
+        "automation_potential": 8,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 1,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 2
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        11
+      ],
+      "typical_validation_window_days": 100,
+      "typical_first_revenue_window_days": 90,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-franchise-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "local-logistics",
+      "slug": "local-logistics",
+      "display_name": "Local Logistics",
+      "short_description": "A offline local logistics model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 4000000,
+        "typical_startup_low_minor": 30000000,
+        "typical_startup_high_minor": 180000000,
+        "ideal_low_minor": 30000000,
+        "ideal_high_minor": 180000000
+      },
+      "scores": {
+        "capital_intensity": 8,
+        "time_requirement": 10,
+        "operator_dependency": 10,
+        "speed_to_validation": 8,
+        "speed_to_first_revenue": 9,
+        "scalability": 6,
+        "recurring_revenue": 5,
+        "inventory_requirement": 6,
+        "staff_requirement": 9,
+        "customer_interaction": 8,
+        "technical_complexity": 4,
+        "sales_dependency": 9,
+        "marketing_dependency": 4,
+        "creative_dependency": 2,
+        "operations_dependency": 10,
+        "product_dependency": 7,
+        "supplier_dependency": 8,
+        "regulatory_complexity": 6,
+        "fixed_cost_intensity": 7,
+        "working_capital_requirement": 8,
+        "financial_risk": 8,
+        "income_ceiling": 9,
+        "automation_potential": 8,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 3,
+        "full_time_founder_requirement": 10,
+        "business_experience_requirement": 3
+      },
+      "best_strengths": [
+        "operations",
+        "technical_trade",
+        "sales"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        12
+      ],
+      "typical_validation_window_days": 38,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": true,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-local-logistics-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "physical-manufacturing",
+      "slug": "physical-manufacturing",
+      "display_name": "Physical Manufacturing",
+      "short_description": "A offline physical manufacturing model evaluated as a category rather than a niche.",
+      "category": "b2b",
+      "validation_template_id": "b2b",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 15000000,
+        "typical_startup_low_minor": 120000000,
+        "typical_startup_high_minor": 800000000,
+        "ideal_low_minor": 120000000,
+        "ideal_high_minor": 800000000
+      },
+      "scores": {
+        "capital_intensity": 10,
+        "time_requirement": 10,
+        "operator_dependency": 9,
+        "speed_to_validation": 3,
+        "speed_to_first_revenue": 5,
+        "scalability": 7,
+        "recurring_revenue": 5,
+        "inventory_requirement": 10,
+        "staff_requirement": 10,
+        "customer_interaction": 7,
+        "technical_complexity": 7,
+        "sales_dependency": 9,
+        "marketing_dependency": 4,
+        "creative_dependency": 4,
+        "operations_dependency": 10,
+        "product_dependency": 10,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 9,
+        "fixed_cost_intensity": 10,
+        "working_capital_requirement": 9,
+        "financial_risk": 10,
+        "income_ceiling": 10,
+        "automation_potential": 9,
+        "location_dependency": 9,
+        "side_hustle_compatibility": 2,
+        "full_time_founder_requirement": 9,
+        "business_experience_requirement": 1
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        12
+      ],
+      "typical_validation_window_days": 100,
+      "typical_first_revenue_window_days": 108,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-physical-manufacturing-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "small-distribution",
+      "slug": "small-distribution",
+      "display_name": "Small Distribution Business",
+      "short_description": "A offline small distribution business model evaluated as a category rather than a niche.",
+      "category": "b2b",
+      "validation_template_id": "b2b",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 6000000,
+        "typical_startup_low_minor": 50000000,
+        "typical_startup_high_minor": 250000000,
+        "ideal_low_minor": 50000000,
+        "ideal_high_minor": 250000000
+      },
+      "scores": {
+        "capital_intensity": 9,
+        "time_requirement": 9,
+        "operator_dependency": 9,
+        "speed_to_validation": 6,
+        "speed_to_first_revenue": 7,
+        "scalability": 6,
+        "recurring_revenue": 5,
+        "inventory_requirement": 10,
+        "staff_requirement": 8,
+        "customer_interaction": 8,
+        "technical_complexity": 2,
+        "sales_dependency": 9,
+        "marketing_dependency": 5,
+        "creative_dependency": 2,
+        "operations_dependency": 10,
+        "product_dependency": 8,
+        "supplier_dependency": 10,
+        "regulatory_complexity": 7,
+        "fixed_cost_intensity": 9,
+        "working_capital_requirement": 8,
+        "financial_risk": 8,
+        "income_ceiling": 10,
+        "automation_potential": 8,
+        "location_dependency": 8,
+        "side_hustle_compatibility": 3,
+        "full_time_founder_requirement": 9,
+        "business_experience_requirement": 2
+      },
+      "best_strengths": [
+        "product_sourcing",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        3,
+        5
+      ],
+      "ideal_daily_hours_range": [
+        5,
+        11
+      ],
+      "typical_validation_window_days": 50,
+      "typical_first_revenue_window_days": 77,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": true,
+      "requires_staff_initially": true,
+      "requires_physical_location": true,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": false,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-small-distribution-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "professional-practice",
+      "slug": "professional-practice",
+      "display_name": "Professional Practice",
+      "short_description": "A hybrid professional practice model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "b2b",
+      "online_offline_type": "hybrid",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1000000,
+        "typical_startup_low_minor": 8000000,
+        "typical_startup_high_minor": 50000000,
+        "ideal_low_minor": 8000000,
+        "ideal_high_minor": 50000000
+      },
+      "scores": {
+        "capital_intensity": 4,
+        "time_requirement": 8,
+        "operator_dependency": 10,
+        "speed_to_validation": 7,
+        "speed_to_first_revenue": 8,
+        "scalability": 6,
+        "recurring_revenue": 7,
+        "inventory_requirement": 1,
+        "staff_requirement": 5,
+        "customer_interaction": 10,
+        "technical_complexity": 4,
+        "sales_dependency": 8,
+        "marketing_dependency": 2,
+        "creative_dependency": 2,
+        "operations_dependency": 9,
+        "product_dependency": 5,
+        "supplier_dependency": 2,
+        "regulatory_complexity": 6,
+        "fixed_cost_intensity": 3,
+        "working_capital_requirement": 2,
+        "financial_risk": 5,
+        "income_ceiling": 6,
+        "automation_potential": 8,
+        "location_dependency": 3,
+        "side_hustle_compatibility": 7,
+        "full_time_founder_requirement": 8,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "networking",
+        "operations",
+        "technical_trade"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 43,
+      "typical_first_revenue_window_days": 68,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": true,
+      "supports_recurring_revenue": true,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-professional-practice-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    },
+    {
+      "business_model_id": "technical-trade-service",
+      "slug": "technical-trade-service",
+      "display_name": "Technical Trade Service",
+      "short_description": "A offline technical trade service model evaluated as a category rather than a niche.",
+      "category": "service",
+      "validation_template_id": "local_service",
+      "online_offline_type": "offline",
+      "base_currency": "INR",
+      "capital": {
+        "minimum_test_minor": 1500000,
+        "typical_startup_low_minor": 10000000,
+        "typical_startup_high_minor": 60000000,
+        "ideal_low_minor": 10000000,
+        "ideal_high_minor": 60000000
+      },
+      "scores": {
+        "capital_intensity": 5,
+        "time_requirement": 8,
+        "operator_dependency": 10,
+        "speed_to_validation": 9,
+        "speed_to_first_revenue": 9,
+        "scalability": 5,
+        "recurring_revenue": 3,
+        "inventory_requirement": 4,
+        "staff_requirement": 4,
+        "customer_interaction": 9,
+        "technical_complexity": 5,
+        "sales_dependency": 7,
+        "marketing_dependency": 2,
+        "creative_dependency": 10,
+        "operations_dependency": 6,
+        "product_dependency": 8,
+        "supplier_dependency": 5,
+        "regulatory_complexity": 5,
+        "fixed_cost_intensity": 5,
+        "working_capital_requirement": 5,
+        "financial_risk": 5,
+        "income_ceiling": 6,
+        "automation_potential": 6,
+        "location_dependency": 2,
+        "side_hustle_compatibility": 10,
+        "full_time_founder_requirement": 6,
+        "business_experience_requirement": 7
+      },
+      "best_strengths": [
+        "creative",
+        "teaching",
+        "networking"
+      ],
+      "poor_fit_strengths": [],
+      "ideal_risk_range": [
+        1,
+        3
+      ],
+      "ideal_daily_hours_range": [
+        4,
+        10
+      ],
+      "typical_validation_window_days": 33,
+      "typical_first_revenue_window_days": 60,
+      "common_failure_modes": [
+        "Testing an offer without enough customer evidence",
+        "Scaling spend before repeatable unit economics"
+      ],
+      "advantages": [
+        "Can be tested with explicit evidence gates",
+        "Supports a staged commitment decision"
+      ],
+      "disadvantages": [
+        "Outcome depends on execution and market choice",
+        "Seed estimates require model-specific research"
+      ],
+      "validation_methods": [
+        "Customer interviews",
+        "Priced offer or pre-sale test",
+        "Capped acquisition experiment"
+      ],
+      "key_metrics": [
+        "qualified_demand",
+        "conversion_rate",
+        "contribution_margin",
+        "payback_period"
+      ],
+      "requires_inventory": false,
+      "requires_staff_initially": false,
+      "requires_physical_location": false,
+      "supports_remote_operation": false,
+      "supports_recurring_revenue": false,
+      "can_start_part_time": true,
+      "evidence": {
+        "confidence_level": "low",
+        "source_type": "model_assumption",
+        "assumption_id": "assumption-technical-trade-service-in-v1",
+        "source_refs": [],
+        "last_reviewed_at": "2026-08-28",
+        "notes": "Generalized India-first seed for engine QA; not a verified quote or forecast."
+      }
+    }
+  ]
+}
