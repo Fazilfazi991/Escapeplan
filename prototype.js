@@ -94,7 +94,7 @@
   }
 
   function scrollToLandingSection(kind) {
-    const landing = page.includes('landing_page');
+    const landing = page === 'home' || page.includes('landing_page');
     if (!landing) {
       sessionStorage.setItem('escapeplan-scroll-target', kind);
       routes.home();

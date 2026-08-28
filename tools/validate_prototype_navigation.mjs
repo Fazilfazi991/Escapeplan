@@ -4,6 +4,7 @@ import path from 'node:path';
 const root = process.cwd();
 const desktop = fs.readFileSync(path.join(root, 'escapeplan_landing_page_desktop_refined/code.html'), 'utf8');
 const mobile = fs.readFileSync(path.join(root, 'escapeplan_landing_page_mobile_refined/code.html'), 'utf8');
+const prototype = fs.readFileSync(path.join(root, 'prototype.js'), 'utf8');
 const requiredLandingMarkup = [
   'href="/quiz_question_1_mobile/code"',
   'href="#how-it-works"',
@@ -18,6 +19,10 @@ for (const marker of requiredLandingMarkup) {
 
 for (const marker of ['href="/quiz_question_1_mobile/code"', 'id="how-it-works"', 'id="sample-result"']) {
   if (!mobile.includes(marker)) throw new Error(`Mobile landing is missing ${marker}`);
+}
+
+if (!prototype.includes("page === 'home' || page.includes('landing_page')")) {
+  throw new Error('Root URL must be classified as a landing page for in-page navigation');
 }
 
 const routeNames = [
