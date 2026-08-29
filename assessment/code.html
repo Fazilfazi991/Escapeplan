@@ -22,7 +22,7 @@
     <main id="assessment" class="assessment-main" tabindex="-1">
       <section class="assessment-progress" aria-label="Assessment progress">
         <div class="assessment-progress-copy">
-          <span id="progress-stage">EscapePlan Assessment</span>
+          <span id="progress-stage">BUILDING YOUR ESCAPEPLAN</span>
           <strong id="progress-label">14% complete</strong>
         </div>
         <div class="assessment-progress-track" aria-hidden="true"><i id="progress-bar"></i></div>
@@ -35,6 +35,9 @@
           <p id="question-help" class="question-help"></p>
         </div>
         <div id="option-list" class="option-list" role="group"></div>
+        <div id="reaction" class="assessment-reaction" aria-live="polite" hidden>
+          <strong id="reaction-title"></strong><span id="reaction-copy"></span>
+        </div>
       </section>
 
       <section id="insight-view" class="insight-view" aria-live="polite" hidden>
@@ -56,6 +59,8 @@
   </div>
 
   <script src="/shared/escapeplan-core.js"></script>
+  <script src="/assessment/assessment-logic.js"></script>
+  <script src="/assessment/assessment-narrator.js"></script>
   <script src="/assessment/assessment.js"></script>
 </body>
 </html>

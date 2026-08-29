@@ -3,58 +3,58 @@
 
   const questions = [
     {
-      id: 'situation', stage: 'Your situation', title: 'Where are you now?',
-      help: 'Choose the option that best describes your current situation.', max: 1,
-      options: ['Full-time job', 'Student', 'Already run a business', 'Ready to start now']
+      id: 'motivation', stage: 'What you want', title: 'What are you trying to change right now?',
+      help: 'Choose the one that matters most today.', max: 1,
+      options: ['I want more income', 'I want out of my job eventually', 'I want something of my own', 'I want to build real wealth', 'I’m just exploring']
     },
     {
-      id: 'motivation', stage: 'What you want', title: 'What do you want a business to change?',
-      help: 'Choose up to two. This helps us understand what “better” means to you.', max: 2,
-      options: ['Extra income', 'Leave my job eventually', 'Build long-term wealth', 'More freedom / flexibility', 'Build something of my own', 'Exploring']
+      id: 'situation', stage: 'Your life today', title: 'What does your life look like today?',
+      help: 'This tells us what a realistic first move looks like.', max: 1,
+      options: ['Full-time job', 'Studying', 'Already running a business', 'Ready to go full-time', 'Between jobs']
     },
     {
-      id: 'capital', stage: 'Your money', title: 'How much can you safely invest?',
-      help: 'Choose an amount you could invest without putting essential expenses at risk.', max: 1,
+      id: 'capital', stage: 'Your money', title: 'If the right business appeared tomorrow, what could you comfortably test with?',
+      help: 'Not everything. Just an amount you could test without risking essential expenses.', max: 1,
       options: ['Under ₹25K', '₹25K–₹1L', '₹1L–₹3L', '₹3L–₹7L', '₹7L+']
     },
     {
-      id: 'time', stage: 'Your time', title: 'How much time can you realistically give it?',
-      help: 'Think about a normal week, not your most motivated week.', max: 1,
+      id: 'time', stage: 'Your time', title: 'Be realistic — how much time can this get from you?',
+      help: 'Think about a normal week, not your most motivated one.', max: 1,
       options: ['1 hour/day', '2–3 hours/day', '4–6 hours/day', 'Full-time']
     },
     {
-      id: 'environment', stage: 'How you want to work', title: 'Which business environment attracts you?',
-      help: 'There is no better choice—only the one that fits how you want to operate.', max: 1,
-      options: ['Online', 'Physical / local', 'A mix', 'No preference']
+      id: 'environment', stage: 'How you want to work', title: 'Which kind of work sounds more like you?',
+      help: 'Choose the operating style that feels most natural.', max: 1,
+      options: ['Sell or build through the internet', 'Run something people can visit / use locally', 'Combine both', 'I don’t care — show me what fits']
     },
     {
-      id: 'strengths', stage: 'Your advantages', title: 'What are your strongest advantages?',
-      help: 'Choose up to two strengths you could use from day one.', max: 2,
-      options: ['Sales', 'Technology', 'Creative / content', 'Products / sourcing', 'Operations', 'Networking', 'Numbers / analysis', 'Not sure']
+      id: 'strengths', stage: 'Your advantages', title: 'What do people already rely on you for?',
+      help: 'Choose up to two. Existing advantages can change what is realistic.', max: 2,
+      options: ['Selling / convincing', 'Technology / systems', 'Creative ideas / content', 'Finding products / deals', 'Managing people / operations', 'Networking', 'Numbers / analysis', 'Nothing obvious yet']
     },
     {
-      id: 'tradeoff', stage: 'Your trade-off', title: 'What matters more right now?',
-      help: 'Choose the direction that feels closer to how you want to build.', max: 1, visual: true,
-      options: ['Start earning sooner', 'Balance speed and scale', 'Build something bigger']
+      id: 'tradeoff', stage: 'Your final trade-off', title: 'Which outcome matters more to you right now?',
+      help: 'Choose where you sit between speed and long-term scale.', max: 1, visual: true,
+      options: ['Money sooner', 'Balanced', 'Growth first', 'Build for the long term']
     }
   ];
 
   const insights = {
-    1: { title: 'Got it.', copy: 'Now we know what you’re trying to change.' },
-    3: { title: 'This changes things.', copy: 'Your available time and capital already make some business models more realistic than others.' },
-    5: { title: 'Interesting…', copy: 'We’re starting to see a pattern in how you want to work.' }
+    1: { title: 'We already know something important.', copy: 'You need a path that fits your life before it asks you to change it.' },
+    3: { title: 'Your path is narrowing.', copy: 'Capital ✓  Time ✓  Lifestyle ✓' },
+    5: { title: 'Okay… this is getting interesting.', copy: 'Your answers now point toward a clearer operating style.' }
   };
 
   const conditionalQuestions = {
     runway: {
-      id: 'runway', stage: 'Quick follow-up', title: 'How many months of expenses could your savings cover?',
-      help: 'A rough estimate is enough. This will later help shape a safer transition plan.', max: 1,
-      options: ['Less than 1 month', '1–3 months', '4–6 months', 'More than 6 months']
+      id: 'runway', stage: 'One useful follow-up', title: 'If your salary stopped tomorrow, how long would your savings last?',
+      help: 'A rough answer is enough.', max: 1,
+      options: ['Less than 2 months', '2–4 months', '5–7 months', '8–12 months', '1 year+']
     },
     operations: {
-      id: 'operations', stage: 'Quick follow-up', title: 'Are you comfortable managing staff or inventory?',
-      help: 'This helps us distinguish between hands-on local models and lighter operating models.', max: 1,
-      options: ['Yes, comfortable with both', 'Staff, but not inventory', 'Inventory, but not staff', 'Prefer neither']
+      id: 'operations', stage: 'One useful follow-up', title: 'How do you feel about staff and inventory?',
+      help: 'This can materially change which local models stay realistic.', max: 1,
+      options: ['Avoid both', 'Inventory is okay', 'Staff is okay', 'Comfortable with both']
     }
   };
 
@@ -68,14 +68,15 @@
     progressLabel: document.getElementById('progress-label'), progressBar: document.getElementById('progress-bar'),
     actions: document.getElementById('assessment-actions'), continueButton: document.getElementById('continue-button'),
     continueLabel: document.querySelector('#continue-button span:first-child'), backButton: document.querySelector('[data-action="back"]'),
+    reaction: document.getElementById('reaction'), reactionTitle: document.getElementById('reaction-title'), reactionCopy: document.getElementById('reaction-copy'),
     insightTitle: document.getElementById('insight-title'), insightCopy: document.getElementById('insight-copy')
   };
 
   function loadState() {
     try {
       const saved = JSON.parse(sessionStorage.getItem(storageKey));
-      return saved && typeof saved === 'object' ? { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, insightAfter: null, ...saved } : { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, insightAfter: null };
-    } catch (_) { return { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, insightAfter: null }; }
+      return saved && typeof saved === 'object' ? { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null, ...saved } : { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null };
+    } catch (_) { return { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null }; }
   }
 
   function saveState() { sessionStorage.setItem(storageKey, JSON.stringify(state)); }
@@ -92,7 +93,8 @@
     const question = activeQuestion();
     const selected = selectedFor(question.id);
     const percent = state.mode === 'core' ? Math.round(((state.index + 1) / questions.length) * 92) : 96 + state.followupIndex;
-    nodes.progressStage.textContent = state.mode === 'core' ? `Step ${state.index + 1} of ${questions.length} · ${question.stage}` : question.stage;
+    const stage = EscapePlanAssessmentLogic.progressStage(question.id);
+    nodes.progressStage.textContent = state.mode === 'core' ? `${stage} · YOUR PATH IS TAKING SHAPE` : 'FIT · ONE USEFUL FOLLOW-UP';
     nodes.progressLabel.textContent = `${percent}% complete`;
     nodes.progressBar.style.transform = `scaleX(${percent / 100})`;
     nodes.category.textContent = question.stage;
@@ -115,6 +117,7 @@
     nodes.questionView.hidden = false;
     nodes.insightView.hidden = true;
     nodes.actions.hidden = false;
+    nodes.reaction.hidden = true;
     nodes.main.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
@@ -126,8 +129,17 @@
     else if (selected.includes(optionIndex)) state.answers[question.id] = selected.filter((value) => value !== optionIndex);
     else if (selected.length < question.max) state.answers[question.id] = [...selected, optionIndex];
     else state.answers[question.id] = [selected[1], optionIndex];
+    state.answerText[question.id] = EscapePlanAssessmentLogic.answerLabels(question, state.answers);
     saveState();
     render();
+    const latest = state.answerText[question.id]?.at(-1);
+    const narration = AssessmentNarrator.fallback({
+      user_state: state.answerText, current_rank_signals: [], allowed_question_types: conditionalQueue(),
+      latest_answer: latest, progress_stage: EscapePlanAssessmentLogic.progressStage(question.id), question_id: question.id
+    });
+    nodes.reactionTitle.textContent = narration.reaction;
+    nodes.reactionCopy.textContent = narration.supporting_copy;
+    nodes.reaction.hidden = false;
   }
 
   function showInsight(afterIndex) {
@@ -187,7 +199,7 @@
     state.insightAfter = null;
     if (completed) {
       saveState();
-      location.href = '/analysis_introduction_desktop/code';
+      location.href = '/analysis-v2/code';
       return;
     }
     state.index += 1;

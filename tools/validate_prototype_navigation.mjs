@@ -8,6 +8,7 @@ const prototype = fs.readFileSync(path.join(root, 'prototype.js'), 'utf8');
 const assessment = fs.readFileSync(path.join(root, 'assessment/assessment.js'), 'utf8');
 const assessmentHtml = fs.readFileSync(path.join(root, 'assessment/code.html'), 'utf8');
 const core = fs.readFileSync(path.join(root, 'shared/escapeplan-core.js'), 'utf8');
+const narrator = fs.readFileSync(path.join(root, 'assessment/assessment-narrator.js'), 'utf8');
 const requiredLandingMarkup = [
   'href="/assessment/code"',
   'href="#how-it-works"',
@@ -42,13 +43,19 @@ if (!assessment.includes("selectedFor('situation').includes(0)") || !assessment.
 if (assessmentHtml.includes('ep-progress') || assessmentHtml.includes('Question 1 of 5')) {
   throw new Error('Assessment must not include the legacy injected progress UI');
 }
+if (/Question\s+\d+\s+of\s+\d+/i.test(assessmentHtml + assessment)) {
+  throw new Error('V2 assessment must not expose conventional question counts');
+}
+for (const field of ['user_state', 'current_rank_signals', 'allowed_question_types', 'latest_answer', 'progress_stage', 'reaction', 'question', 'supporting_copy', 'options', 'curiosity_hint', 'tone']) {
+  if (!narrator.includes(`'${field}'`)) throw new Error(`AssessmentNarrator contract is missing ${field}`);
+}
 if (!core.includes("IN: { currency: 'INR'") || !core.includes("AE: { currency: 'AED'") || !core.includes("US: { currency: 'USD'")) {
   throw new Error('Shared currency formatter must support INR, AED and USD market configuration');
 }
 
 const routeNames = [
   'escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined',
-  'assessment',
+  'assessment', 'analysis-v2', 'result-v2', 'unlock-v2',
   'quiz_question_1_mobile', 'quiz_capital_question_desktop', 'quiz_business_style_mobile',
   'quiz_risk_scenario_desktop', 'quiz_final_question_mobile',
   'analysis_introduction_desktop', 'analysis_capital_income_desktop',
