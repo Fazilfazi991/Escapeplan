@@ -74,12 +74,12 @@
 
   function loadState() {
     try {
-      const saved = JSON.parse(sessionStorage.getItem(storageKey));
+      const saved = JSON.parse(sessionStorage.getItem(storageKey) || localStorage.getItem(storageKey));
       return saved && typeof saved === 'object' ? { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null, ...saved } : { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null };
     } catch (_) { return { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null }; }
   }
 
-  function saveState() { sessionStorage.setItem(storageKey, JSON.stringify(state)); }
+  function saveState() { const serialized = JSON.stringify(state); sessionStorage.setItem(storageKey, serialized); localStorage.setItem(storageKey, serialized); }
   function selectedFor(id) { return Array.isArray(state.answers[id]) ? state.answers[id] : []; }
   function activeQuestion() { return state.mode === 'followup' ? conditionalQuestions[state.followupIds[state.followupIndex]] : questions[state.index]; }
   function conditionalQueue() {
