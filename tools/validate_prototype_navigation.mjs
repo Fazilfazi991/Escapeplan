@@ -55,7 +55,7 @@ if (!core.includes("IN: { currency: 'INR'") || !core.includes("AE: { currency: '
 
 const routeNames = [
   'escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined',
-  'assessment', 'analysis-v2', 'result-v2', 'unlock-v2',
+  'assessment', 'analysis-v2', 'result-v2', 'match-v2', 'unlock-v2',
   'quiz_question_1_mobile', 'quiz_capital_question_desktop', 'quiz_business_style_mobile',
   'quiz_risk_scenario_desktop', 'quiz_final_question_mobile',
   'analysis_introduction_desktop', 'analysis_capital_income_desktop',
