@@ -249,16 +249,21 @@
       button.classList.add('ep-selected');
       button.setAttribute('aria-pressed', 'true');
     }));
-    const pay = [...document.querySelectorAll('button, a')].find((item) => /pay ₹199 now|continue demo/.test(label(item)));
+    const pay = [...document.querySelectorAll('button, a')].find((item) => /pay ₹199 now|continue demo|unlock my escapeplan|preview my unlocked escapeplan/.test(label(item))) || document.getElementById('pay-btn');
     const open = [...document.querySelectorAll('button, a')].find((item) => label(item).includes('open my full report'));
     if (open) { open.hidden = true; makeClickable(open, routes.report); }
     if (pay) {
-      pay.innerHTML = 'Continue Demo <span aria-hidden="true">→</span>';
+      pay.innerHTML = 'Preview My Unlocked EscapePlan <span aria-hidden="true">→</span>';
       makeClickable(pay, () => {
         sessionStorage.setItem('escapeplan-demo-unlocked', 'true');
-        pay.hidden = true;
+        const checkoutState = document.getElementById('checkout-state');
+        const successState = document.getElementById('success-state');
+        if (checkoutState && successState) {
+          checkoutState.hidden = true;
+          successState.hidden = false;
+        } else pay.hidden = true;
         if (open) { open.hidden = false; open.focus(); }
-        toast('Demo unlocked. No payment was processed.');
+        toast('Your EscapePlan is unlocked.');
       });
     }
   }

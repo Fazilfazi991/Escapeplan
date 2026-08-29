@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-29T18:30:00+04:00",
+  "title": "Design System: EscapePlan",
+  "extensions": {
+    "colorMeta": {
+      "route-indigo": { "role": "primary", "displayName": "Route Indigo", "canonical": "#4b4ee8", "tonalRamp": ["oklch(22% 0.15 278)", "oklch(32% 0.17 278)", "oklch(43% 0.19 278)", "#4b4ee8", "oklch(65% 0.16 278)", "oklch(75% 0.12 278)", "oklch(86% 0.07 278)", "oklch(95% 0.025 278)"] },
+      "route-indigo-deep": { "role": "primary", "displayName": "Deep Route Indigo", "canonical": "#3033bd", "tonalRamp": ["oklch(18% 0.13 278)", "oklch(27% 0.16 278)", "#3033bd", "oklch(50% 0.18 278)", "oklch(62% 0.15 278)", "oklch(74% 0.11 278)", "oklch(86% 0.06 278)", "oklch(95% 0.02 278)"] },
+      "signal-lime": { "role": "secondary", "displayName": "Signal Lime", "canonical": "#b9ec57", "tonalRamp": ["oklch(22% 0.07 125)", "oklch(34% 0.10 125)", "oklch(46% 0.13 125)", "oklch(58% 0.15 125)", "oklch(70% 0.16 125)", "#b9ec57", "oklch(88% 0.10 125)", "oklch(95% 0.04 125)"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#202027", "tonalRamp": ["#202027", "#34343c", "#4a4953", "#62616c", "#7d7b86", "#9d9ba5", "#c6c4cb", "#f2f1f3"] },
+      "muted-ink": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#686774", "tonalRamp": ["#24232b", "#393842", "#504f5a", "#686774", "#83818d", "#a09eaa", "#c8c6ce", "#f3f2f4"] },
+      "divider": { "role": "neutral", "displayName": "Divider", "canonical": "#dedde7", "tonalRamp": ["#272630", "#403f4a", "#5d5b67", "#7b7985", "#9d9ba6", "#bebcc6", "#dedde7", "#f6f5f8"] },
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#fffdfb", "tonalRamp": ["#272421", "#47423e", "#69625c", "#8e857d", "#b3aaa2", "#d7d0c9", "#eee9e4", "#fffdfb"] },
+      "warm-canvas": { "role": "neutral", "displayName": "Warm Canvas", "canonical": "#f7f5f3", "tonalRamp": ["#262422", "#46423f", "#67625e", "#89847f", "#ada8a3", "#d0cbc7", "#e6e2df", "#f7f5f3"] },
+      "indigo-wash": { "role": "neutral", "displayName": "Indigo Wash", "canonical": "#ecebff", "tonalRamp": ["#242442", "#3e3e65", "#5d5d89", "#7e7ead", "#a1a1d0", "#c5c5ed", "#deddfa", "#ecebff"] },
+      "capital-indigo": { "role": "secondary", "displayName": "Capital Indigo", "canonical": "#292b63", "tonalRamp": ["#191a3b", "#292b63", "#3c3f83", "#575a9e", "#7779b7", "#9b9dce", "#c6c7e5", "#f0f0fa"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Decision Display", "purpose": "One decisive conclusion or question per screen." },
+      "headline": { "displayName": "Section Turn", "purpose": "Introduces the next reveal, mystery, or proposition." },
+      "body": { "displayName": "Practical Explanation", "purpose": "Short evidence, caveats, and next-step context." },
+      "label": { "displayName": "Stage Label", "purpose": "Uppercase stage names, statuses, and compact metadata." }
+    },
+    "shadows": [
+      { "name": "action-lift", "value": "0 13px 30px rgba(75,78,232,.22)", "purpose": "Diffuse lift under the primary action." },
+      { "name": "origin-glow", "value": "0 12px 28px rgba(75,78,232,.28)", "purpose": "Separates the YOU origin from the route field." },
+      { "name": "route-card-lift", "value": "0 8px 24px rgba(32,32,39,.08)", "purpose": "Quietly elevates ranked route destinations." }
+    ],
+    "motion": [
+      { "name": "action-ease", "value": "180ms cubic-bezier(.2,.8,.2,1)", "purpose": "Primary button lift and color response." },
+      { "name": "signal-reveal", "value": "360ms with 160ms item stagger", "purpose": "Reveals assessment signals in reading order once." },
+      { "name": "route-draw", "value": "560ms ease", "purpose": "Draws each route branch from its origin once." },
+      { "name": "unlock-stagger", "value": "550ms with 120ms route stagger", "purpose": "Clarifies unlocked routes in rank order once." }
+    ],
+    "breakpoints": [
+      { "name": "mobile-floor", "value": "320px" },
+      { "name": "wide-layout", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single dominant continuation for each post-assessment stage.",
+      "html": "<button class=\"ds-btn-primary\">Compare My Paths <span aria-hidden=\"true\">→</span></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 24px;border:0;border-radius:14px;background:var(--brand,#4b4ee8);color:#fff;font:800 14px Manrope,sans-serif;box-shadow:0 13px 30px rgba(75,78,232,.22);transition:transform 180ms cubic-bezier(.2,.8,.2,1),background 180ms}.ds-btn-primary:hover{transform:translateY(-2px);background:var(--brand-deep,#3033bd)}.ds-btn-primary:focus-visible{outline:3px solid #8b5cf6;outline-offset:3px}"
+    },
+    {
+      "name": "Category Node",
+      "kind": "chip",
+      "refersTo": "signal-chip",
+      "description": "A non-interactive business-category node used while routes are filtered.",
+      "html": "<span class=\"ds-category-node\">Commerce</span>",
+      "css": ".ds-category-node{display:inline-block;padding:6px 9px;border:1px solid var(--line,#dedde7);border-radius:999px;background:var(--paper,#fffdfb);color:var(--muted,#686774);font:700 10px Manrope,sans-serif}"
+    },
+    {
+      "name": "Question Card",
+      "kind": "card",
+      "refersTo": "question-card",
+      "description": "Frames a useful locked comparison question without inventing its answer.",
+      "html": "<article class=\"ds-question-card\"><strong>Which path needs the least money?</strong><span class=\"ds-mask\">Matched route</span><small>Locked</small></article>",
+      "css": ".ds-question-card{padding:15px 16px;border:1px solid var(--line,#dedde7);border-radius:14px;background:var(--paper,#fffdfb);color:var(--ink,#202027);font-family:Manrope,sans-serif}.ds-question-card strong,.ds-question-card small{display:block}.ds-question-card strong{font-size:14px}.ds-question-card small{margin-top:6px;color:var(--brand-deep,#3033bd);font-size:10px;font-weight:800;text-transform:uppercase}.ds-mask{display:inline-block;min-height:18px;margin-top:9px;padding:4px 7px;border-radius:5px;background:#e7e5eb;color:#75727c;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}"
+    },
+    {
+      "name": "Business DNA Trait",
+      "kind": "custom",
+      "description": "A qualitative trait row whose bar supports emphasis without claiming a score.",
+      "html": "<div class=\"ds-dna-trait\"><span>LOW OVERHEAD <b>Capital-conscious</b></span><i><em></em></i></div>",
+      "css": ".ds-dna-trait{font-family:Manrope,sans-serif}.ds-dna-trait span{display:flex;justify-content:space-between;gap:14px;color:var(--ink,#202027);font-size:11px;font-weight:800;letter-spacing:.05em}.ds-dna-trait span b{color:var(--muted,#686774);font-weight:700;letter-spacing:0}.ds-dna-trait i{display:block;height:7px;margin-top:7px;border-radius:999px;background:#e4e2e8;overflow:hidden}.ds-dna-trait em{display:block;width:72%;height:100%;border-radius:inherit;background:var(--brand,#4b4ee8)}"
+    },
+    {
+      "name": "Escape Route",
+      "kind": "custom",
+      "refersTo": "route-card",
+      "description": "The signature branch-and-destination unit used in ranked route maps.",
+      "html": "<div class=\"ds-route\"><span class=\"ds-origin\">YOU</span><i></i><article><b>#1</b><strong>Niche E-commerce</strong><small>Strongest fit</small></article></div>",
+      "css": ".ds-route{display:grid;grid-template-columns:62px 56px minmax(180px,1fr);align-items:center;font-family:Manrope,sans-serif}.ds-origin{display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:var(--brand,#4b4ee8);color:#fff;font-size:12px;font-weight:800;box-shadow:0 12px 28px rgba(75,78,232,.28)}.ds-route>i{height:1px;background:var(--brand,#4b4ee8)}.ds-route article{min-height:72px;padding:13px 15px;border-radius:14px;background:var(--paper,#fffdfb);color:var(--ink,#202027);box-shadow:0 8px 24px rgba(32,32,39,.08)}.ds-route article b{margin-right:8px;color:var(--brand-deep,#3033bd)}.ds-route article strong{font-size:14px}.ds-route article small{display:block;margin-top:6px;color:var(--muted,#686774);font-size:11px}"
+    },
+    {
+      "name": "Capital Comparison",
+      "kind": "card",
+      "description": "A dark, compact contrast between the user's possible test capital and the one-time unlock.",
+      "html": "<div class=\"ds-capital\"><div><small>You may test with</small><strong>₹25K</strong></div><i>vs</i><div><small>EscapePlan</small><strong>₹199</strong></div></div>",
+      "css": ".ds-capital{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:20px;border-radius:16px;background:#292b63;color:#fff;font-family:Manrope,sans-serif}.ds-capital div{text-align:center}.ds-capital small,.ds-capital strong{display:block}.ds-capital small{color:#d8d9ff;font-size:10px;text-transform:uppercase}.ds-capital strong{margin-top:5px;font-size:20px}.ds-capital i{color:#aeb0d8;font-size:11px}"
+    },
+    {
+      "name": "Paid Report Navigation",
+      "kind": "nav",
+      "description": "The report-only navigation retained after a successful unlock.",
+      "html": "<nav class=\"ds-report-nav\" aria-label=\"Report sections\"><a href=\"#\" aria-current=\"page\">Overview</a><a href=\"#\">Matches</a><a href=\"#\">Money</a><a href=\"#\">Quit Plan</a><a href=\"#\">30 Days</a></nav>",
+      "css": ".ds-report-nav{display:flex;justify-content:flex-end;gap:6px;overflow-x:auto;font:700 13px system-ui,sans-serif}.ds-report-nav a{white-space:nowrap;padding:9px 13px;border-radius:999px;color:#10233f;text-decoration:none}.ds-report-nav a:hover,.ds-report-nav a:focus-visible,.ds-report-nav a[aria-current=page]{background:#0b4fdb;color:#fff}.ds-report-nav a:focus-visible{outline:3px solid #8b5cf6;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Decision Map",
+    "overview": "EscapePlan should feel like a clear route emerging from uncertainty. Warm-white space keeps the experience calm and human; crisp indigo branches, nodes, dividers, and checks make the reasoning visible. The visual system is practical rather than aspirational: it helps a founder compare constraints, recognize a fit, and decide what to test.\n\nThe post-assessment experience follows a durable progression: Reveal → Reward → New Mystery → Comparison → ₹199. Each screen answers one question and opens the next, using short direct copy and one purposeful visual change. Preview and payment language must remain truthful. Assessment and conversion screens do not expose marketing navigation; the paid report alone keeps its report-only navigation.",
+    "keyCharacteristics": [
+      "Warm, quiet canvas with high-contrast ink and a disciplined indigo accent.",
+      "The Escape Route Map as the signature visual: crisp branches, circular origins, ranked route cards, and deliberately obscured alternatives.",
+      "Qualitative Business DNA expressed as named traits and readable signals, never fabricated precision.",
+      "Mobile-first single-column reading that expands into selective two-column comparisons.",
+      "Brief, one-time motion that explains filtering, drawing, revealing, or unlocking."
+    ],
+    "rules": [
+      { "name": "The Route Owns Indigo Rule", "body": "Reserve saturated indigo for decisions, route geometry, and interaction; its repetition should make the path legible.", "section": "colors" },
+      { "name": "The Lime Means Done Rule", "body": "Use lime only for a completed, successful unlock or equally definitive completion state.", "section": "colors" },
+      { "name": "The Short Answer Rule", "body": "Headlines state the conclusion or question directly; supporting copy explains the constraint in one compact paragraph.", "section": "typography" },
+      { "name": "The Precision Without Scores Rule", "body": "Business DNA labels may name qualitative strength and fit, but must not imply a measured probability or unsupported numeric score.", "section": "typography" },
+      { "name": "The Flat Until Meaningful Rule", "body": "Do not shadow every panel; lift only actions, origins, and destinations that need to read above the route field.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do preserve the Reveal → Reward → New Mystery → Comparison → ₹199 sequence across post-quiz surfaces.",
+      "Do use stored assessment answers and deterministic logic for personalization.",
+      "Do frame ₹199 as a one-time unlock and clearly identify prototype checkout as a no-charge preview.",
+      "Do make every experience keyboard operable, readable at 320px, and quiet under prefers-reduced-motion.",
+      "Do use animation once to explain filtering, drawing, revealing, or unlocking."
+    ],
+    "donts": [
+      "Don't add marketing navigation after the assessment or remove the paid report's report-only navigation.",
+      "Don't fabricate rankings, probabilities, success rates, testimonials, or precise Business DNA scores.",
+      "Don't use blur as vague decorative mystique; use it only as an honest information mask, paired with clear locked framing.",
+      "Don't turn the warm-white system into a generic white SaaS dashboard or introduce competing accent colors.",
+      "Don't loop, bounce, or continuously animate route geometry after its state change is understood."
+    ]
+  }
+}
