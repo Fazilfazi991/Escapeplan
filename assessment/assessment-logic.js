@@ -2,7 +2,7 @@
   'use strict';
 
   const stageByQuestion = {
-    motivation: 'YOU', situation: 'YOU', capital: 'MONEY', time: 'MONEY',
+    motivation: 'GOAL', situation: 'GOAL', capital: 'MONEY', time: 'MONEY',
     environment: 'STYLE', strengths: 'STYLE', tradeoff: 'FIT', runway: 'FIT', operations: 'FIT'
   };
 

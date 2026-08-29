@@ -1,243 +1,31 @@
-(function () {
-  'use strict';
-
-  const questions = [
-    {
-      id: 'motivation', stage: 'What you want', title: 'What are you trying to change right now?',
-      help: 'Choose the one that matters most today.', max: 1,
-      options: ['I want more income', 'I want out of my job eventually', 'I want something of my own', 'I want to build real wealth', 'I’m just exploring']
-    },
-    {
-      id: 'situation', stage: 'Your life today', title: 'What does your life look like today?',
-      help: 'This tells us what a realistic first move looks like.', max: 1,
-      options: ['Full-time job', 'Studying', 'Already running a business', 'Ready to go full-time', 'Between jobs']
-    },
-    {
-      id: 'capital', stage: 'Your money', title: 'If the right business appeared tomorrow, what could you comfortably test with?',
-      help: 'Not everything. Just an amount you could test without risking essential expenses.', max: 1,
-      options: ['Under ₹25K', '₹25K–₹1L', '₹1L–₹3L', '₹3L–₹7L', '₹7L+']
-    },
-    {
-      id: 'time', stage: 'Your time', title: 'Be realistic — how much time can this get from you?',
-      help: 'Think about a normal week, not your most motivated one.', max: 1,
-      options: ['1 hour/day', '2–3 hours/day', '4–6 hours/day', 'Full-time']
-    },
-    {
-      id: 'environment', stage: 'How you want to work', title: 'Which kind of work sounds more like you?',
-      help: 'Choose the operating style that feels most natural.', max: 1,
-      options: ['Sell or build through the internet', 'Run something people can visit / use locally', 'Combine both', 'I don’t care — show me what fits']
-    },
-    {
-      id: 'strengths', stage: 'Your advantages', title: 'What do people already rely on you for?',
-      help: 'Choose up to two. Existing advantages can change what is realistic.', max: 2,
-      options: ['Selling / convincing', 'Technology / systems', 'Creative ideas / content', 'Finding products / deals', 'Managing people / operations', 'Networking', 'Numbers / analysis', 'Nothing obvious yet']
-    },
-    {
-      id: 'tradeoff', stage: 'Your final trade-off', title: 'Which outcome matters more to you right now?',
-      help: 'Choose where you sit between speed and long-term scale.', max: 1, visual: true,
-      options: ['Money sooner', 'Balanced', 'Growth first', 'Build for the long term']
-    }
-  ];
-
-  const insights = {
-    1: { title: 'We already know something important.', copy: 'You need a path that fits your life before it asks you to change it.' },
-    3: { title: 'Your path is narrowing.', copy: 'Capital ✓  Time ✓  Lifestyle ✓' },
-    5: { title: 'Okay… this is getting interesting.', copy: 'Your answers now point toward a clearer operating style.' }
-  };
-
-  const conditionalQuestions = {
-    runway: {
-      id: 'runway', stage: 'One useful follow-up', title: 'If your salary stopped tomorrow, how long would your savings last?',
-      help: 'A rough answer is enough.', max: 1,
-      options: ['Less than 2 months', '2–4 months', '5–7 months', '8–12 months', '1 year+']
-    },
-    operations: {
-      id: 'operations', stage: 'One useful follow-up', title: 'How do you feel about staff and inventory?',
-      help: 'This can materially change which local models stay realistic.', max: 1,
-      options: ['Avoid both', 'Inventory is okay', 'Staff is okay', 'Comfortable with both']
-    }
-  };
-
-  const storageKey = 'escapeplan-assessment-v1';
-  const state = loadState();
-  const nodes = {
-    main: document.getElementById('assessment'), questionView: document.getElementById('question-view'),
-    insightView: document.getElementById('insight-view'), category: document.getElementById('question-category'),
-    title: document.getElementById('question-title'), help: document.getElementById('question-help'),
-    options: document.getElementById('option-list'), progressStage: document.getElementById('progress-stage'),
-    progressLabel: document.getElementById('progress-label'), progressBar: document.getElementById('progress-bar'),
-    actions: document.getElementById('assessment-actions'), continueButton: document.getElementById('continue-button'),
-    continueLabel: document.querySelector('#continue-button span:first-child'), backButton: document.querySelector('[data-action="back"]'),
-    reaction: document.getElementById('reaction'), reactionTitle: document.getElementById('reaction-title'), reactionCopy: document.getElementById('reaction-copy'),
-    insightTitle: document.getElementById('insight-title'), insightCopy: document.getElementById('insight-copy')
-  };
-
-  function loadState() {
-    try {
-      const saved = JSON.parse(sessionStorage.getItem(storageKey) || localStorage.getItem(storageKey));
-      return saved && typeof saved === 'object' ? { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null, ...saved } : { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null };
-    } catch (_) { return { index: 0, mode: 'core', followupIndex: 0, followupIds: [], answers: {}, answerText: {}, insightAfter: null }; }
-  }
-
-  function saveState() { const serialized = JSON.stringify(state); sessionStorage.setItem(storageKey, serialized); localStorage.setItem(storageKey, serialized); }
-  function selectedFor(id) { return Array.isArray(state.answers[id]) ? state.answers[id] : []; }
-  function activeQuestion() { return state.mode === 'followup' ? conditionalQuestions[state.followupIds[state.followupIndex]] : questions[state.index]; }
-  function conditionalQueue() {
-    const queue = [];
-    if (selectedFor('situation').includes(0)) queue.push('runway');
-    if (selectedFor('environment').includes(1)) queue.push('operations');
-    return queue;
-  }
-
-  function render() {
-    const question = activeQuestion();
-    const selected = selectedFor(question.id);
-    const percent = state.mode === 'core' ? Math.round(((state.index + 1) / questions.length) * 92) : 96 + state.followupIndex;
-    const stage = EscapePlanAssessmentLogic.progressStage(question.id);
-    nodes.progressStage.textContent = state.mode === 'core' ? `${stage} · YOUR PATH IS TAKING SHAPE` : 'FIT · ONE USEFUL FOLLOW-UP';
-    nodes.progressLabel.textContent = `${percent}% complete`;
-    nodes.progressBar.style.transform = `scaleX(${percent / 100})`;
-    nodes.category.textContent = question.stage;
-    nodes.title.textContent = question.title;
-    nodes.help.textContent = question.help;
-    nodes.options.className = `option-list${question.visual ? ' option-list--tradeoff' : ''}`;
-    nodes.options.setAttribute('aria-label', question.max > 1 ? `Choose up to ${question.max}` : 'Choose one');
-    nodes.options.innerHTML = question.options.map((option, optionIndex) => {
-      const active = selected.includes(optionIndex);
-      return `<button class="option-card${active ? ' is-selected' : ''}" type="button" data-option="${optionIndex}" aria-pressed="${active}">
-        <span class="option-indicator" aria-hidden="true">${active ? '✓' : ''}</span><span class="option-label">${option}</span>
-      </button>`;
-    }).join('');
-    nodes.continueButton.disabled = selected.length === 0;
-    nodes.continueButton.setAttribute('aria-disabled', String(selected.length === 0));
-    const finalFollowup = state.mode === 'followup' && state.followupIndex === state.followupIds.length - 1;
-    const finalCoreWithoutFollowup = state.mode === 'core' && state.index === questions.length - 1 && conditionalQueue().length === 0;
-    nodes.continueLabel.textContent = finalFollowup || finalCoreWithoutFollowup ? 'Build My EscapePlan' : 'Continue';
-    nodes.backButton.disabled = state.mode === 'core' && state.index === 0;
-    nodes.questionView.hidden = false;
-    nodes.insightView.hidden = true;
-    nodes.actions.hidden = false;
-    nodes.reaction.hidden = true;
-    nodes.main.focus({ preventScroll: true });
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }
-
-  function selectOption(optionIndex) {
-    const question = activeQuestion();
-    const selected = selectedFor(question.id);
-    if (question.max === 1) state.answers[question.id] = [optionIndex];
-    else if (selected.includes(optionIndex)) state.answers[question.id] = selected.filter((value) => value !== optionIndex);
-    else if (selected.length < question.max) state.answers[question.id] = [...selected, optionIndex];
-    else state.answers[question.id] = [selected[1], optionIndex];
-    state.answerText[question.id] = EscapePlanAssessmentLogic.answerLabels(question, state.answers);
-    saveState();
-    render();
-    const latest = state.answerText[question.id]?.at(-1);
-    const narration = AssessmentNarrator.fallback({
-      user_state: state.answerText, current_rank_signals: [], allowed_question_types: conditionalQueue(),
-      latest_answer: latest, progress_stage: EscapePlanAssessmentLogic.progressStage(question.id), question_id: question.id
-    });
-    nodes.reactionTitle.textContent = narration.reaction;
-    nodes.reactionCopy.textContent = narration.supporting_copy;
-    nodes.reaction.hidden = false;
-  }
-
-  function showInsight(afterIndex) {
-    const insight = insights[afterIndex];
-    if (!insight) return false;
-    state.insightAfter = afterIndex;
-    saveState();
-    nodes.insightTitle.textContent = insight.title;
-    nodes.insightCopy.textContent = insight.copy;
-    nodes.questionView.hidden = true;
-    nodes.insightView.hidden = false;
-    nodes.actions.hidden = true;
-    nodes.main.focus({ preventScroll: true });
-    return true;
-  }
-
-  function showFinalInsight() {
-    state.insightAfter = 'final';
-    saveState();
-    nodes.insightTitle.textContent = 'That’s enough.';
-    nodes.insightCopy.textContent = 'Let’s build your EscapePlan.';
-    nodes.questionView.hidden = true;
-    nodes.insightView.hidden = false;
-    nodes.actions.hidden = true;
-    nodes.main.focus({ preventScroll: true });
-  }
-
-  function continueAssessment() {
-    const question = activeQuestion();
-    if (!selectedFor(question.id).length) return;
-    if (state.mode === 'followup') {
-      if (state.followupIndex < state.followupIds.length - 1) {
-        state.followupIndex += 1;
-        saveState();
-        render();
-      } else showFinalInsight();
-      return;
-    }
-    if (showInsight(state.index)) return;
-    if (state.index === questions.length - 1) {
-      state.followupIds = conditionalQueue();
-      if (state.followupIds.length) {
-        state.mode = 'followup';
-        state.followupIndex = 0;
-        saveState();
-        render();
-      } else showFinalInsight();
-      return;
-    }
-    state.index += 1;
-    saveState();
-    render();
-  }
-
-  function continueAfterInsight() {
-    const completed = state.insightAfter === 'final';
-    state.insightAfter = null;
-    if (completed) {
-      saveState();
-      location.href = '/analysis-v2/code';
-      return;
-    }
-    state.index += 1;
-    saveState();
-    render();
-  }
-
-  function goBack() {
-    if (state.mode === 'followup') {
-      if (state.followupIndex > 0) state.followupIndex -= 1;
-      else { state.mode = 'core'; state.index = questions.length - 1; }
-      state.insightAfter = null;
-      saveState();
-      render();
-      return;
-    }
-    if (state.index === 0) return;
-    state.index -= 1;
-    state.insightAfter = null;
-    saveState();
-    render();
-  }
-
-  document.addEventListener('click', (event) => {
-    const option = event.target.closest('[data-option]');
-    if (option) { selectOption(Number(option.dataset.option)); return; }
-    const action = event.target.closest('[data-action]')?.dataset.action;
-    if (action === 'continue') continueAssessment();
-    if (action === 'back') goBack();
-    if (action === 'exit') location.href = '/';
-    if (action === 'insight-continue') continueAfterInsight();
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' && document.activeElement === nodes.continueButton && !nodes.continueButton.disabled) continueAssessment();
-  });
-
-  if (state.insightAfter === 'final') showFinalInsight();
-  else if (state.insightAfter !== null && insights[state.insightAfter]) showInsight(state.insightAfter);
-  else render();
+(function(){'use strict';
+const questions=[
+{id:'motivation',stage:'Start with the change',title:'What are you trying to change right now?',help:'Choose the one that matters most today.',max:1,options:['I want more income','I want out of my job eventually','I want something of my own','I want to build real wealth','I’m just exploring']},
+{id:'situation',stage:'Your life today',title:'What does your life look like today?',help:'This tells us what a realistic first move looks like.',max:1,options:['Full-time job','Studying','Already running a business','Ready to go full-time','Between jobs']},
+{id:'capital',stage:'Set a safe test range',title:'If the right business appeared tomorrow, what could you comfortably test with?',help:'Not everything. Just an amount you could test without risking essential expenses.',max:1,options:['Under ₹25K','₹25K–₹1L','₹1L–₹3L','₹3L–₹7L','₹7L+']},
+{id:'time',stage:'Protect your real week',title:'Be realistic — how much time can this get from you?',help:'Think about a normal week, not your most motivated one.',max:1,options:['1 hour/day','2–3 hours/day','4–6 hours/day','Full-time']},
+{id:'environment',stage:'Choose your working world',title:'Which kind of work sounds more like you?',help:'Choose the operating style that feels most natural.',max:1,options:['Sell or build through the internet','Run something people can visit / use locally','Combine both','I don’t care — show me what fits']},
+{id:'strengths',stage:'Find your unfair advantages',title:'What do people already rely on you for?',help:'Choose up to two. Existing advantages can change what is realistic.',max:2,options:['Selling / convincing','Technology / systems','Creative ideas / content','Finding products / deals','Managing people / operations','Networking','Numbers / analysis','Nothing obvious yet']},
+{id:'tradeoff',stage:'Make the final trade-off',title:'Which outcome matters more to you right now?',help:'Choose where you sit between speed and long-term scale.',max:1,options:['Money sooner','Balanced','Growth first','Build for the long term']}];
+const insights={1:{type:'stage',title:'Goal found.',copy:'Now we can test what fits your resources—not somebody else’s life.'},2:{type:'capital',title:'Your safe test range is set.',copy:'Some routes just became less practical. Others moved closer.'},4:{type:'dna',title:'Your business DNA is taking shape.',copy:'We can now see how your money, time and preferred working world interact.'},5:{type:'strengths',title:'Your advantage changes the map.',copy:'Two people with the same budget can need completely different businesses.'}};
+const conditionalQuestions={runway:{id:'runway',stage:'One more detail for a safer route',title:'If your salary stopped tomorrow, how long would your savings last?',help:'A rough answer is enough.',max:1,options:['Less than 2 months','2–4 months','5–7 months','8–12 months','1 year+']},operations:{id:'operations',stage:'One more detail for a local route',title:'How do you feel about staff and inventory?',help:'This can materially change which local models stay realistic.',max:1,options:['Avoid both','Inventory is okay','Staff is okay','Comfortable with both']}};
+const categories=['Commerce','Services','Software','Food','Retail','Education','Content','Rental','Marketplace','Local services','Operations'],key='escapeplan-assessment-v1',state=load();
+const $=id=>document.getElementById(id),n={main:$('assessment'),intro:$('intro-view'),quiz:$('quiz-view'),introCount:$('intro-count'),introTitle:$('intro-title'),introCopy:$('intro-copy'),introButton:$('intro-button-label'),question:$('question-view'),insight:$('insight-view'),category:$('question-category'),title:$('question-title'),help:$('question-help'),visual:$('question-visual'),options:$('option-list'),route:$('route-field'),routeStatus:$('route-status'),actions:$('assessment-actions'),continue:$('continue-button'),continueLabel:document.querySelector('#continue-button span:first-child'),back:document.querySelector('[data-action="back"]'),reaction:$('reaction'),reactionTitle:$('reaction-title'),reactionCopy:$('reaction-copy'),insightTitle:$('insight-title'),insightCopy:$('insight-copy'),insightVisual:$('insight-visual')};
+const icons={motivation:['M5 13h4l2-7 3 14 2-7h4','M6 5h12v5a6 6 0 0 1-12 0z M9 20h6 M12 16v4','M4 12 12 5l8 7v8h-6v-5h-4v5H4z','M5 18 10 13l3 3 6-8 M15 8h4v4','M12 3a9 9 0 1 0 9 9'],strengths:['M4 14l5-5 4 4 7-7','M5 5h6v6H5z M13 13h6v6h-6z M15 5h4v4h-4z M5 15h4v4H5z','M12 3l2.3 4.7 5.2.8-3.8 3.7.9 5.3-4.6-2.5L7.4 20l.9-5.3-3.8-3.7 5.2-.8z','M4 8h16v10H4z M8 8V5h8v3','M4 18V8l8-5 8 5v10 M8 18v-5h8v5','M5 12h14 M12 5v14','M5 18l4-5 3 2 7-9','M7 7l10 10 M17 7 7 17']},svg=p=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${p}"/></svg>`;
+function load(){try{const x=JSON.parse(sessionStorage.getItem(key)||localStorage.getItem(key));return x&&typeof x==='object'?{index:0,mode:'core',followupIndex:0,followupIds:[],answers:{},answerText:{},insightAfter:null,introComplete:false,introStep:0,...x}:{index:0,mode:'core',followupIndex:0,followupIds:[],answers:{},answerText:{},insightAfter:null,introComplete:false,introStep:0};}catch(_){return{index:0,mode:'core',followupIndex:0,followupIds:[],answers:{},answerText:{},insightAfter:null,introComplete:false,introStep:0};}}
+function save(){const x=JSON.stringify(state);sessionStorage.setItem(key,x);localStorage.setItem(key,x)}function selected(id){return Array.isArray(state.answers[id])?state.answers[id]:[]}function active(){return state.mode==='followup'?conditionalQuestions[state.followupIds[state.followupIndex]]:questions[state.index]}function queue(){const q=[];if(selected('situation').includes(0))q.push('runway');if(selected('environment').includes(1))q.push('operations');return q}function stage(id){return EscapePlanAssessmentLogic.progressStage(id)}
+function intro(){const steps=[['A clearer way to choose','There are hundreds of businesses you could start.','The useful question is not “Which one looks exciting?” It is “Which few actually fit your life?”','Show me how'],['Your constraints are clues','Most business ideas are wrong for you.','Your money, time, working style and strengths can remove the noise—before you risk months or lakhs.','See the map'],['Your route begins here','We’ll narrow the field as you answer.','Watch your Escape Route Map react. We will only reveal your strongest matches after the assessment.','Start my EscapePlan']],s=steps[state.introStep]||steps[0];n.introCount.textContent=s[0];n.introTitle.textContent=s[1];n.introCopy.textContent=s[2];n.introButton.textContent=s[3];n.intro.dataset.step=state.introStep;n.intro.hidden=false;n.quiz.hidden=true;n.actions.hidden=true;n.main.focus({preventScroll:true})}
+function start(){state.introComplete=true;save();n.intro.hidden=true;n.quiz.hidden=false;render()}function stages(s){const o=['GOAL','MONEY','STYLE','FIT'],c=o.indexOf(s);document.querySelectorAll('[data-stage]').forEach(x=>{const i=o.indexOf(x.dataset.stage);x.classList.toggle('is-active',i===c);x.classList.toggle('is-done',i<c)})}
+function scores(){const x=Object.fromEntries(categories.map(c=>[c,1])),e=selected('environment')[0],c=selected('capital')[0],t=selected('time')[0],st=selected('strengths');if(c!==undefined&&c<2)['Food','Retail','Rental','Operations'].forEach(v=>x[v]-=.55);if(t===0)['Food','Retail','Local services','Operations'].forEach(v=>x[v]-=.45);if(e===0)['Software','Content','Marketplace','Commerce'].forEach(v=>x[v]+=.65);if(e===1)['Food','Retail','Local services','Operations'].forEach(v=>x[v]+=.65);if(e===2)['Commerce','Services','Education','Marketplace'].forEach(v=>x[v]+=.4);const b={0:['Commerce','Services'],1:['Software','Marketplace'],2:['Content','Education'],3:['Commerce','Retail'],4:['Operations','Local services'],5:['Services','Commerce'],6:['Software','Marketplace']};st.forEach(i=>(b[i]||[]).forEach(v=>x[v]+=.55));return x}
+function map(){const x=scores(),a=Object.keys(state.answers).filter(k=>selected(k).length).length;n.routeStatus.textContent=a?`${a} signal${a===1?'':'s'} shaping the field`:'Listening for your first signal';n.route.innerHTML=`<span class="route-origin">YOU</span>${categories.map((c,i)=>`<span class="route-branch" style="--i:${i};--weight:${Math.max(.22,Math.min(1,x[c]/1.8))}"><i></i><b>${c}</b></span>`).join('')}`}
+function visual(q,s){const p=s[0];if(q.id==='capital')return`<div class="capital-meter">${q.options.map((o,i)=>`<i class="${p!==undefined&&i<=p?'is-filled':''}" style="--h:${34+i*11}px"></i>`).join('')}</div><span>Lean test</span><span>More operating room</span>`;if(q.id==='time')return`<div class="time-dial" style="--turn:${p===undefined?0:(p+1)*38}deg"><i></i><b>${p===undefined?'Your week':q.options[p]}</b></div>`;if(q.id==='environment')return`<div class="work-scenes"><span class="${p===0||p===2?'is-on':''}">${svg('M4 5h16v11H4z M9 20h6 M12 16v4')}</span><i></i><span class="${p===1||p===2?'is-on':''}">${svg('M4 10h16v10H4z M3 10l2-6h14l2 6 M8 14h3v6')}</span></div>`;if(q.id==='strengths')return`<div class="token-count"><strong>${s.length}</strong><span>of 2 advantages selected</span></div>`;if(q.id==='tradeoff')return`<div class="tradeoff-balance"><span>Proof sooner</span><i><b style="--position:${p===undefined?50:p/3*100}%"></b></i><span>Scale later</span></div>`;return''}
+function options(q,s){return q.options.map((o,i)=>{const a=s.includes(i),ic=(icons[q.id]||[])[i];return`<button class="option-card${a?' is-selected':''}" type="button" data-option="${i}" aria-pressed="${a}">${ic?`<span class="option-icon">${svg(ic)}</span>`:'<span class="option-indicator" aria-hidden="true"></span>'}<span class="option-label">${o}</span></button>`}).join('')}
+function render(){const q=active(),s=selected(q.id);n.intro.hidden=true;n.quiz.hidden=false;n.quiz.dataset.question=q.id;stages(stage(q.id));map();n.category.textContent=q.stage;n.title.textContent=q.title;n.help.textContent=q.help;n.visual.innerHTML=visual(q,s);n.visual.hidden=!n.visual.innerHTML;n.options.className=`option-list option-list--${q.id}`;n.options.setAttribute('aria-label',q.max>1?`Choose up to ${q.max}`:'Choose one');n.options.innerHTML=options(q,s);n.continue.disabled=!s.length;n.continue.setAttribute('aria-disabled',String(!s.length));const f=state.mode==='followup'&&state.followupIndex===state.followupIds.length-1,l=state.mode==='core'&&state.index===questions.length-1&&!queue().length;n.continueLabel.textContent=f||l?'Build My EscapePlan':'Continue';n.back.disabled=state.mode==='core'&&state.index===0;n.question.hidden=false;n.insight.hidden=true;n.actions.hidden=false;n.reaction.hidden=true;n.main.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'})}
+function choose(i){const q=active(),s=selected(q.id);if(q.max===1)state.answers[q.id]=[i];else if(s.includes(i))state.answers[q.id]=s.filter(v=>v!==i);else if(s.length<q.max)state.answers[q.id]=[...s,i];else state.answers[q.id]=[s[1],i];state.answerText[q.id]=EscapePlanAssessmentLogic.answerLabels(q,state.answers);save();render();const latest=state.answerText[q.id]?.at(-1),r=AssessmentNarrator.fallback({user_state:state.answerText,current_rank_signals:[],allowed_question_types:queue(),latest_answer:latest,progress_stage:stage(q.id),question_id:q.id});n.reactionTitle.textContent=r.reaction;n.reactionCopy.textContent=r.supporting_copy;n.reaction.hidden=false}
+function insight(after){const x=insights[after];if(!x)return false;state.insightAfter=after;save();n.insightTitle.textContent=x.title;n.insightCopy.textContent=x.copy;n.insightVisual.className=`insight-visual insight-visual--${x.type}`;n.insightVisual.innerHTML=x.type==='dna'?'<i></i><i></i><i></i><i></i><b>DNA</b>':x.type==='strengths'?'<span></span><span></span><b>+</b>':'<i></i><i></i><i></i><b>✓</b>';n.question.hidden=true;n.insight.hidden=false;n.actions.hidden=true;n.main.focus({preventScroll:true});return true}
+function final(){state.insightAfter='final';save();n.insightTitle.textContent='Your route is ready to reveal.';n.insightCopy.textContent='Your answers are complete. Now the deterministic matching engine can compare the business paths that fit them.';n.insightVisual.className='insight-visual insight-visual--final';n.insightVisual.innerHTML='<span></span><span></span><span></span><b>READY</b>';n.question.hidden=true;n.insight.hidden=false;n.actions.hidden=true;n.main.focus({preventScroll:true})}
+function next(){const q=active();if(!selected(q.id).length)return;if(state.mode==='followup'){if(state.followupIndex<state.followupIds.length-1){state.followupIndex++;save();render()}else final();return}if(insight(state.index))return;if(state.index===questions.length-1){state.followupIds=queue();if(state.followupIds.length){state.mode='followup';state.followupIndex=0;save();render()}else final();return}state.index++;save();render()}
+function after(){const done=state.insightAfter==='final';state.insightAfter=null;if(done){save();location.href='/analysis-v2/code';return}state.index++;save();render()}function back(){if(state.mode==='followup'){if(state.followupIndex>0)state.followupIndex--;else{state.mode='core';state.index=questions.length-1}state.insightAfter=null;save();render();return}if(!state.index)return;state.index--;state.insightAfter=null;save();render()}
+document.addEventListener('click',e=>{const o=e.target.closest('[data-option]');if(o){choose(Number(o.dataset.option));return}const a=e.target.closest('[data-action]')?.dataset.action;if(a==='intro-next'){if(state.introStep<2){state.introStep++;save();intro()}else start()}if(a==='intro-skip')start();if(a==='continue')next();if(a==='back')back();if(a==='exit')location.href='/';if(a==='insight-continue')after()});
+if(!state.introComplete&&!Object.keys(state.answers).length)intro();else if(state.insightAfter==='final'){n.intro.hidden=true;n.quiz.hidden=false;map();final()}else if(state.insightAfter!==null&&insights[state.insightAfter]){n.intro.hidden=true;n.quiz.hidden=false;map();insight(state.insightAfter)}else start();
 }());
