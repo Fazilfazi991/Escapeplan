@@ -52,6 +52,21 @@ for (const field of ['user_state', 'current_rank_signals', 'allowed_question_typ
 if (!core.includes("IN: { currency: 'INR'") || !core.includes("AE: { currency: 'AED'") || !core.includes("US: { currency: 'USD'")) {
   throw new Error('Shared currency formatter must support INR, AED and USD market configuration');
 }
+for (const marker of [
+  "if (page.startsWith('report_')) return;",
+  "document.body.classList.add('ep-report-mode')",
+  "header.id = 'ep-report-header'",
+  'id="ep-report-mobile-menu"',
+  'Business Matches',
+  'Money Plan',
+  '30-Day Plan',
+  'Update My Answers'
+]) {
+  if (!prototype.includes(marker)) throw new Error(`Report navigation is missing ${marker}`);
+}
+if (!prototype.includes(`href="${'${route(reportRoutes.overview)}'}" aria-label="Your EscapePlan overview"`)) {
+  throw new Error('Report logo must link to the report overview');
+}
 
 const routeNames = [
   'escapeplan_landing_page_desktop_refined', 'escapeplan_landing_page_mobile_refined',

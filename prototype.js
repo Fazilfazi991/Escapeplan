@@ -110,6 +110,7 @@
   }
 
   function wireMobileMenu() {
+    if (page.startsWith('report_')) return;
     const menuButton = [...document.querySelectorAll('button')].find((button) => label(button) === 'menu');
     if (!menuButton) return;
     menuButton.setAttribute('aria-label', 'Open navigation menu');
@@ -264,16 +265,65 @@
 
   function wireReport() {
     if (!page.startsWith('report_')) return;
-    const nav = document.createElement('nav');
-    nav.id = 'ep-report-nav';
-    nav.setAttribute('aria-label', 'Full report sections');
-    nav.innerHTML = Object.entries(reportRoutes).map(([name, target]) => `<a href="${route(target)}"${page === target ? ' aria-current="page"' : ''}>${name.replace(/\b\w/g, (letter) => letter.toUpperCase())}</a>`).join('');
-    document.body.prepend(nav);
+    document.body.classList.add('ep-report-mode');
+
+    const activePage = page === 'report_summary_dna_mobile' ? reportRoutes.overview : page;
+    const sectionLabels = {
+      overview: 'Overview',
+      matches: 'Matches',
+      money: 'Money',
+      'quit plan': 'Quit Plan',
+      '30 days': '30 Days'
+    };
+    const mobileLabels = {
+      overview: 'Overview',
+      matches: 'Business Matches',
+      money: 'Money Plan',
+      'quit plan': 'Quit Plan',
+      '30 days': '30-Day Plan'
+    };
+    const links = (labels) => Object.entries(reportRoutes).map(([name, target]) =>
+      `<a href="${route(target)}"${activePage === target ? ' aria-current="page"' : ''}>${labels[name]}</a>`
+    ).join('');
+
+    const header = document.createElement('header');
+    header.id = 'ep-report-header';
+    header.innerHTML = `
+      <a class="ep-report-brand ep-brand-logo" href="${route(reportRoutes.overview)}" aria-label="Your EscapePlan overview">
+        <img alt="EscapePlan" src="/escapeplan_logo/screen.png">
+      </a>
+      <nav id="ep-report-nav" aria-label="Full report sections">${links(sectionLabels)}</nav>
+      <button id="ep-report-menu-button" type="button" aria-expanded="false" aria-controls="ep-report-mobile-menu">Sections</button>
+      <nav id="ep-report-mobile-menu" aria-label="Report sections">
+        ${links(mobileLabels)}
+        <button type="button" data-action="close">Close</button>
+      </nav>`;
+    document.body.prepend(header);
+
+    const menuButton = header.querySelector('#ep-report-menu-button');
+    const mobileMenu = header.querySelector('#ep-report-mobile-menu');
+    makeClickable(menuButton, () => {
+      const open = mobileMenu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+      if (open) mobileMenu.querySelector('a').focus();
+    });
+    mobileMenu.querySelector('[data-action="close"]').addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.focus();
+    });
+
+    const maintenance = document.createElement('aside');
+    maintenance.id = 'ep-report-maintenance';
+    maintenance.setAttribute('aria-label', 'Report preferences');
+    maintenance.innerHTML = `<a href="${route('assessment')}">Update My Answers</a><p>Your recommendations may change if your situation changes.</p>`;
+    document.body.appendChild(maintenance);
     [...document.querySelectorAll('button, a')].forEach((item) => {
       const text = label(item);
+      if (/^(how it works|sample result|take the test)$/.test(text) && !item.closest('#ep-report-header')) item.hidden = true;
       if (text.includes('access full blueprint') || text.includes('explore full analysis')) makeClickable(item, () => location.href = route(reportRoutes.matches));
       if (text.includes('view strategy')) makeClickable(item, () => location.href = route(reportRoutes['quit plan']));
-      if (text.includes('retake assessment') || text.includes('update answers')) makeClickable(item, routes.quiz);
+      if ((text.includes('retake assessment') || text.includes('update answers')) && !item.closest('#ep-report-maintenance')) item.hidden = true;
       if (text.includes('download pdf')) makeClickable(item, () => toast('PDF export is represented in this prototype; no file was generated.'));
       if (/expand_more/.test(text)) {
         item.setAttribute('aria-expanded', 'false');
